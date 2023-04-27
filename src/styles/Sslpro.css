@@ -1,0 +1,101 @@
+.pmain_wrapper {
+    position: absolute;
+    display: flex;
+    width: 1598px;
+    height: 883px;
+    left: 150px;
+    top: 1005px;
+    background: #fafafa;
+}
+.pinfo{
+    flex-direction: row;
+
+}
+
+.pcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 588px;
+    height: 395px;
+    left: 983px;
+    top: 273px;
+}
+
+.ptext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 588px;
+    height: 347px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.pbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 161px;
+    height: 48px;
+    background: #ed3957;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border: none;
+}
+
+.pbtn_text {
+    width: 113px;
+    height: 24px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.ptext_h1 {
+    width: 588px;
+    height: 142px;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.ptext_p {
+    width: 543px;
+    height: 22px;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #5c5d66;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
