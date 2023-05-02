@@ -1,16 +1,30 @@
 .smain_wrapper {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-
-    position: absolute;
-    width: 1198px;
+    width: 100%;
     height: 598px;
     left: 361px;
     top: 223px;
 }
 
+.pbox_wrapper {
+    background-color: black;
+}
+
+/* .pcard{
+    display: flex;
+    flex-direction: column;
+}
+
+.prow{
+    display: flex;
+    flex-direction: row;
+} */
+/* .pbox1{
+    order: 3;
+} */
 .scontent {
     width: 1198px;
     height: 589px;
@@ -97,7 +111,7 @@ display: flex;
 }
 
 .sbutton {
-   
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -161,7 +175,7 @@ display: flex;
     font-weight: 700;
     font-size: 80px;
     line-height: 96px;
-     text-align: center;
+    text-align: center;
     color: #0F111A;
     flex: none;
     order: 0;
@@ -171,7 +185,7 @@ display: flex;
 .details {
     width: 899px;
     height: 48px;
-   font-family: 'Aeonik';
+    font-family: 'Aeonik';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -182,8 +196,9 @@ display: flex;
     order: 1;
     flex-grow: 0;
 }
-.sbenefits{
-display: flex;
+
+.sbenefits {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 24px 16px;
@@ -200,8 +215,8 @@ display: flex;
     flex-grow: 0;
 }
 
-.slist{
-display: flex;
+.slist {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -218,69 +233,70 @@ display: flex;
     order: 0;
     flex-grow: 0;
 }
-.sbenefit1{
+
+.sbenefit1 {
     display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 0px;
-    
-        width: 330px;
-        height: 123px;
-    
-    
-        /* Inside auto layout */
-    
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        border-right: 0.5px solid #C0C2CC;
-        padding-right: 15px;
-        
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0px;
+
+    width: 330px;
+    height: 123px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-right: 0.5px solid #C0C2CC;
+    padding-right: 15px;
+
 }
 
-.bene1text{
+.bene1text {
     display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 0px;
-        width: 330px;
-        height: 95px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0px;
+    width: 330px;
+    height: 95px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
-.free{
+.free {
     width: 315px;
-        height: 0px;
-    
-        /* Header links */
-    
-        font-family: 'Aeonik';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        /* identical to box height, or 150% */
-    
-    
-        /* Neutral/Black */
-    
-        color: #0F111A;
-    
-    
-        /* Inside auto layout */
-    
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+    height: 0px;
+
+    /* Header links */
+
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Neutral/Black */
+
+    color: #0F111A;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.freep{
+.freep {
 
-width: 330px;
+    width: 330px;
     height: 63px;
 
     /* Body/small subtext */
@@ -306,10 +322,11 @@ width: 330px;
 
 }
 
-.sbenefit2{
+.sbenefit2 {
     border-right: 0.5px solid #C0C2CC;
-        padding-right: 15px;
+    padding-right: 15px;
 }
+
 /* .divider1{
     border-right: 1px solid black;
     width: 2px;
