@@ -1,6 +1,6 @@
 import React from "react";
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
-import {styles} from './navstyles';
+import {styles} from './Navigationstyles';
 
 const Navbar = () => {
   const classes = styles(); 
