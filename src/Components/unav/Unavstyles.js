@@ -2,17 +2,17 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   main_wrapper: {
-    width: "100%",
-    height: 69,
+    width:"100%",
+    height:69,
     backgroundColor: theme.color.black,
   },
   own_wrapper: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "0px",
-    gap: "20px",
+    display:"flex",
+    flexDirection:"row",
+    alignItems:"center",
+    justifyContent:"center",
+    padding:"0px",
+    gap:"20px",
   },
   own: {
     fontFamily: "Aeonik",
@@ -26,7 +26,6 @@ export const styles = createUseStyles((theme) => ({
     paddingTop: "5px",
   },
   own_button: {
-    /* button */
     display: "flex",
     flexDirection: "row",
     alignItems: "flex-start",
@@ -35,7 +34,7 @@ export const styles = createUseStyles((theme) => ({
     width: "101px",
     height: "33px",
     background: theme.color.lightPink,
-    borderRadius: " 4px",
+    borderRadius: "4px",
     flex: "none",
     order: 1,
     flexGrow: 0,
@@ -45,7 +44,7 @@ export const styles = createUseStyles((theme) => ({
   },
   btn_text: {
     width: "77px",
-    height: " 17px",
+    height: "17px",
     fontFamily: "vInter",
     fontStyle: "normal",
     fontWeight: 600,

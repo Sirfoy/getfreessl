@@ -1,22 +1,16 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  // rec: {
-  //     display: "flex",
-  //     justifyContent: "center",
-  //     alignItems: "center",
-  // },
-
-  box: {
-    width: " 100%",
+   box: {
+    width: "100%",
     height: "350px",
     background: theme.white,
-    boxShadow: " 0px 12px 48px rgba(0, 0, 0, 0.08)",
+    boxShadow: "0px 12px 48px rgba(0, 0, 0, 0.08)",
     borderRadius: "4px",
   },
 
   info: {
-    display: " flex",
+    display: "flex",
     flexDirection: "column",
 
     alignItems: "flex-Start",
@@ -25,18 +19,18 @@ export const styles = createUseStyles((theme) => ({
   },
 
   verif: {
-    position: " relative",
+    position: "relative",
     width: "80px",
     height: "80px",
   },
 
   pimage: {
-    width: " 70%",
+    width: "70%",
     height: "70%",
   },
 
   content: {
-    display: " flex",
+    display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
   },
@@ -52,11 +46,11 @@ export const styles = createUseStyles((theme) => ({
   },
 
   verify_para: {
-    fontSize: " 14px",
-    lineHeight: " 21px",
+    fontSize: "14px",
+    lineHeight: "21px",
 
     fontFamily: "Aeonik",
-    fontStyle: " normal",
+    fontStyle: "normal",
     fontWeight: 400,
 
     color: theme.color.lightGrey,
@@ -65,6 +59,6 @@ export const styles = createUseStyles((theme) => ({
 
   prow: {
     display: "flex",
-    flexDirection: " row",
+    flexDirection: "row",
   },
 }));

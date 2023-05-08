@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Nav from "../Components/navbar/Navbar";
 import Unav from "../Components/unav/Unav";
 import Sslprotection from "../Components/sslprotection/Sslprotection";
+// import Sslc from "../Components/sslc/Sslc";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Nav />
       <Unav />
       <Sslprotection />
+      {/* <Sslc/> */}
     </>
   );
 }

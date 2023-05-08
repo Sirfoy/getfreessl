@@ -6,7 +6,7 @@ export const styles = createUseStyles((theme) => ({
     height: "978px",
     margin: "150px",
     display: "flex",
-    justifyContent: " center",
+    justifyContent: "center",
     alignItems: "center",
   },
 
@@ -21,7 +21,7 @@ export const styles = createUseStyles((theme) => ({
   pleft_wrapper: {
     display: "flex",
     display: "grid",
-    gridTemplateColumns: " repeat(2, 1fr)",
+    gridTemplateColumns: "repeat(2, 1fr)",
     alignItems: "center",
     gap: "70px",
     width: "50%",
@@ -51,7 +51,7 @@ export const styles = createUseStyles((theme) => ({
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontzseight: 300,
-    fontSize: " 15px",
+    fontSize: "15px",
     lineHeight: "24px",
     color: theme.color.lightGrey,
   },
@@ -61,7 +61,7 @@ export const styles = createUseStyles((theme) => ({
     border: "none",
     borderRadius: "4px",
     flexDirection: "row",
-    alignItems: " center",
+    alignItems: "center",
     padding: "12px 24px",
     gap: "8px",
     cursor: "pointer",
@@ -81,10 +81,10 @@ export const styles = createUseStyles((theme) => ({
 
   pcolumn: {
     display: "flex",
-    flexDirection: " column",
+    flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    gap: " 70px",
+    gap: "70px",
   },
 
   prow: {

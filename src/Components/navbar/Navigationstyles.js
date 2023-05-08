@@ -5,7 +5,7 @@ export const styles = createUseStyles((theme) => ({
     width: "100%",
     height: "74px",
     background: theme.color.white,
-    boxShadow: " 0px 1px 8px rgba(0, 0, 0, 0.04)",
+    boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
   },
 
   logo_nav: {
