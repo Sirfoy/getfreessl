@@ -2,7 +2,7 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   pmain_wrapper: {
-    background:theme.grey,
+    background:theme.color.grey,
     height: "978px",
     margin: "150px",
     display: "flex",
@@ -53,11 +53,11 @@ export const styles = createUseStyles((theme) => ({
     fontzseight: 300,
     fontSize: " 15px",
     lineHeight: "24px",
-    color: theme.lightGrey,
+    color: theme.color.lightGrey,
   },
 
   pssl_button: {
-    background: theme.lightRed,
+    background: theme.color.lightRed,
     border: "none",
     borderRadius: "4px",
     flexDirection: "row",
@@ -73,7 +73,7 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: 700,
     fontSize: "10px",
     lineHeight: "12px",
-    color: theme.white,
+    color: theme.color.white,
     fontSize: "16px",
     lineHeight: "24px",
     textAlign: "center",

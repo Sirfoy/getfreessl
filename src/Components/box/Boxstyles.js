@@ -48,7 +48,7 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: 700,
     fontSize: "16px",
     lineHeight: "36px",
-    color: theme.lightBlack,
+    color: theme.color.lightBlack,
   },
 
   verify_para: {
@@ -59,7 +59,7 @@ export const styles = createUseStyles((theme) => ({
     fontStyle: " normal",
     fontWeight: 400,
 
-    color: theme.lightGrey,
+    color: theme.color.lightGrey,
     width: "88%",
   },
 

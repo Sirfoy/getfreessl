@@ -1,10 +1,10 @@
-import  { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
-export  const styles = createUseStyles((theme) => ({
+export const styles = createUseStyles((theme) => ({
   main_wrapper: {
     width: "100%",
     height: 69,
-    backgroundColor: theme.black,
+    backgroundColor: theme.color.black,
   },
   own_wrapper: {
     display: "flex",
@@ -22,7 +22,7 @@ export  const styles = createUseStyles((theme) => ({
     lineHeight: "24px",
     display: "flex",
     alignItems: "center",
-    color: theme.white,
+    color: theme.color.white,
     paddingTop: "5px",
   },
   own_button: {
@@ -34,7 +34,7 @@ export  const styles = createUseStyles((theme) => ({
     gap: "10px",
     width: "101px",
     height: "33px",
-    background: "lightPink",
+    background: theme.color.lightPink,
     borderRadius: " 4px",
     flex: "none",
     order: 1,
@@ -46,7 +46,7 @@ export  const styles = createUseStyles((theme) => ({
   btn_text: {
     width: "77px",
     height: " 17px",
-    fontFamily: "Inter",
+    fontFamily: "vInter",
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "14px",
@@ -54,6 +54,6 @@ export  const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    color: "lightBlack",
+    color: theme.color.lightBlack,
   },
 }));
