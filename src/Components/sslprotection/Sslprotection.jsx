@@ -11,7 +11,7 @@ const Sslprotection = () => {
           <div className={classes.pleft_wrapper}>
             <div className={classes.prow}>
               <Box
-                pic={"/Assets/domain.svg"}
+                pic="/Assets/domain.svg"
                 title="Enter domain"
                 graph="To begin your short but valuable journey to protection, input your domain name in the box provided, and follow the instructions to proceed."
               />
@@ -19,12 +19,12 @@ const Sslprotection = () => {
 
             <div className={classes.pcolumn}>
               <Box
-                pic={"/Assets/logo1.png"}
+                pic="/Assets/logo1.png"
                 title="Verify domain ownership "
                 graph=" Check any of the three options to choose a verification method and confirm ownership of your domain. This could be via email, HTTPS file upload, or DNS(CNAME). "
               />
               <Box
-                pic={"/Assets/certified.svg"}
+                pic="/Assets/certified.svg"
                 title="Certificate issued "
                 graph=" Congratulations, you’ve verified your domain, and your certificate will be sent to you immediately. Input your preferred email address to receive it instantly. That’s all, Yaaaaay!!."
               />
