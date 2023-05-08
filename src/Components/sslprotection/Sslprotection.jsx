@@ -5,7 +5,7 @@ import {styles} from "./sslprotectonstyles.js";
 const Sslprotection = () => {
   const classes = styles();
   return (
-    <div>
+    <>
       <div className={classes.pmain_wrapper}>
         <div className={classes.content_wrapper}>
           <div className={classes.pleft_wrapper}>
@@ -51,7 +51,7 @@ const Sslprotection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
