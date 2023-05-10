@@ -4,7 +4,7 @@ export const styles = createUseStyles((theme) => ({
   pmain_wrapper: {
     background:theme.color.grey,
     height: "978px",
-    margin: "150px",
+    margin: "70px 150px 70px 150px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

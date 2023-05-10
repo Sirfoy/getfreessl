@@ -15,6 +15,8 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
      lightGrey: "#5C5D66",
      lightRed: "#ED3957 ",
      grey: "#FAFAFA",
+     placeholdergrey:' #C0C2CC',
+
    },
  };
 
