@@ -44,8 +44,8 @@ export const styles = createUseStyles((theme) => ({
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 400,
-    fontSize: "22px",
-    lineHeight: "36px",
+    fontSize: "20px",
+    lineHeight: "34px",
     textAlign: "center",
     width: "80%",
 
@@ -77,9 +77,9 @@ export const styles = createUseStyles((theme) => ({
   },
 
   hinput_pic: {
-    height: "37px",
-    padding: "8px",
-  },
+    height: "27px",
+    padding: "11px",
+ },
 
   hinput_text: {
     fontFamily: "Aeonik",
