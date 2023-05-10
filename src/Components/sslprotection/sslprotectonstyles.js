@@ -2,14 +2,13 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   pmain_wrapper: {
-    background:theme.color.grey,
+    background: theme.color.grey,
     height: "978px",
     margin: "70px 150px 70px 150px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
-
   content_wrapper: {
     width: "90%",
     height: "708px",
@@ -17,7 +16,6 @@ export const styles = createUseStyles((theme) => ({
     gap: "50px",
     padding: "28px",
   },
-
   pleft_wrapper: {
     display: "flex",
     display: "grid",
@@ -34,11 +32,9 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-
   pcontent: {
     width: "80%",
   },
-
   pssl_header: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
@@ -46,7 +42,6 @@ export const styles = createUseStyles((theme) => ({
     fontSize: "49px",
     lineHeight: "59px",
   },
-
   pssl_p: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
@@ -55,7 +50,6 @@ export const styles = createUseStyles((theme) => ({
     lineHeight: "24px",
     color: theme.color.lightGrey,
   },
-
   pssl_button: {
     background: theme.color.lightRed,
     border: "none",
@@ -66,7 +60,6 @@ export const styles = createUseStyles((theme) => ({
     gap: "8px",
     cursor: "pointer",
   },
-
   pssl_btn_text: {
     fontFamily: "Inter",
     fontStyle: "normal",
@@ -78,7 +71,6 @@ export const styles = createUseStyles((theme) => ({
     lineHeight: "24px",
     textAlign: "center",
   },
-
   pcolumn: {
     display: "flex",
     flexDirection: "column",
@@ -86,7 +78,6 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     gap: "70px",
   },
-
   prow: {
     margin: "auto",
   },

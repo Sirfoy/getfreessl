@@ -1,7 +1,5 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
-
-
     hero_btn: {
         padding: "12px 24px",
         gap: '8px',

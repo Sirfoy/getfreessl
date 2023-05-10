@@ -1,11 +1,10 @@
 import React from "react";
 import Box from "../box/Box";
-import { styles } from "./sslprotectonstyles.js";
+import { styles } from "./sslProtectonStyles.js";
 
 const Sslprotection = () => {
   const classes = styles();
   return (
-
     <div className={classes.pmain_wrapper}>
       <div className={classes.content_wrapper}>
         <div className={classes.pleft_wrapper}>
@@ -16,7 +15,6 @@ const Sslprotection = () => {
               graph="To begin your short but valuable journey to protection, input your domain name in the box provided, and follow the instructions to proceed."
             />
           </div>
-
           <div className={classes.pcolumn}>
             <Box
               pic="/Assets/logo1.png"
@@ -35,7 +33,6 @@ const Sslprotection = () => {
             <h1 className={classes.pssl_header}>
               SSL Protection for everyone in 3 steps
             </h1>
-
             <p className={classes.pssl_p}>
               Save time and money, secure your website data with three simple
               steps; enter a domain, verify domain ownership, submit an email

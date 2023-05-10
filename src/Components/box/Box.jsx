@@ -1,19 +1,13 @@
 import React from 'react'
-import {styles} from "./Boxstyles.js"
-
-
+import { styles } from "./boxStyles.js"
 const Boxes = (props) => {
-  const classes = styles ();
+  const classes = styles();
   return (
     <div className={classes.box}>
       <div className={classes.info}>
         <div className={classes.icon}>
-         
-            <img className={classes.pimage} src={props.pic} alt="verify" />
-         
-          
+          <img className={classes.pimage} src={props.pic} alt="verify" />
         </div>
-
         <div className={classes.content}>
           <h1 className={classes.verify_owner}> {props.title}</h1>
           <p className={classes.verify_para}>
@@ -24,5 +18,4 @@ const Boxes = (props) => {
     </div>
   );
 }
-
 export default Boxes;

@@ -1,16 +1,13 @@
 import React from 'react'
-import { styles } from "./herobtnstyles"
-const Herobtn = () => {
+import { styles } from "./heroBtnStyles"
+const HeroBtn = () => {
     const classes = styles();
     return (
         <div>
             <button className={classes.hero_btn}>
-                 Generate SSL Certificate
-                
+                Generate SSL Certificate
             </button>
-
         </div>
     )
 }
-
-export default Herobtn
+export default HeroBtn

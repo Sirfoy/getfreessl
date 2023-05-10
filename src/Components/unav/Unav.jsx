@@ -1,7 +1,5 @@
 import React from "react";
-import {styles} from "./Unavstyles.js";
-
-
+import {styles} from "./unavStyles.js";
 const Unav = () => {
   const classes = styles();
   return (

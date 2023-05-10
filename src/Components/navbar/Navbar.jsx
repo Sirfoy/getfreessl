@@ -1,6 +1,6 @@
 import React from "react";
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
-import {styles} from './Navigationstyles.js';
+import {styles} from './navigationStyles.js';
 
 const Navbar = () => {
   const classes = styles(); 
@@ -12,5 +12,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;
