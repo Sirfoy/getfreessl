@@ -7,7 +7,7 @@ export const styles = createUseStyles((theme) => ({
     background: theme.color.white,
     boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
   },
-  logo_nav: {
+  logoNav: {
     width: "217px",
     height: "60px",
     marginLeft: "150px",

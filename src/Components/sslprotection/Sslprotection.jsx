@@ -5,9 +5,9 @@ import { styles } from "./sslProtectonStyles.js";
 const Sslprotection = () => {
   const classes = styles();
   return (
-    <div className={classes.pmain_wrapper}>
-      <div className={classes.content_wrapper}>
-        <div className={classes.pleft_wrapper}>
+    <div className={classes.pmainWrapper}>
+      <div className={classes.contentWrapper}>
+        <div className={classes.pleftWrapper}>
           <div className={classes.prow}>
             <Box
               pic="/Assets/domain.svg"
@@ -28,27 +28,26 @@ const Sslprotection = () => {
             />
           </div>
         </div>
-        <div className={classes.pright_wrapper}>
+        <div className={classes.prightWrapper}>
           <div className={classes.pcontent}>
-            <h1 className={classes.pssl_header}>
+            <h1 className={classes.psslHeader}>
               SSL Protection for everyone in 3 steps
             </h1>
-            <p className={classes.pssl_p}>
+            <p className={classes.psslP}>
               Save time and money, secure your website data with three simple
               steps; enter a domain, verify domain ownership, submit an email
               and congratulations! you’re protected.  Your data and your
-              visitors' information will be protected, giving your users a
-              sense of security. You also gain an online credibility with
-              HTTPS encryption. It is free, fast and favourable.
+              visitors' information will be protected, giving your users a sense
+              of security. You also gain an online credibility with HTTPS
+              encryption. It is free, fast and favourable.
             </p>
-            <button className={classes.pssl_button}>
-              <span className={classes.pssl_btn_text}> Get yours now</span>
+            <button className={classes.psslButton}>
+              <span className={classes.psslBtnText}> Get yours now</span>
             </button>
           </div>
         </div>
       </div>
     </div>
-
   );
 };
 

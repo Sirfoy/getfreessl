@@ -1,0 +1,62 @@
+import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+
+export const styles = createUseStyles((theme) => ({
+  HVerifyMainWrapper: {
+    height: "auto",
+    margin: "52px",
+  },
+  verifyHeader: {
+    display: "flex",
+    height: "auto",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  verifyTitle: {
+    fontFamily: "Aeonik",
+    fontStyle: "normal",
+    fontWeight: 700,
+    fontSize: "28px",
+    lineHeight: "36px",
+    color: theme.color.lightBlack,
+  },
+  verifyButton: {
+    padding: "12px 24px",
+    gap: "8px",
+    width: "135px",
+    height: " 48px",
+    border: "none",
+    background: theme.color.buttonPink,
+    borderRadius: "4px",
+  },
+  verifyButonText: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: 700,
+    fontSize: " 16px",
+    lineHeight: "24px",
+    textAlign: "center",
+    color: theme.color.lightBlack,
+  },
+  thankYouWrapper: {
+    padding: "24px",
+    background: " rgba(255, 166, 181, 0.2)",
+    borderRadius: "4px",
+    marginTop: "15px",
+    marginBottom: "10px",
+  },
+  thankYouPara: {
+    fontFamily: "Aeonik",
+    fontStyle: " normal",
+    fontWeight: 400,
+    fontSize: "15px",
+    lineHeight: "21px",
+    display: "flex",
+    alignItems: "center",
+    color: theme.color.lightBlack,
+    alignItems: "center",
+    justifyContent: "center",
+    lineHeight: "23px",
+    margin: " 0px",
+    padding: "0px",
+  },
+}));

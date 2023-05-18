@@ -1,7 +1,7 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  pmain_wrapper: {
+  pmainWrapper: {
     background: theme.color.grey,
     height: "978px",
     margin: "70px 150px 70px 150px",
@@ -9,14 +9,14 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-  content_wrapper: {
+  contentWrapper: {
     width: "90%",
     height: "708px",
     display: "flex",
     gap: "50px",
     padding: "28px",
   },
-  pleft_wrapper: {
+  pleftWrapper: {
     display: "flex",
     display: "grid",
     gridTemplateColumns: "repeat(2, 1fr)",
@@ -25,7 +25,7 @@ export const styles = createUseStyles((theme) => ({
     width: "50%",
     height: "100%",
   },
-  pright_wrapper: {
+  prightWrapper: {
     width: "50%",
     height: "100%",
     display: "flex",
@@ -35,14 +35,14 @@ export const styles = createUseStyles((theme) => ({
   pcontent: {
     width: "80%",
   },
-  pssl_header: {
+  psslHeader: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "49px",
     lineHeight: "59px",
   },
-  pssl_p: {
+  psslP: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontzseight: 300,
@@ -50,7 +50,7 @@ export const styles = createUseStyles((theme) => ({
     lineHeight: "24px",
     color: theme.color.lightGrey,
   },
-  pssl_button: {
+  psslButton: {
     background: theme.color.lightRed,
     border: "none",
     borderRadius: "4px",
@@ -60,7 +60,7 @@ export const styles = createUseStyles((theme) => ({
     gap: "8px",
     cursor: "pointer",
   },
-  pssl_btn_text: {
+  psslBtnText: {
     fontFamily: "Inter",
     fontStyle: "normal",
     fontWeight: 700,

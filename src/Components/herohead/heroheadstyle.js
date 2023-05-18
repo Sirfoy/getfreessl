@@ -1,48 +1,47 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  hhead_wrapper: {
+  hheadWrapper: {
     height: "416px",
-     display: "flex",
+    display: "flex",
     flexDirection: "column",
   },
-
   hhead: {
     height: "256px",
     margin: "111px",
     margin: " 8px  111px 5px 111px",
   },
-  hhead_head: {
+  hheadHead: {
     height: "139px",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
   },
-  hhead_head_h: {
+  hheadHead_h: {
     height: "192px",
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 700,
-    fontSize: "80px",
-    lineHeight: "96px",
+    fontSize: "63px",
+    lineHeight: "88px",
     textAlign: "center",
-    color:theme.color.lightBlack,
+    color: theme.color.lightBlack,
     paddingBottom: "10px",
   },
-  hhead_para: {
+  hheadPara: {
     height: "48px",
     display: "flex",
     justifyContent: "center",
     paddingTop: "20px",
   },
-  hhead_para_p: {
+  hheadParaP: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 400,
     fontSize: "20px",
-    lineHeight: "34px",
+    lineHeight: "32px",
     textAlign: "center",
-    width: "80%",
+    width: "91%",
     color: theme.color.lightGrey,
   },
   hsearch: {
@@ -60,11 +59,11 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     gap: "5px",
   },
-  hinput_pic: {
+  hinputPic: {
     height: "27px",
     padding: "11px",
- },
-  hinput_text: {
+  },
+  hinputText: {
     fontFamily: "Aeonik",
     fontStyle: " normal",
     fontWeight: 400,

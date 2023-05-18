@@ -1,12 +1,12 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
-  benefits_mainwrapper: {
+  benefitsMainWrapper: {
     width: "33%",
     borderRight: ` 0.5px solid ${theme.color.placeholdergrey}`,
     margin: " 9px",
     display: "flex",
   },
-  benefits_mainwrapper2: {
+  benefitsMainWrapper2: {
     width: "33%",
     margin: " 9px",
     display: "flex",
@@ -18,25 +18,27 @@ export const styles = createUseStyles((theme) => ({
     alignItems: " flex-start",
     padding: "10px",
   },
-  benefit_image: {
+  benefitImage: {
     width: "24px",
     height: "24px",
   },
-  benefits_textWrapper: {
+  benefitsTextWrapper: {
     padding: "0px",
     gap: "8px",
-    width: "330px",
+    width: "90%",
   },
-  benefits_header: {
+  benefitsHeader: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 500,
     fontSize: "16px",
-    lineHeight: " 24px",
-    color: theme.color.lightBack,
-    height: "24px",
+    lineHeight: "8px",
+    color: theme.color.lightBlack,
+    height: "7px",
+
+    
   },
-  benefits_para: {
+  benefitsPara: {
     fontFamily: "Aeonik",
     fontStyle: " normal",
     fontWeight: 400,
