@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Nav />
       <Unav />
-      <Hero/>
+      <Hero />
     
      
     </>

@@ -35,8 +35,6 @@ export const styles = createUseStyles((theme) => ({
     lineHeight: "8px",
     color: theme.color.lightBlack,
     height: "7px",
-
-    
   },
   benefitsPara: {
     fontFamily: "Aeonik",

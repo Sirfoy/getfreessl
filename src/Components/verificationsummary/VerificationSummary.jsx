@@ -13,17 +13,17 @@ const VerificationSummary = ({ onRestartClick }) => {
 
         <div className={classes.VerificationSummaryBoxWrapper}>
           <DomainBox
-            pic="/assets/domain1.svg"
+            pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain1.svg"
             placeholder="www.lizzy.com"
             Domain="Domain"
           />
           <DomainBox
-            pic="/assets/domain2.svg"
+            pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain2.svg"
             placeholder="Email"
             Domain="Verification method"
           />
           <DomainBox
-            pic="/assets/domain3.svg"
+            pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain3.svg"
             placeholder="pending"
             Domain="Verification status"
           />

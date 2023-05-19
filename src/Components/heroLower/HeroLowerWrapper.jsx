@@ -8,7 +8,7 @@ const HeroLowerWrapper = () => {
       <div className={classes.hlowerWrapper}>
         <HeroBenefits
           isBorder="false"
-          pic="/Assets/benefit1.svg"
+          pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/benefit1.svg"
           title="Free forever "
           graph="Lorem ipsum dolor sit amet, consectetur adipis elit.
      Sit enim nec, 
@@ -16,7 +16,7 @@ const HeroLowerWrapper = () => {
         />
         <HeroBenefits
           isBorder="false"
-          pic="/Assets/benefit2.svg"
+          pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/benefit2.svg"
           title="Trusted, Trusted, Reliable "
           graph="Our SSL certificates guarantee full protection
      for any domain or website. your visitors' information 
@@ -25,7 +25,7 @@ const HeroLowerWrapper = () => {
         />
         <HeroBenefits
           className={classes.lastBenefit}
-          pic="/Assets/benefit3.svg"
+          pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/benefit3.svg"
           title="SSL perks "
           graph="Enjoy website's credibility and search engine rankings. 
     Improve your chances of being seen by potential customers."

@@ -39,7 +39,7 @@ const HeroVerify = ({ onProceedClick, onRestartClick }) => {
         <div className={classesVerify.verifyMethod}>
           <img
             className={classesVerify.verifyPic}
-            src={"/Assets/step1.svg"}
+            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
             alt="check"
           />
           <p className={classesVerify.verifyGraph}>
@@ -49,7 +49,7 @@ const HeroVerify = ({ onProceedClick, onRestartClick }) => {
         <div>
           <img
             className={classesVerify.verifyArrowDown}
-            src={"/assets/arrowdown.png"}
+            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"
             alt="arrow"
           />
         </div>
@@ -73,7 +73,7 @@ const HeroVerify = ({ onProceedClick, onRestartClick }) => {
           <div className={classesVerify.verifyMethod}>
             <img
               className={classesVerify.verifyPic}
-              src={"/Assets/step2.svg"}
+              src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step2.svg"
               alt="check"
             />
             <p className={classesVerify.verifyGraph}>Get certificate</p>
@@ -81,7 +81,7 @@ const HeroVerify = ({ onProceedClick, onRestartClick }) => {
           <div className="verify_arrow">
             <img
               className={classesVerify.verifyArrowDown}
-              src="/assets/arrowdown.png"
+              src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"
               alt="arrow"
             />
           </div>

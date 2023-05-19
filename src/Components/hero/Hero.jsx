@@ -8,7 +8,7 @@ import HeroLowerWrapper from "../heroLower/HeroLowerWrapper";
 import SslTool from "../ssltools/SslTool";
 import Sslprotection from "../sslprotection/SslProtection";
 
-const Hero = ({ onRestartClick, onHeroClick }) => {
+const Hero = () => {
   const classes = styles();
   const [changed, setchanged] = useState(true);
 

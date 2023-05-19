@@ -6,7 +6,7 @@ const Httpbox = (props) => {
     <div>
       <div className={classes.httpBoxMainWrapper1}>
         <div className={classes.httpBoxMethod}>
-          <img className={classes.httpBoxPic} src={props.pic} alt="check" />
+          <img className={classes.httpBoxPic} src={props.pic} alt="check"/>
           <p className={classes.httpBoxGraph}>{props.graph}</p>
 
           <div

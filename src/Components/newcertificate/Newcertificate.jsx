@@ -8,7 +8,7 @@ const Newcertificate = () => {
         <div className={classes.getCertificateFrameWrapper}>
           <img
             className={classes.getCertificateFramePic}
-            src="/Assets/newtick.svg"
+            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/newtick.svg"
             alt=""
           />
           <p className={classes.getCertificateFrametext}>

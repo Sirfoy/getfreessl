@@ -9,23 +9,23 @@ const DnsCname = ({ onRestartClick, onProceedClick }) => {
         <div className={classes.dnsMainWrapper}>
             <Httpbox
                 isText="true"
-                pic='/Assets/step1.svg'
+                pic='https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg'
                 graph="Sign In to your DNS provider, typically the registrar of your domain. "
             />
             <Httpbox
                 isText="true"
-                pic='/Assets/step2.svg'
+                pic='https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step2.svg'
                 graph="Navigate to the section where DNS records are managed. "
             />
             <Httpbox
                 isText="true"
-                pic='/Assets/step3.svg'
+                pic='https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step3.svg'
                 graph="Add the following CNAME record "
             />
             <Records />
             <Httpbox
                 isText="true"
-                pic='/Assets/step4.svg'
+                pic='https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step4.svg'
                 graph="Save your CNAME record and click “Proceed” to continue"
             />
             <Actions

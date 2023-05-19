@@ -1,6 +1,5 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 import "../styles/index.css";
-import type { AppProps } from "next/app";
 import theme from '../../theme'
 
 

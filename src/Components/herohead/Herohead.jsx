@@ -23,7 +23,7 @@ const HeroHead = ({ onHeroClick }) => {
             <div className={classes.hsearch}>
                 <div className={classes.hinput}>
                     <div className={classes.hinputPic}>
-                        <img src="/assets/https.svg" alt="https" />
+                        <img src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/https.svg" alt="https" />
                     </div>
                     <div className={classes.hinputInputField}>
                         <input

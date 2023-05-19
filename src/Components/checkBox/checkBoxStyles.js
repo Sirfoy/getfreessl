@@ -4,7 +4,8 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     height: "24px",
-    gap: " 10px",
+    gap: "10px",
+    justifyContent: "flex-start",
   },
   tcheckText: {
     fontFamily: "Aeonik",
