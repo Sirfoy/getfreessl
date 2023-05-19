@@ -1,5 +1,5 @@
 import React from "react";
-import { styles } from "./HeroVerifyStyles";
+import { styles } from "./heroVerifyStyles";
 import VerifySection from "../VerifySection/VerifySection";
 import { useState } from "react";
 import Newcertificate from "../newcertificate/Newcertificate";

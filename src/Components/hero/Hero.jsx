@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./heroStyles";
-import HeroHead from "../herohead/HeroHead";
+import Herohead from "../herohead/Herohead";
 import HeroBenefits from "../herobenefits/HeroBenefits";
 import HeroVerify from "../heroVerifyDomain/HeroVerify";
 import { useState } from "react";
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className={classes.heroWrapper}>
         <div className={classes.hupperWrapper}>
           <div>
-            <HeroHead onHeroClick={handleclicked} />
+            <Herohead onHeroClick={handleclicked} />
           </div>
         </div>
         {!changed && <HeroVerify onRestartClick={handleclicked} />}

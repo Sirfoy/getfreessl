@@ -1,5 +1,5 @@
 import React from "react";
-import { styles } from "./HeroLowerStyles";
+import { styles } from "./heroLowerStyles";
 import HeroBenefits from "../herobenefits/HeroBenefits";
 const HeroLowerWrapper = () => {
   const classes = styles();

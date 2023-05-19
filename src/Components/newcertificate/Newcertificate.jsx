@@ -1,5 +1,5 @@
 import React from "react";
-import { styles } from "./newcertificatestyles";
+import { styles } from "./newCertificateStyles";
 const Newcertificate = () => {
   const classes = styles();
   return (
