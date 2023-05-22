@@ -1,6 +1,6 @@
-import React from 'react'
-import { styles } from "./boxStyles.js"
-const Boxes = (props) => {
+import React from "react";
+import { styles } from "./useBoxesStyles";
+export const Boxes = (props) => {
   const classes = styles();
   return (
     <div className={classes.box}>
@@ -10,12 +10,10 @@ const Boxes = (props) => {
         </div>
         <div className={classes.content}>
           <h1 className={classes.verifyOwner}> {props.title}</h1>
-          <p className={classes.verify_para}>
-            {props.graph}
-          </p>
+          <p className={classes.verify_para}>{props.graph}</p>
         </div>
       </div>
     </div>
   );
-}
-export default Boxes;
+};
+

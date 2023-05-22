@@ -1,7 +1,7 @@
 import React from "react";
-import { styles } from "./sslToolStyles";
-import CheckBoxes from "../checkBox/CheckBoxes";
-const Ssltool = () => {
+import { styles } from "./useSslToolStyles";
+import {CheckBoxes} from "../CheckBox/CheckBoxes";
+export const SslTool = () => {
   const classes = styles();
   return (
     <div className={classes.tmainWrapper}>
@@ -30,4 +30,4 @@ const Ssltool = () => {
     </div>
   );
 };
-export default Ssltool;
+ 

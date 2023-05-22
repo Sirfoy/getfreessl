@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from "./newCertificateStyles";
-const Newcertificate = () => {
+import { styles } from "./useNewCertificateStyles";
+export const NewCertificate = () => {
   const classes = styles();
   return (
     <div className={classes.getCertificateMainWrapper}>
@@ -39,4 +39,4 @@ const Newcertificate = () => {
     </div>
   );
 };
-export default Newcertificate;
+ 

@@ -1,11 +1,12 @@
 import React from "react";
-import { styles } from "./heroVerifyStyles";
-import VerifySection from "../VerifySection/VerifySection";
+import { styles } from "./useHeroVerifyStyles";
+import {VerifySection }from "../VerifySection/VerifySection";
 import { useState } from "react";
-import Newcertificate from "../newcertificate/Newcertificate";
-import { stylesVerify } from "./../verification/verificationStyles";
-import VerificationSummary from "../verificationsummary/VerificationSummary";
-const HeroVerify = ({ onProceedClick, onRestartClick }) => {
+import { NewCertificate } from "../NewCertificate/NewCertificate";
+import { stylesVerify } from "../Verification/verificationStyles";
+import { VerificationSummary } from "../VerificationSummary/VerificationSummary";
+
+export const HeroVerify = ({ onProceedClick, onRestartClick }) => {
   const classesVerify = stylesVerify();
   const classes = styles();
   const [selected, setselected] = useState(null);
@@ -16,6 +17,7 @@ const HeroVerify = ({ onProceedClick, onRestartClick }) => {
   const handleclick = () => {
     setchange(false);
   };
+
   return (
     <div className={classes.HVerifyMainWrapper}>
       <div className={classes.verifyHeader}>
@@ -54,8 +56,8 @@ const HeroVerify = ({ onProceedClick, onRestartClick }) => {
           />
         </div>
       </div>
-      <div style={{display: selected === 1 ? "block" : "none" }}>
-        <div style={{display: change === true ? "block" : "none" }}>
+      <div style={{ display: selected === 1 ? "block" : "none" }}>
+        <div style={{ display: change === true ? "block" : "none" }}>
           <VerifySection
             onProceedClick={handleclick}
             onRestartClick={onRestartClick}
@@ -87,12 +89,9 @@ const HeroVerify = ({ onProceedClick, onRestartClick }) => {
           </div>
         </div>
         <div style={{ display: selected === 2 ? "block" : "none" }}>
-          {/* <Getcertificate/> */}
-          <Newcertificate />
+          <NewCertificate />
         </div>
       </div>
     </div>
   );
 };
-
-export default HeroVerify;

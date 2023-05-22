@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from "./recordBoxStyle";
-const RecordBox = (props) => {
+import { styles } from "./useRecordBoxStyle";
+export const RecordBox = (props) => {
   const classes = styles();
   return (
     <div className={classes.recordBoxWrapper}>
@@ -16,4 +16,4 @@ const RecordBox = (props) => {
   );
 };
 
-export default RecordBox;
+ 

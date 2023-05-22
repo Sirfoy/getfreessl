@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { styles } from "./VerifyCheckStyles";
-import HttpFile from "../httpfileVerification/HttpFile";
-import DnsCname from "../dnsfile/DnsCname.jsx";
-function VerifyCheck({ onRestartClick, onProceedClick }) {
+import { styles } from "./useVerifytickStyles";
+import { HttpFile } from "../HttpFile/HttpFile";
+import { DnsCname } from "../DnsFile/DnsCname.jsx";
+export function VerifyCheck({ onRestartClick, onProceedClick }) {
   const classes = styles();
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
@@ -60,4 +60,4 @@ function VerifyCheck({ onRestartClick, onProceedClick }) {
     </div>
   );
 }
-export default VerifyCheck;
+

@@ -1,8 +1,8 @@
 import React from "react";
-import { styles } from "./VerificationSummaryStyles";
-import DomainBox from "../domaininput/DomainBox";
-import RestartBtn from "../restartprocess/RestartBtn";
-const VerificationSummary = ({ onRestartClick }) => {
+import { styles } from "./useVerificationSummaryStyles";
+import { DomainBox } from "../DomainInput/DomainBox";
+import { RestartBtn } from "../RestartBtn/RestartBtn";
+export const VerificationSummary = ({ onRestartClick }) => {
   const classes = styles();
   return (
     <div className={classes.verificationSummaryWrapper}>
@@ -44,5 +44,3 @@ const VerificationSummary = ({ onRestartClick }) => {
     </div>
   );
 };
-
-export default VerificationSummary;

@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from "./unavStyles.js";
-const Unav = () => {
+import { styles } from "./useUnavStyles";
+export const Unav = () => {
   const classes = styles();
   return (
     <div className={classes.mainWrapper}>
@@ -14,4 +14,4 @@ const Unav = () => {
   );
 };
 
-export default Unav;
+ 

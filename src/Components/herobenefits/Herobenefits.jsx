@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from "./heroBenefitStyle";
-const HeroBenefits = (props) => {
+import { styles } from "./useHeroBenefitsStyle";
+export const HeroBenefits = (props) => {
   const classes = styles();
   return (
     <div
@@ -22,4 +22,3 @@ const HeroBenefits = (props) => {
     </div>
   );
 };
-export default HeroBenefits;

@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from "./recordStyle";
-import RecordBox from "../recordBox/RecordBox";
+import { styles } from "./useRecordStyle";
+import { RecordBox } from "../RecordBox/RecordBox";
 const Records = () => {
   const classes = styles();
   return (

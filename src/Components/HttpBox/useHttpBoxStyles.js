@@ -1,11 +1,11 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  httpBoxMainWrapper1: {
+  HttpBoxMainWrapper1: {
     marginBottom: "16px",
   },
 
-  httpBoxMethod: {
+  HttpBoxMethod: {
     width: "96%",
     height: 61,
     background: theme.color.grey,
@@ -15,18 +15,18 @@ export const styles = createUseStyles((theme) => ({
     gap: "8px",
     paddingLeft: "16px",
   },
-  httpBoxPic: {
+  HttpBoxPic: {
     width: 23.8,
     height: 23,
   },
-  httpBoxGraph: {
+  HttpBoxGraph: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 400,
     fontSize: 14.8387,
     color: "#000000",
   },
-  httpBoxLink1: {
+  HttpBoxLink1: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 400,
@@ -35,7 +35,7 @@ export const styles = createUseStyles((theme) => ({
     textDecorationLine: "underline",
     color: theme.color.linkBlue,
   },
-  httpBoxLink2: {
+  HttpBoxLink2: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 400,

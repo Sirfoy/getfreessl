@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from './checkBoxStyles';
-const checkBoxes = (props) => {
+import { styles } from './useCheckBoxesStyles';
+export const CheckBoxes = (props) => {
   const classes = styles();
   return (
     <div className={classes.checkContanier}>
@@ -13,4 +13,4 @@ const checkBoxes = (props) => {
     </div>
   );
 };
-export default checkBoxes;
+

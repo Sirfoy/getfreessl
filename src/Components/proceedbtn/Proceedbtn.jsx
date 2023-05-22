@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from "./proceedBtnStyles.js";
-const Proceedbtn = ({ onClick }) => {
+import { styles } from "./useProceedBtnStyles"
+export const ProceedBtn = ({ onClick }) => {
   const classes = styles();
   return (
     <div>
@@ -10,4 +10,4 @@ const Proceedbtn = ({ onClick }) => {
     </div>
   );
 };
-export default Proceedbtn;
+  

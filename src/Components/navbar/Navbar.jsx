@@ -1,7 +1,7 @@
 import React from "react";
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
-import { styles } from "./navigationStyles.js";
-const Navbar = () => {
+import { styles } from "./useNavBarStyles";
+export const NavBar = () => {
   const classes = styles();
   return (
     <div className={classes.Navigation}>
@@ -11,4 +11,4 @@ const Navbar = () => {
     </div>
   );
 };
-export default Navbar;
+

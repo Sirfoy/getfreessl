@@ -44,17 +44,5 @@ export const styles = createUseStyles((theme) => ({
       border: `1px solid ${theme.color.lightBlack}`,
     },
   },
-  checkedRadioButton: {
-    "&::after": {
-      content: '"hr"',
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      width: "16px",
-      height: "16px",
-      borderRadius: "50%",
-      background: "#000",
-    },
-  },
+  
 }));

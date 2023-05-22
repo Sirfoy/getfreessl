@@ -1,7 +1,7 @@
 import React from "react";
-import { styles } from "./heroLowerStyles";
-import HeroBenefits from "../herobenefits/HeroBenefits";
-const HeroLowerWrapper = () => {
+import { styles } from "./useHeroLowerWrapperStyles";
+import { HeroBenefits } from "../HeroBenefits/HeroBenefits";
+export const HeroLowerWrapper = () => {
   const classes = styles();
   return (
     <div className={classes.hlowerMainWrapper}>
@@ -34,5 +34,3 @@ const HeroLowerWrapper = () => {
     </div>
   );
 };
-
-export default HeroLowerWrapper;

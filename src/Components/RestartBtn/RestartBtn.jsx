@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { styles } from "./restartBtnstyles";
+import { styles } from "./useRestartBtnstyles";
 
-const RestartBtn = ({ onClick }) => {
+export const RestartBtn = ({ onClick }) => {
   const classes = styles();
   return (
     <div>
@@ -14,4 +14,4 @@ const RestartBtn = ({ onClick }) => {
     </div>
   );
 };
-export default RestartBtn;
+ 

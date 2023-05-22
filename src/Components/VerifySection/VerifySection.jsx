@@ -1,8 +1,8 @@
 import React from "react";
-import { styles } from "./VerifySectionStyles";
-import VerifyCheck from "../verifytick/Verifytick";
+import { styles } from "./useVerifySectionStyles";
+import { VerifyCheck } from "../VerifyTick/Verifytick";
 
-const VerifySection = ({ onRestartClick, onProceedClick }) => {
+export const VerifySection = ({ onRestartClick, onProceedClick }) => {
   const classes = styles();
   return (
     <div className={classes.VerifySection}>
@@ -28,5 +28,3 @@ const VerifySection = ({ onRestartClick, onProceedClick }) => {
     </div>
   );
 };
-
-export default VerifySection;

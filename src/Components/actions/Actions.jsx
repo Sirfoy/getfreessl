@@ -1,24 +1,20 @@
-import React from 'react'
-import { styles } from "./actionStyles"
-import RestartBtn from "../restartprocess/RestartBtn"
-import ProceedBtn from "../proceedbtn/Proceedbtn"
-const Actions = ({ text, onRestartClick, onProceedClick }) => {
-    const classes = styles();
-    return (
-        <div>
-            <div className={classes.actionMainWrapper}>
-                <div className={classes.actiontextWrapper}>
-                    <p className={classes.actionTextParagraph}>
-                        {text}
-                    </p>
-                </div>
-                <div className={classes.actionsBtnWrapper}>
-                    <RestartBtn onClick={onRestartClick} />
-                    <ProceedBtn onClick={onProceedClick} />
-                </div>
-            </div>
+import React from "react";
+import { styles } from "./useActionStyles";
+import { RestartBtn } from "../RestartBtn/RestartBtn";
+import { ProceedBtn } from "../ProceedBtn/ProceedBtn";
+export const Actions = ({ text, onRestartClick, onProceedClick }) => {
+  const classes = styles();
+  return (
+    <div>
+      <div className={classes.actionMainWrapper}>
+        <div className={classes.actiontextWrapper}>
+          <p className={classes.actionTextParagraph}>{text}</p>
         </div>
-    )
-}
-
-export default Actions
+        <div className={classes.actionsBtnWrapper}>
+          <RestartBtn onClick={onRestartClick} />
+          <ProceedBtn onClick={onProceedClick} />
+        </div>
+      </div>
+    </div>
+  );
+};
