@@ -4,7 +4,7 @@ export const styles = createUseStyles((theme) => ({
   checkBoxWrapper: {
     display: "flex",
     flexDirection: "column",
-    gap: "24px",
+    // gap: "24px",
   },
 
   checkInput: {
@@ -22,6 +22,7 @@ export const styles = createUseStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     gap: 5,
+    marginBottom: 15,
 
     color: theme.color.lightBlack,
     "& input": {

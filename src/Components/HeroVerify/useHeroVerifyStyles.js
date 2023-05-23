@@ -27,6 +27,11 @@ export const styles = createUseStyles((theme) => ({
     border: "none",
     background: theme.color.buttonPink,
     borderRadius: "4px",
+    "&:hover": {
+      opacity: 0.8,
+      border: "none",
+      cursor: "pointer",
+    },
   },
   verifyButonText: {
     fontFamily: "Inter",

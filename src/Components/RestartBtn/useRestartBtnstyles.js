@@ -16,5 +16,9 @@ export const styles = createUseStyles((theme) => ({
     color:theme.color.lightBlack,
     cursor: "pointer",
     background: theme.color.white,
+    "&:hover": {
+      border: `1px solid ${theme.color.lightPink}`,
+      cursor: "pointer",
+    },
   },
 }));

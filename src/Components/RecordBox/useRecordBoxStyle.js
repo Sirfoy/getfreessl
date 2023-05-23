@@ -6,7 +6,7 @@ export const styles = createUseStyles((theme) => ({
   },
   recordBoxInputWrapper: {
     height: "41px",
-    border: `1px solid ${theme.color.placeholdergrey}`,
+    border: `1px dashed ${theme.color.placeholdergrey}`,
     padding: 10,
     gap: 10,
     display: "flex",
