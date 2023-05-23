@@ -35,6 +35,7 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: 700,
     fontSize: 56,
     margin: "0px",
+    paddingBottom: 22,
     color: theme.color.white,
   },
   MainFooterTextContanierPara: {
@@ -49,6 +50,7 @@ export const styles = createUseStyles((theme) => ({
     display:"flex",
     width:"100%",
     justifyContent:"center",
+    paddingTop:"24px",
   },
 
 }));

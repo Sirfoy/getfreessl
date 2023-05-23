@@ -20,10 +20,9 @@ export const Footer = () => {
         <div className={classes.FooterCoverageWrapper}>
           <FooterCoverage head="40+" graph="Certificates" isborder="true" />
           <FooterCoverage head="90%" graph="Browser coverage" isborder="true" />
-          <FooterCoverage head="90+" graph="Global customers" />
+          <FooterCoverage head="4k+" graph="Global customers" />
         </div>
       </div>
-
       <FooterMiddle />
     </div>
   );
