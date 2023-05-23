@@ -1,23 +1,19 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   tmainWrapper: {
-    height: "543px",
-    margin: "0px 150px  20px 150px",
+    margin: "0px 150px  157px 150px",
     display: "flex",
   },
   tleftWrapper: {
     width: "50%",
-    height: "100%",
     display: "flex",
     alignItems: "center",
   },
   trightWrapper: {
     width: "50%",
-    height: "100%",
   },
   tleftContanier: {
     width: "70%",
-     height: "388px",
   },
   tTexHead: {
     fontFamily: "Aeonik",

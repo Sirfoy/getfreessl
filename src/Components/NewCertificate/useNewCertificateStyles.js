@@ -3,7 +3,6 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   getCertificateMainWrapper: {
     margin: "1px",
-    height: "100%",
     paddingTop: "24px",
     paddingLeft: "64px",
     paddingRight: "64px",

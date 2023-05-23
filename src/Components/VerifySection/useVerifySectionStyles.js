@@ -1,7 +1,6 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   VerifySection: {
-    height: "100%",
     background: theme.color.grey,
     marginTop: "1px",
     display: "flex",

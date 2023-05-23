@@ -2,7 +2,6 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   mainWrapper: {
     width: "100%",
-    height: 69,
     backgroundColor: theme.color.black,
   },
   ownWrapper: {
@@ -30,8 +29,6 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "flex-start",
     padding: "9px 16px",
     gap: "10px",
-    width: "101px",
-    height: "33px",
     background: theme.color.lightPink,
     borderRadius: "4px",
     flex: "none",

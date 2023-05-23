@@ -3,7 +3,6 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   pmainWrapper: {
     background: theme.color.grey,
-    height: "978px",
     margin: "70px 150px 70px 150px",
     display: "flex",
     justifyContent: "center",
@@ -11,10 +10,10 @@ export const styles = createUseStyles((theme) => ({
   },
   contentWrapper: {
     width: "90%",
-    height: "708px",
     display: "flex",
     gap: "50px",
-    padding: "28px",
+    paddingTop: 109,
+    paddingBottom: 161,
   },
   pleftWrapper: {
     display: "flex",
@@ -23,11 +22,9 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     gap: "70px",
     width: "50%",
-    height: "100%",
   },
   prightWrapper: {
     width: "50%",
-    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

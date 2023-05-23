@@ -2,12 +2,12 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   hlowerMainWrapper: {
-    margin: "0px 361px 57px 361px",
+    margin: "0px 361px 0px 361px",
   },
   hlowerWrapper: {
-    height: "192px",
     display: "flex",
-    margin: "57px",
+    marginRight: 57,
+    marginLeft: 57,
   },
   lastBenefit: {
     border: "none",

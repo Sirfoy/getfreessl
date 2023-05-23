@@ -2,7 +2,6 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   hheadWrapper: {
-    height: "416px",
     display: "flex",
     flexDirection: "column",
   },
@@ -18,18 +17,15 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
   },
   hheadHead_h: {
-    height: "192px",
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 700,
     fontSize: "63px",
-    lineHeight: "88px",
     textAlign: "center",
     color: theme.color.lightBlack,
     paddingBottom: "10px",
   },
   hheadPara: {
-    height: "48px",
     display: "flex",
     justifyContent: "center",
     paddingTop: "20px",
@@ -39,13 +35,11 @@ export const styles = createUseStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 400,
     fontSize: "20px",
-    lineHeight: "32px",
     textAlign: "center",
     width: "91%",
     color: theme.color.lightGrey,
   },
   hsearch: {
-    height: "112px",
     padding: "20px",
     border: "24px solid black",
     borderRadius: "4px",

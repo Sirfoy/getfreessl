@@ -2,12 +2,10 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   HVerifyMainWrapper: {
-    height: "auto",
     margin: "52px",
   },
   verifyHeader: {
     display: "flex",
-    height: "auto",
     justifyContent: "space-between",
     alignItems: "center",
   },

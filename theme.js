@@ -21,6 +21,7 @@ const theme = {
     buttonPink: "#FFA6B5",
     linkBlue: "#1B9BE2",
     blackvar: "#2B2C33",
+   
   },
 };
 

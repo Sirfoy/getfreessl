@@ -3,7 +3,6 @@ export const styles = createUseStyles((theme) => ({
   httpMainWrapper:{
     padding: 32,
     gap: 10,
-    height: 474,
     background: "#FFFFFF",
     border: `1px solid ${theme.color.placeholdergrey}`,
     borderRadius: 4,

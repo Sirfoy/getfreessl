@@ -1,6 +1,7 @@
 import React from "react";
 import { Boxes } from "../Box/Boxes";
-import { styles } from "./useSslProtectonStyles"
+import { styles } from "./useSslProtectonStyles";
+import Link from "next/link";
 
 export const SslProtection = () => {
   const classes = styles();
