@@ -65,18 +65,25 @@ export const styles = createUseStyles((theme) => ({
     border: `1px solid ${theme.color.blackvar}`,
     borderRadius: 4,
     display: "flex",
+    "&:hover": {
+      border: `1px solid ${theme.color.lightBlack}`,
+      cursor: "pointer",
+    },
   },
   inputGetCertificate: {
     width: "80%",
     border: "0px",
     paddingLeft: "20px",
+
     "&:focus": {
       outline: "none",
-      fontFamily: "Aeonik",
+      fontFamily: "Inter",
       fontStyle: "normal",
       fontWeight: 400,
-      fontSize: 14,
-      color: theme.color.lightGrey,
+      fontSize: 16,
+      lineHeight: "200%",
+      letterSpacing: "0.002em",
+      color: theme.color.lightBlack,
     },
     "&::placeholder": {
       fontFamily: "Aeonik",
@@ -98,6 +105,11 @@ export const styles = createUseStyles((theme) => ({
     fontSize: 16,
     textAlign: "center",
     color: theme.color.white,
+    "&:hover": {
+      background: theme.color.LightRedHover,
+      border: "none",
+      cursor: "pointer",
+    },
   },
   getCertificateButton: {
     display: "flex",

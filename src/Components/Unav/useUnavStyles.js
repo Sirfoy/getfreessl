@@ -21,7 +21,6 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     color: theme.color.white,
-    paddingTop: "5px",
   },
   ownButton: {
     display: "flex",
@@ -37,11 +36,14 @@ export const styles = createUseStyles((theme) => ({
     zIndex: 1,
     border: "none",
     cursor: "pointer",
+    "&:hover": {
+      opacity: 0.8,
+      border: "none",
+      cursor: "pointer",
+    },
   },
   btnText: {
-    width: "77px",
-    height: "17px",
-    fontFamily: "vInter",
+    fontFamily: "Inter",
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "14px",

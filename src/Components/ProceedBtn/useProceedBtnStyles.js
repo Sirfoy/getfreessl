@@ -18,5 +18,10 @@ export const styles = createUseStyles((theme) => ({
     cursor: "pointer",
     textAlign: "center",
     color: theme.color.white,
+    "&:hover": {
+      background: theme.color.LightRedHover,
+      border: "none",
+      cursor: "pointer",
+    },
   },
 }));

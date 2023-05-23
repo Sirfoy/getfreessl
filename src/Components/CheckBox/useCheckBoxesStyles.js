@@ -6,6 +6,7 @@ export const styles = createUseStyles((theme) => ({
     height: "24px",
     gap: "10px",
     justifyContent: "flex-start",
+    paddingBottom: 13,
   },
   tcheckText: {
     fontFamily: "Aeonik",

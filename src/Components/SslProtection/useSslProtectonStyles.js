@@ -56,12 +56,16 @@ export const styles = createUseStyles((theme) => ({
     padding: "12px 24px",
     gap: "8px",
     cursor: "pointer",
+    "&:hover": {
+      background: theme.color.LightRedHover,
+      border: "none",
+      cursor: "pointer",
+    },
   },
   psslBtnText: {
     fontFamily: "Inter",
     fontStyle: "normal",
     fontWeight: 700,
-    fontSize: "10px",
     lineHeight: "12px",
     color: theme.color.white,
     fontSize: "16px",

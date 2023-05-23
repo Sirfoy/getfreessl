@@ -13,6 +13,7 @@ const theme = {
     lightPink: "#FFA6B5",
     lightGrey: "#5C5D66",
     lightRed: "#ED3957 ",
+    LightRedHover:"#E32D4C",
     lightRed2: "#FA536E ",
     grey: "#FAFAFA",
     grey2: "#F2F2F2",
