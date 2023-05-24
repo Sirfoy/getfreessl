@@ -1,5 +1,4 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
-
 export const styles = createUseStyles((theme) => ({
   domainBoxWrapperframe: {
     gap: 9,
@@ -14,28 +13,25 @@ export const styles = createUseStyles((theme) => ({
     marginRight: 29,
   },
   domainBoxWrapper: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 500,
-    fontSize: 14,
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.medium,
+    fontSize: theme.size.secondSize,
     color: theme.color.lightBlack,
   },
   domainBoxWrapperBox: {
     width: "100%",
-    border: "0px",
+    border: 0,
     "&:focus": {
       outline: "none",
-      fontFamily: "Aeonik",
-      fontStyle: "normal",
-      fontWeight: 400,
-      fontSize: 14,
+      fontFamily: theme.font.firstfont,
+      fontWeight: theme.Weight.light,
+      fontSize: theme.size.secondSize,
       color: theme.color.lightGrey,
     },
     "&::placeholder": {
-      fontFamily: "Aeonik",
-      fontStyle: "normal",
-      fontWeight: 400,
-      fontSize: 14,
+      fontFamily: theme.font.firstfont,
+      fontWeight: theme.Weight.light,
+      fontSize: theme.size.secondSize,
       color: theme.color.placeholdergrey2,
     },
     domainBoxWrapperframePic: {
@@ -43,13 +39,10 @@ export const styles = createUseStyles((theme) => ({
       height: 12,
     },
   },
-
   domainBoxParagraph: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 500,
-    fontSize: 14,
-
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.medium,
+    fontSize: theme.size.secondSize,
     color: theme.color.lightBlack,
   },
 }));

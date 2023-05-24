@@ -1,11 +1,10 @@
 import React from "react";
 import { styles } from "./useHeroVerifyStyles";
-import {VerifySection }from "../VerifySection/VerifySection";
+import { VerifySection } from "../VerifySection/VerifySection";
 import { useState } from "react";
 import { NewCertificate } from "../NewCertificate/NewCertificate";
 import { stylesVerify } from "../Verification/verificationStyles";
 import { VerificationSummary } from "../VerificationSummary/VerificationSummary";
-
 export const HeroVerify = ({ onProceedClick, onRestartClick }) => {
   const classesVerify = stylesVerify();
   const classes = styles();
@@ -17,7 +16,6 @@ export const HeroVerify = ({ onProceedClick, onRestartClick }) => {
   const handleclick = () => {
     setchange(false);
   };
-
   return (
     <div className={classes.HVerifyMainWrapper}>
       <div className={classes.verifyHeader}>

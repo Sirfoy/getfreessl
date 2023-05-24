@@ -15,5 +15,3 @@ export const RecordBox = (props) => {
     </div>
   );
 };
-
- 

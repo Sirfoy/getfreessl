@@ -10,12 +10,11 @@ import { HeroVerify } from "../HeroVerify/HeroVerify";
 export const Hero = () => {
   const classes = styles();
   const [changed, setchanged] = useState(true);
-
   const handleclicked = () => {
     setchanged(!changed);
   };
   return (
-    <div>
+    <>
       <div className={classes.HeroWrapper}>
         <div className={classes.hupperWrapper}>
           <div>
@@ -33,6 +32,6 @@ export const Hero = () => {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 };

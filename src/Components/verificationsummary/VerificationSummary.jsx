@@ -10,7 +10,6 @@ export const VerificationSummary = ({ onRestartClick }) => {
         <div className={classes.verificationSummaryText}>
           Verification summary
         </div>
-
         <div className={classes.VerificationSummaryBoxWrapper}>
           <DomainBox
             pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain1.svg"
@@ -28,7 +27,6 @@ export const VerificationSummary = ({ onRestartClick }) => {
             Domain="Verification status"
           />
         </div>
-
         <div className={classes.VerificationSummaryMainTextWrapper}>
           <div className={classes.VerificationSummaryTextWrapper}>
             <p className={classes.VerificationSummaryParagraph}>

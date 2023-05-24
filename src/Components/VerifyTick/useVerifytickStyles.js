@@ -9,21 +9,19 @@ export const styles = createUseStyles((theme) => ({
 
   checkInput: {
     cursor: "pointer",
-    fontSize: 16,
+    fontSize: theme.size.thirdSize,
     userSelect: "none",
     background: "black",
   },
   checkBoxLabel: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 500,
-    fontSize: 16,
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.medium,
+    fontSize: theme.size.thirdSize,
     height: "31px",
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
     gap: 5,
     marginBottom: 15,
-
     color: theme.color.lightBlack,
     "& input": {
       appearance: "none",
@@ -40,10 +38,9 @@ export const styles = createUseStyles((theme) => ({
       WebkitAppearance: "none",
       MozAppearance: "none",
       width: 24,
-      height: "24px ",
+      height: "24px",
       borderRadius: "50%",
       border: `1px solid ${theme.color.lightBlack}`,
     },
   },
-  
 }));
