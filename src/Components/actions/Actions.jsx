@@ -5,7 +5,6 @@ import { ProceedBtn } from "../ProceedBtn/ProceedBtn";
 export const Actions = ({ text, onRestartClick, onProceedClick }) => {
   const classes = styles();
   return (
-    <div>
       <div className={classes.actionMainWrapper}>
         <div className={classes.actiontextWrapper}>
           <p className={classes.actionTextParagraph}>{text}</p>
@@ -15,6 +14,5 @@ export const Actions = ({ text, onRestartClick, onProceedClick }) => {
           <ProceedBtn onClick={onProceedClick} />
         </div>
       </div>
-    </div>
   );
 };

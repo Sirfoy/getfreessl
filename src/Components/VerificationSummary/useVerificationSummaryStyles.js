@@ -29,12 +29,11 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "space-between",
   },
   VerificationSummaryParagraph: {
-    margin: "0px",
+    margin: 0,
   },
   VerificationSummaryTextWrapper: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 400,
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.light,
     fontSize: 11,
     textDecorationLine: "underline",
     color: theme.color.lightGrey,

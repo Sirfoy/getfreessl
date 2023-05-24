@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./useSslToolStyles";
-import {CheckBoxes} from "../CheckBox/CheckBoxes";
+import { CheckBoxes } from "../CheckBox/CheckBoxes";
 export const SslTool = () => {
   const classes = styles();
   return (
@@ -25,9 +25,11 @@ export const SslTool = () => {
         </div>
       </div>
       <div className={classes.trightWrapper}>
-        <img src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/bigpadlock.svg" alt="getfreessl" />
+        <img
+          src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/bigpadlock.svg"
+          alt="getfreessl"
+        />
       </div>
     </div>
   );
 };
- 

@@ -3,8 +3,6 @@ import { styles } from "./useHeroHeadStyle";
 import { HeroBtn } from "../HeroButton/HeroBtn";
 export const HeroHead = ({ onHeroClick }) => {
   const classes = styles();
-
-
   return (
     <div className={classes.hheadWrapper}>
       <div className={classes.hhead}>

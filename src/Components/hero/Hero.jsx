@@ -10,12 +10,11 @@ import { Footer } from "../Footer/Footer";
 export const Hero = () => {
   const classes = styles();
   const [changed, setchanged] = useState(true);
-
   const handleclicked = () => {
     setchanged(!changed);
   };
   return (
-    <div>
+    <>
       <div className={classes.HeroWrapper}>
         <div className={classes.hupperWrapper}>
           <div>
@@ -33,7 +32,6 @@ export const Hero = () => {
           </>
         )}
       </div>
-      <Footer/>
-    </div>
+    </>
   );
 };

@@ -11,13 +11,11 @@ export const VerifySection = ({ onRestartClick, onProceedClick }) => {
           <h1 className={classes.VerifySectionMainText}>
             Verification methods
           </h1>
-
           <p className={classes.VerifySectionParagraph}>
             We need you to verifiy ownership of the domain you provided, please
             choose a preferred verification method and click “Proceed”
           </p>
         </div>
-
         <div>
           <VerifyCheck
             onRestartClick={onRestartClick}
