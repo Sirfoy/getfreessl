@@ -54,6 +54,7 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.fifthSize,
     color: theme.color.lightGrey,
     margin: 0,
+    lineHeight: "48px",
   },
   FooterMiddleTextHead: {
     fontFamily: theme.font.firstfont,
@@ -65,6 +66,7 @@ export const styles = createUseStyles((theme) => ({
   FooterMiddleButtonsContanier: {
     display: "flex",
     gap: "16px",
+    paddingTop:"16px",
   },
   startBuilding: {
     fontFamily: theme.font.secondfont,
@@ -86,6 +88,7 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.thirdSize,
     color: theme.color.lightBlack,
     backgroundColor: theme.color.white,
+    padding: "16px 32px",
     borderRadius: 4,
     display: "flex",
     alignItems: "center",
