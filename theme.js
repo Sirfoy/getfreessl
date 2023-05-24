@@ -18,6 +18,7 @@ const theme = {
     sixthSize: "28px",
     seventhSize: "52px",
     eighthSize:"56px",
+    ninethSize:"32px",
   },
   color: {
     black: "#000000",
@@ -45,3 +46,8 @@ const theme = {
 };
 
 export default theme;
+
+
+
+
+

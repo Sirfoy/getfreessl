@@ -16,7 +16,7 @@ export const stylesVerify = createUseStyles((theme) => ({
   verificationMainWrapper2: {
     display: "none",
     height: "72px",
-    color: theme.color.grey2,
+    backgroundColor: theme.color.grey2,
     marginTop: "1px",
     display: "flex",
     justifyContent: "space-between",

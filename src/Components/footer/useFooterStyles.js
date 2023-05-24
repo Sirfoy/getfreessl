@@ -1,12 +1,9 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   MainFooterWrapper: {
-    height: 791,
-    width: "100%",
     background: theme.color.lightBlack,
     paddingTop: 60,
   },
-
   MainFooterHeading: {
     height: 260,
     margin: "60px 320px 60px 320px",
@@ -17,8 +14,8 @@ export const styles = createUseStyles((theme) => ({
     marginRight: 320,
     display: "flex",
     justifyContent: "center",
-    flexDirection:"column",
-    alignItems:"center",
+    flexDirection: "column",
+    alignItems: "center",
   },
   MainFooterTextContanier: {
     width: 608,
@@ -28,29 +25,26 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     textAlign: "center",
   },
-
   MainFooterTextContanierHead: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 700,
-    fontSize: 56,
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.bold,
+    fontSize: theme.size.eighthSize,
     margin: "0px",
     paddingBottom: 22,
     color: theme.color.white,
   },
   MainFooterTextContanierPara: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 400,
-    fontSize: 18,
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.light,
+    fontSize: theme.size.fifthSize,
     margin: "0px",
     color: theme.color.white,
+    lineHeight: "27px",
   },
-  FooterCoverageWrapper:{
-    display:"flex",
-    width:"100%",
-    justifyContent:"center",
-    paddingTop:"24px",
+  FooterCoverageWrapper: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "center",
+    paddingTop: "24px",
   },
-
 }));

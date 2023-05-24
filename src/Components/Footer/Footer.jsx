@@ -2,6 +2,7 @@ import React from "react";
 import { styles } from "./useFooterStyles";
 import { FooterCoverage } from "../FooterCoverage/FooterCoverage";
 import { FooterMiddle } from "../FooterMiddle/FooterMiddle";
+import { FooterLast } from "../FooterLast/FooterLast";
 export const Footer = () => {
   const classes = styles();
   return (
@@ -24,6 +25,7 @@ export const Footer = () => {
         </div>
       </div>
       <FooterMiddle />
+      <FooterLast />
     </div>
   );
 };
