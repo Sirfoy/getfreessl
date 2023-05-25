@@ -22,7 +22,7 @@ export const styles = createUseStyles((theme) => ({
     fontFamily: theme.font.firstfont,
     fontWeight: theme.Weight.light,
     fontSize: theme.size.secondSize,
-    color: theme.color.Black,
+    color: theme.color.black,
   },
   HttpBoxLink1: {
     fontFamily: theme.font.firstfont,
