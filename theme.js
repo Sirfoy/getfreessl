@@ -1,8 +1,8 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 const theme = {
   font: {
-    firstfont: "Aeonik",
-    secondfont: "Inter",
+    Aeonik: "Aeonik",
+    Inter: "Inter",
   },
   Weight: {
     bold: 700,
@@ -10,15 +10,7 @@ const theme = {
     medium: 500,
   },
   size: {
-    firstSize: "63px",
-    secondSize: "14px",
-    thirdSize: "16px",
-    fourthSize: "20px",
-    fifthSize: "18px",
-    sixthSize: "28px",
-    seventhSize: "52px",
-    eighthSize:"56px",
-    ninethSize:"32px",
+    defaultSize: 14,
   },
   color: {
     black: "#000000",

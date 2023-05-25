@@ -1,13 +1,10 @@
 import React from "react";
-import { styles } from "./useProceedBtnStyles"
+import { styles } from "./useProceedBtnStyles";
 export const ProceedBtn = ({ onClick }) => {
   const classes = styles();
   return (
-    <>
-      <button className={classes.proceedBtnWrapper} onClick={onClick}>
-        Proceed
-      </button>
-    </>
+    <button className={classes.proceedBtnWrapper} onClick={onClick}>
+      Proceed
+    </button>
   );
 };
-  
