@@ -48,9 +48,9 @@ export const SslProtection = () => {
               encryption. It is free, fast and favourable.
             </p>
 
-            {/* <button className={classes.psslButton} onClick={console.log("are you working")}>
+            <button className={classes.psslButton} onClick={handleClick}>
               <span className={classes.psslBtnText}> Get yours now</span>
-            </button> */}
+            </button>
           </div>
         </div>
       </div>
