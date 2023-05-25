@@ -2,8 +2,7 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   verificationSummaryWrapper: {
-    background: theme.color.grey,
-    marginTop: "1px",
+    margin: "1px 0px",
     marginBottom: "1px",
     padding: "1px",
   },

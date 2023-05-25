@@ -21,8 +21,7 @@ export const stylesVerify = createUseStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingLeft: "24px",
-    paddingRight: "24px",
+    padding: "0 24px",
     cursor: "pointer",
   },
 

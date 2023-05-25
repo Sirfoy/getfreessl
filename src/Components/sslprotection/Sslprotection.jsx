@@ -1,8 +1,14 @@
 import React from "react";
 import { Boxes } from "../Box/Boxes";
-import { styles } from "./useSslProtectonStyles"
-
+import { styles } from "./useSslProtectonStyles";
 export const SslProtection = () => {
+  const handleClick = () => {
+    window.scrollTo({     
+      top: 0,
+      behavior: "smooth",
+    });
+    console.log("clickedddd")
+  };
   const classes = styles();
   return (
     <div className={classes.pmainWrapper}>
@@ -41,9 +47,10 @@ export const SslProtection = () => {
               sense of security. You also gain an online credibility with HTTPS
               encryption. It is free, fast and favourable.
             </p>
-            <button className={classes.psslButton}>
+
+            {/* <button className={classes.psslButton} onClick={console.log("are you working")}>
               <span className={classes.psslBtnText}> Get yours now</span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

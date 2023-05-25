@@ -4,9 +4,7 @@ export const styles = createUseStyles((theme) => ({
   checkBoxWrapper: {
     display: "flex",
     flexDirection: "column",
-    // gap: "24px",
   },
-
   checkInput: {
     cursor: "pointer",
     fontSize: theme.size.thirdSize,
