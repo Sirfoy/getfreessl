@@ -19,6 +19,7 @@ const theme = {
     seventhSize: "52px",
     eighthSize:"56px",
     ninethSize:"32px",
+    tenthSize: "12.9576px",
   },
   color: {
     black: "#000000",
@@ -41,6 +42,7 @@ const theme = {
     buttonPink: "#FFA6B5",
     linkBlue: "#1B9BE2",
     blackvar: "#2B2C33",
+    modalBackground:"#C2C9D1",
    
   },
 };

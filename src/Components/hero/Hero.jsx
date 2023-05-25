@@ -6,10 +6,10 @@ import { HeroLowerWrapper } from "../heroLower/HeroLowerWrapper";
 import { SslTool } from "../SslTools/SslTool";
 import { SslProtection } from "../SslProtection/SslProtection";
 import { HeroVerify } from "../HeroVerify/HeroVerify";
-import { Footer } from "../Footer/Footer";
-export const Hero = () => {
+
+export const Hero = ({ onGetClick }) => {
   const classes = styles();
-  const [changed, setchanged] = useState(true);
+  const [changed, setchanged] = useState(false);
   const handleclicked = () => {
     setchanged(!changed);
   };
@@ -21,10 +21,12 @@ export const Hero = () => {
             <HeroHead onHeroClick={handleclicked} />
           </div>
         </div>
-        {!changed && <HeroVerify onRestartClick={handleclicked} />}
+        {changed && (
+          <HeroVerify onRestartClick={handleclicked} onGetClick={onGetClick} />
+        )}
       </div>
       <div>
-        {changed && (
+        {!changed && (
           <>
             <HeroLowerWrapper />
             <SslProtection />

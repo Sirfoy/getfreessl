@@ -1,18 +1,30 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
+  ModalSectionMainContanier:{
+    width:"100%",
+    height:"100vh",
+    // background:"black",
+    background: 'rgba(0, 0, 0, 0.35)',
+    position: "fixed",
+    zIndex: 9999,
+    overflow:"hidden",
+  },
   ModalSectionMainWrapper: {
+    backgroundColor: theme.color.white,
     width: "959px",
     height: "773px",
-    background: "red",
+    position:"fixed", 
+    top: 61,
+    left: 364,
   },
   ModalSectionUpper: {
+    backgroundColor: theme.color.white,
     display: "flex",
-    background: "green",
     height: 56.14,
     alignItems: "center",
     justifyContent: "flex-end",
-    borderBottom: "0.91px solid #C2C9D1",
+    borderBottom: `0.91px solid ${theme.color.modalBackground}`,
   },
   ModalSectionUpperPic: {
     display: "flex",
@@ -21,8 +33,8 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "flex-end",
     paddingRight: 16,
   },
-  ModalSectionmiddle: {
-    background: "yellow",
+  ModalSectionMiddle: {
+    backgroundColor: theme.color.white,
     marginLeft: "28px",
     marginRight: "28px",
     marginTop: "7px",
@@ -31,26 +43,26 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
   },
-  ModalSectionmiddleHead: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 700,
+  ModalSectionMiddleHead: {
+    
     fontSize: 32,
     display: "flex",
     alignItems: "center",
     textAlign: "center",
-    color: "#0F111A",
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.bold,
+    fontSize: theme.size.ninethSize,
+    color: theme.color.lightBlack,
     margin: 0,
   },
-  ModalSectionmiddlePara: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 400,
+  ModalSectionMiddlePara: {
+    fontFamily: theme.font.firstfont,
+    fontWeight: theme.Weight.light,
+    color: theme.color.lightGrey,
     textAlign: "center",
-    color: "#5C5D66",
     width: "60%",
     margin: 0,
     lineHeight: "27px",
-    paddingTop:'10px',
+    paddingTop: "10px",
   },
 }));
