@@ -7,7 +7,6 @@ export const SslProtection = () => {
       top: 0,
       behavior: "smooth",
     });
-    console.log("clickedddd")
   };
   const classes = styles();
   return (
