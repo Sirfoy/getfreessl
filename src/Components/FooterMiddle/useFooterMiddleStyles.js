@@ -59,7 +59,7 @@ export const styles = createUseStyles((theme) => ({
   FooterMiddleTextHead: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.ninethSize,
+    fontSize: theme.size.defaultSize + 18,
     color: theme.color.lightBlack,
     margin: 0,
   },

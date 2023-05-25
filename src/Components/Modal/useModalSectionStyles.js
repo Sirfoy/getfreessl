@@ -1,30 +1,29 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  ModalSectionMainContanier:{
-    width:"100%",
-    height:"100vh",
-    // background:"black",
-    background: 'rgba(0, 0, 0, 0.35)',
+  ModalSectionMainContanier: {
+    width: "100%",
+    height: "100vh",
+    background: "rgba(0, 0, 0, 0.35)",
     position: "fixed",
     zIndex: 9999,
-    overflow:"hidden",
+    overflow: "hidden",
   },
   ModalSectionMainWrapper: {
     backgroundColor: theme.color.white,
     width: "959px",
     height: "773px",
-    position:"fixed", 
+    position: "fixed",
     top: 61,
     left: 364,
   },
   ModalSectionUpper: {
     backgroundColor: theme.color.white,
     display: "flex",
-    height: 56.14,
+    height: 56,
     alignItems: "center",
     justifyContent: "flex-end",
-    borderBottom: `0.91px solid ${theme.color.modalBackground}`,
+    borderBottom: `0.9px solid ${theme.color.modalBackground}`,
   },
   ModalSectionUpperPic: {
     display: "flex",
@@ -35,28 +34,25 @@ export const styles = createUseStyles((theme) => ({
   },
   ModalSectionMiddle: {
     backgroundColor: theme.color.white,
-    marginLeft: "28px",
-    marginRight: "28px",
-    marginTop: "7px",
+    margin: "7px 28px 0 28px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
   },
   ModalSectionMiddleHead: {
-    
     fontSize: 32,
     display: "flex",
     alignItems: "center",
     textAlign: "center",
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.ninethSize,
+    fontSize: theme.size.defaultSize + 18,
     color: theme.color.lightBlack,
     margin: 0,
   },
   ModalSectionMiddlePara: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
     color: theme.color.lightGrey,
     textAlign: "center",
