@@ -47,7 +47,6 @@ export const SslProtection = () => {
               sense of security. You also gain an online credibility with HTTPS
               encryption. It is free, fast and favourable.
             </p>
-
             <button className={classes.psslButton} onClick={handleClick}>
               <span className={classes.psslBtnText}> Get yours now</span>
             </button>

@@ -9,9 +9,9 @@ export const styles = createUseStyles((theme) => ({
     paddingBottom: 13,
   },
   tcheckText: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.medium,
-    fontSize: theme.size.thirdSize,
+    fontSize: theme.size.defaultSize + 2,
     lineHeight: "24px",
     display: "flex",
     alignItems: " center",

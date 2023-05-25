@@ -7,14 +7,14 @@ export const styles = createUseStyles((theme) => ({
   },
   checkInput: {
     cursor: "pointer",
-    fontSize: theme.size.thirdSize,
+    fontSize: theme.size.defaultSize + 2,
     userSelect: "none",
     background: "black",
   },
   checkBoxLabel: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.medium,
-    fontSize: theme.size.thirdSize,
+    fontSize: theme.size.defaultSize + 2,
     height: "31px",
     display: "flex",
     alignItems: "center",

@@ -13,9 +13,9 @@ export const styles = createUseStyles((theme) => ({
     margin: 0,
   },
   httpTextP: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.medium,
-    fontSize: theme.size.secondSize,
+    fontSize: theme.size.defaultSize,
     color: theme.color.lightGrey,
   },
 }));

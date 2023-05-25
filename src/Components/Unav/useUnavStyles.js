@@ -14,9 +14,9 @@ export const styles = createUseStyles((theme) => ({
     gap: "20px",
   },
   own: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
-    fontSize: theme.size.fourthSize,
+    fontSize: theme.size.defaultSize + 6,
     lineHeight: "24px",
     display: "flex",
     alignItems: "center",
@@ -45,9 +45,9 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   btnText: {
-    fontFamily: theme.font.secondfont,
+    fontFamily: theme.font.Inter,
     fontWeight: theme.Weight.medium,
-    fontSize: theme.size.secondSize,
+    fontSize: theme.size.defaultSize,
     lineHeight: "17px",
     display: "flex",
     alignItems: "center",

@@ -32,9 +32,9 @@ export const styles = createUseStyles((theme) => ({
     margin: 0,
   },
   VerificationSummaryTextWrapper: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
-    fontSize: 11,
+    fontSize: theme.size.defaultSize - 3,    
     textDecorationLine: "underline",
     color: theme.color.lightGrey,
   },

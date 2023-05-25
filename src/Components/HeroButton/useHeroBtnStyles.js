@@ -1,9 +1,9 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   HeroBtn: {
-    fontFamily: theme.font.secondfont,
+    fontFamily: theme.font.Inter,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.thirdSize,
+    fontSize: theme.size.defaultSize + 4,
     padding: "12px 24px",
     gap: "8px",
     background: theme.color.lightRed,

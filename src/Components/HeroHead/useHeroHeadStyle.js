@@ -8,7 +8,6 @@ export const styles = createUseStyles((theme) => ({
   },
   hhead: {
     height: "256px",
-    margin: "111px",
     margin: " 8px  111px 5px 111px",
   },
   hheadHead: {
@@ -19,9 +18,9 @@ export const styles = createUseStyles((theme) => ({
   },
   hheadHead_h: {
     height: "192px",
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.firstSize,
+    fontSize: theme.size.defaultSize + 49,
     lineHeight: "88px",
     textAlign: "center",
     color: theme.color.lightBlack,
@@ -34,9 +33,9 @@ export const styles = createUseStyles((theme) => ({
     paddingTop: "20px",
   },
   hheadParaP: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
-    fontSize: theme.size.fourthSize,
+    fontSize: theme.size.defaultSize + 6,
     lineHeight: "32px",
     textAlign: "center",
     width: "91%",
@@ -62,17 +61,17 @@ export const styles = createUseStyles((theme) => ({
     padding: "11px",
   },
   hinputText: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
-    fontSize: theme.size.fifthSize,
+    fontSize: theme.size.defaultSize + 4,
     lineHeight: "27px",
     border: "none",
     outline: "none",
     "&::placeholder": {
       color: theme.color.placeholdergrey,
-      fontFamily: theme.font.firstfont,
+      fontFamily: theme.font.Aeonik,
       fontWeight: theme.Weight.light,
-      fontSize: theme.size.fifthSize,
+      fontSize: theme.size.defaultSize + 4,
       lineHeight: "27px",
     },
   },
