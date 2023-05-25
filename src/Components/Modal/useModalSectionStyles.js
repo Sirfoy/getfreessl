@@ -41,7 +41,6 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
   },
   ModalSectionMiddleHead: {
-    fontSize: 32,
     display: "flex",
     alignItems: "center",
     textAlign: "center",
