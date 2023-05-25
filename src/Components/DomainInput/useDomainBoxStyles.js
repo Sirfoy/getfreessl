@@ -13,9 +13,9 @@ export const styles = createUseStyles((theme) => ({
     marginRight: 29,
   },
   domainBoxWrapper: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.medium,
-    fontSize: theme.size.secondSize,
+    fontSize: theme.size.defaultSize,
     color: theme.color.lightBlack,
   },
   domainBoxWrapperBox: {
@@ -23,15 +23,15 @@ export const styles = createUseStyles((theme) => ({
     border: 0,
     "&:focus": {
       outline: "none",
-      fontFamily: theme.font.firstfont,
+      fontFamily: theme.font.Aeonik,
       fontWeight: theme.Weight.light,
-      fontSize: theme.size.secondSize,
+      fontSize: theme.size.defaultSize,
       color: theme.color.lightGrey,
     },
     "&::placeholder": {
-      fontFamily: theme.font.firstfont,
+      fontFamily: theme.font.Aeonik,
       fontWeight: theme.Weight.light,
-      fontSize: theme.size.secondSize,
+      fontSize: theme.size.defaultSize,
       color: theme.color.placeholdergrey2,
     },
     domainBoxWrapperframePic: {
@@ -40,9 +40,9 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   domainBoxParagraph: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.medium,
-    fontSize: theme.size.secondSize,
+    fontSize: theme.size.defaultSize,
     color: theme.color.lightBlack,
   },
 }));

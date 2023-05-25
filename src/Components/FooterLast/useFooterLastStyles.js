@@ -15,9 +15,9 @@ export const styles = createUseStyles((theme) => ({
     gap: "2px",
   },
   FooterLastLeftcopyright: {
-    fontFamily: theme.font.secondfont,
+    fontFamily: theme.font.Inter,
     fontWeight: theme.Weight.light,
-    fontSize: theme.size.secondSize,
+    fontSize: theme.size.defaultSize,
     color: theme.color.grey,
   },
   FooterLastRightSection: {

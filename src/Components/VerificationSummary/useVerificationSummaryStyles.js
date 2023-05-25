@@ -2,8 +2,7 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   verificationSummaryWrapper: {
-    background: theme.color.grey,
-    marginTop: "1px",
+    margin: "1px 0px",
     marginBottom: "1px",
     padding: "1px",
   },
@@ -32,9 +31,9 @@ export const styles = createUseStyles((theme) => ({
     margin: 0,
   },
   VerificationSummaryTextWrapper: {
-    fontFamily: theme.font.firstfont,
+    fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
-    fontSize: 11,
+    fontSize: theme.size.defaultSize - 3,    
     textDecorationLine: "underline",
     color: theme.color.lightGrey,
   },

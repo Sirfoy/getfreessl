@@ -8,8 +8,8 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " center",
-    borderRight: '1px solid white',
-    paddingTop:"24px",
+    borderRight: "1px solid white",
+    paddingTop: "24px",
   },
   FooterCoverageMainContanier2: {
     height: 91,
@@ -19,8 +19,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " center",
-    paddingTop:"24px",
-    
+    paddingTop: "24px",
   },
   FooterCoverageMainContanierWrapper: {
     width: "100%",
@@ -29,17 +28,17 @@ export const styles = createUseStyles((theme) => ({
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 700,
-    fontSize: 40,
-    margin: "0px",
+    fontSize: theme.size.defaultSize + 26,
+    margin: 0,
     textAlign: "center",
-    color: "#FFFFFF",
+    color: theme.color.white,
   },
   FooterCoverageMainContanierbody: {
     fontFamily: "Aeonik",
     fontStyle: "normal",
     fontWeight: 400,
-    fontSize: 18,
+    fontSize: theme.size.defaultSize + 4,
     textAlign: "center",
-    color: "#FFFFFF",
+    color: theme.color.white,
   },
 }));
