@@ -11,14 +11,6 @@ const theme = {
   },
   size: {
     defaultSize: 14,
-    firstSize: "63px",
-   
-    thirdSize: "16px",
-    fourthSize: "20px",
-    fifthSize: "18px",
-    sixthSize: "28px",
-    seventhSize: "52px",
-    eighthSize: "56px",
   },
   color: {
     black: "#000000",
