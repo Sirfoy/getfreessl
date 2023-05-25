@@ -10,7 +10,7 @@ export const styles = createUseStyles((theme) => ({
     background: theme.color.grey,
   },
   getCertificateFrame: {
-    height: 90.67,
+    height: 91,
     background: "rgba(255, 166, 181, 0.2)",
     borderRadius: 4,
     display: "flex",
@@ -25,7 +25,7 @@ export const styles = createUseStyles((theme) => ({
   },
   getCertificateFramePic: {
     width: 64,
-    height: 42.67,
+    height: 43,
   },
   getCertificateFrametext: {
     fontFamily: theme.font.Aeonik,

@@ -17,8 +17,7 @@ export const styles = createUseStyles((theme) => ({
   },
   pleftWrapper: {
     display: "flex",
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
+    display: "flex",   
     alignItems: "center",
     gap: "70px",
     width: "50%",
