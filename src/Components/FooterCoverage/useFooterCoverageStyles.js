@@ -8,8 +8,8 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " center",
-    borderRight: '1px solid white',
-    paddingTop:"24px",
+    borderRight: "1px solid white",
+    paddingTop: "24px",
   },
   FooterCoverageMainContanier2: {
     height: 91,
@@ -19,8 +19,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " center",
-    paddingTop:"24px",
-    
+    paddingTop: "24px",
   },
   FooterCoverageMainContanierWrapper: {
     width: "100%",
@@ -30,7 +29,7 @@ export const styles = createUseStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 700,
     fontSize: 40,
-    margin: "0px",
+    margin: 0,
     textAlign: "center",
     color: "#FFFFFF",
   },
