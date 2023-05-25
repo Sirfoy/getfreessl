@@ -1,5 +1,6 @@
 import React from "react";
 import { styles } from "./useNewCertificateStyles";
+
 export const NewCertificate = () => {
   const classes = styles();
   return (
@@ -34,9 +35,12 @@ export const NewCertificate = () => {
           <div className={classes.getCertificateButton}>
             <button className={classes.getCertificateBtn}>Submit</button>
           </div>
+    
         </div>
       </div>
-
+       
+      <div>
+      </div>
     </div>
   );
 };

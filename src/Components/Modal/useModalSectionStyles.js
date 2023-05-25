@@ -1,0 +1,56 @@
+import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+
+export const styles = createUseStyles((theme) => ({
+  ModalSectionMainWrapper: {
+    width: "959px",
+    height: "773px",
+    background: "red",
+  },
+  ModalSectionUpper: {
+    display: "flex",
+    background: "green",
+    height: 56.14,
+    alignItems: "center",
+    justifyContent: "flex-end",
+    borderBottom: "0.91px solid #C2C9D1",
+  },
+  ModalSectionUpperPic: {
+    display: "flex",
+    alignContent: "center",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    paddingRight: 16,
+  },
+  ModalSectionmiddle: {
+    background: "yellow",
+    marginLeft: "28px",
+    marginRight: "28px",
+    marginTop: "7px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  ModalSectionmiddleHead: {
+    fontFamily: "Aeonik",
+    fontStyle: "normal",
+    fontWeight: 700,
+    fontSize: 32,
+    display: "flex",
+    alignItems: "center",
+    textAlign: "center",
+    color: "#0F111A",
+    margin: 0,
+  },
+  ModalSectionmiddlePara: {
+    fontFamily: "Aeonik",
+    fontStyle: "normal",
+    fontWeight: 400,
+    textAlign: "center",
+    color: "#5C5D66",
+    width: "60%",
+    margin: 0,
+    lineHeight: "27px",
+    paddingTop:'10px',
+  },
+}));
