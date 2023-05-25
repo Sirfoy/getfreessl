@@ -9,21 +9,18 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const [change, setchange] = useState(false);
   const handleclicked = () => {
+    window.document.body.style.overflow = !change ? "hidden" : "auto";
     setchange(!change);
   };
   return (
     <>
       {change && <ModalSection />}
-      <div
-        style={{
-          overflow: change === true ? "none" : "hidden",
-        }}
-      >
+    
         <NavBar />
         <Unav />
         <Hero onGetClick={handleclicked} />
         <Footer />
-      </div>
+   
     </>
   );
 }
