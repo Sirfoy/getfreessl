@@ -13,4 +13,3 @@ export const CheckBoxes = ({title}) => {
     </div>
   );
 };
-
