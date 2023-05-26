@@ -4,7 +4,7 @@ export const styles = createUseStyles((theme) => ({
   box: {
     width: "100%",
     height: "350px",
-    background: theme.white,
+    background: theme.color.white,
     boxShadow: "0px 12px 48px rgba(0, 0, 0, 0.08)",
     borderRadius: "4px",
   },

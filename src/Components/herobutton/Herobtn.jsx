@@ -5,8 +5,6 @@ export const HeroBtn = ({ onClick ,text}) => {
   return (
       <button className={classes.HeroBtn} onClick={onClick}>
         {text}
-
-        {/* Generate SSL Certificate */}
       </button> 
   );
 };
