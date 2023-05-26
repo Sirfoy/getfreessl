@@ -10,7 +10,7 @@ export const HttpBox = (props) => {
         <div
           className={props.isText ? classes.HttpBoxLink1 : classes.HttpBoxLink2}
         >
-          {props.link}
+          {props.TheLinks}
         </div>
       </div>
     </div>
