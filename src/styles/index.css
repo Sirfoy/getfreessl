@@ -1,4 +1,25 @@
+@font-face {
+  font-family: "Aeonik";
+  src: url("../../public/Assets/Aeonik-font-download/Aeonik-Light.otf");
+  font-weight: 400;
+  format:('truetype');
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("../../public/Assets/Aeonik-font-download/Aeonik-Bold.otf");
+  font-weight: 700;
+  format:('truetype');
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("../../public/Assets/Aeonik-font-download/Aeonik-Regular.otf");
+  font-weight: 500;
+  format:('truetype');
+}
+
 body {
-    margin: 0;
+  margin: 0;
+  font-style: normal; 
 
 }

@@ -1,20 +1,17 @@
 import React from "react";
-import {styles} from "./Unavstyles.js";
-
-
-const Unav = () => {
+import { styles } from "./useUnavStyles";
+export const Unav = () => {
   const classes = styles();
   return (
-    <div className={classes.main_wrapper}>
-      <div className={classes.own_wrapper}>
+    <div className={classes.mainWrapper}>
+      <div className={classes.ownWrapper}>
         <p className={classes.own}>Own a website for free in 5 Minutes</p>
-        <button className={classes.own_button}>
-          <span className={classes.own_text}> Learn More</span>
+        <button className={classes.ownButton}>
+          <span className={classes.ownText}> Learn More</span>
         </button>
       </div>
     </div>
   );
 };
 
-export default Unav
-
+ 
