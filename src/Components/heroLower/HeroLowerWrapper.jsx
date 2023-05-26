@@ -1,4 +1,3 @@
-import React from "react";
 import { styles } from "./useHeroLowerWrapperStyles";
 import { HeroBenefits } from "../HeroBenefits/HeroBenefits";
 export const HeroLowerWrapper = () => {
