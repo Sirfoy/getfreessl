@@ -32,12 +32,13 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
         />
         HTTP file upload
       </label>
-      <div style={{ display: selected === 1 ? "block" : "none" }}>
+      {selected === 1 && (
         <HttpFile
           onRestartClick={onRestartClick}
           onProceedClick={onProceedClick}
         />
-      </div>
+      )}
+    
       <label
         className={classes.checkBoxLabel}
         onClick={() => toggle(selected === 2 ? 0 : 2)}
@@ -51,13 +52,12 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
         <span className={classes.checkedRadioButton} />
         DNS (CNAME)
       </label>
-      <div style={{ display: selected === 2 ? "block" : "none" }}>
+      {selected === 2 && (
         <DnsCname
           onRestartClick={onRestartClick}
           onProceedClick={onProceedClick}
         />
-      </div>
+      )}
     </div>
   );
 }
-

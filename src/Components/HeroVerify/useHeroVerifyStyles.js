@@ -40,7 +40,7 @@ export const styles = createUseStyles((theme) => ({
   },
   thankYouWrapper: {
     padding: 24,
-    background: " rgba(255, 166, 181, 0.2)",
+    background: "rgba(255, 166, 181, 0.2)",
     borderRadius: 4,
     marginTop: 15,
     marginBottom: 10,

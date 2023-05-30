@@ -1,4 +1,3 @@
-import React from "react";
 import { styles } from "./useHeroVerifyStyles";
 import { VerifySection } from "../VerifySection/VerifySection";
 import { useState } from "react";
@@ -86,9 +85,8 @@ export const HeroVerify = ({ onProceedClick, onRestartClick ,onGetClick}) => {
             />
           </div>
         </div>
-        <div style={{ display: selected === 2 ? "block" : "none" }}>
-          <NewCertificate onClick={onGetClick} />
-        </div>
+        {selected === 2 && <NewCertificate/> }
+        
       </div>
     </div>
   );

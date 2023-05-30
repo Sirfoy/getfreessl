@@ -37,7 +37,8 @@ export const HeroHead = ({ onHeroClick }) => {
           </div>
         </div>
         <div className={classes.hbutton}>
-          <HeroBtn onClick={onHeroClick} />
+          <HeroBtn onClick={onHeroClick} 
+          text="Generate SSL Certificate"/>
         </div>
       </div>
     </div>

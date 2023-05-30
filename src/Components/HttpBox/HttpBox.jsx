@@ -5,12 +5,14 @@ export const HttpBox = (props) => {
   return (
     <div className={classes.HttpBoxMainWrapper1}>
       <div className={classes.HttpBoxMethod}>
-        <img className={classes.HttpBoxPic} src={props.pic} alt="check" />
-        <p className={classes.HttpBoxGraph}>{props.graph}</p>
+        <img className={classes.HttpBoxPic} src={props?.pic} alt="check" />
+        <p className={classes.HttpBoxGraph}>{props?.graph}</p>
         <div
-          className={props.isText ? classes.HttpBoxLink1 : classes.HttpBoxLink2}
+          className={
+            props?.isText ? classes.HttpBoxLink1 : classes.HttpBoxLink2
+          }
         >
-          {props.TheLinks}
+          {props?.link}
         </div>
       </div>
     </div>

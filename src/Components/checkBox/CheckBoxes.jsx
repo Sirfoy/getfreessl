@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from './useCheckBoxesStyles';
-export const CheckBoxes = (props) => {
+export const CheckBoxes = ({title}) => {
   const classes = styles();
   return (
     <div className={classes.checkContanier}>
@@ -8,9 +8,8 @@ export const CheckBoxes = (props) => {
         <img src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/checkcheck.svg" alt="check" />
       </div>
       <div className={classes.tcheckText}>
-        {props.title}
+        {title}
       </div>
     </div>
   );
 };
-
