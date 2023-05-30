@@ -6,9 +6,7 @@ export const Unav = () => {
     <div className={classes.mainWrapper}>
       <div className={classes.ownWrapper}>
         <p className={classes.own}>Own a website for free in 5 Minutes</p>
-        <button className={classes.ownButton}>
-          <span className={classes.ownText}> Learn More</span>
-        </button>
+        <button className={classes.ownButton}>Learn more</button>
       </div>
     </div>
   );

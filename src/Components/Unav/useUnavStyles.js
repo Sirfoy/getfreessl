@@ -37,23 +37,20 @@ export const styles = createUseStyles((theme) => ({
     zIndex: 1,
     border: "none",
     cursor: "pointer",
-    "&:hover": {
-      opacity: 0.8,
-      border: "none",
-      cursor: "pointer",
-    },
-  },
-  btnText: {
     fontFamily: theme.font.Inter,
-    fontWeight: theme.Weight.medium,
+    fontWeight: theme.Weight.large,
     fontSize: theme.size.defaultSize,
     lineHeight: "17px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     color: theme.color.lightBlack,
+    "&:hover": {
+      opacity: 0.8,
+      border: "none",
+      cursor: "pointer",
+    },
   },
-
   [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
     {
       ownButton: {
