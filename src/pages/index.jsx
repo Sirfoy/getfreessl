@@ -14,13 +14,11 @@ export default function Home() {
   };
   return (
     <>
-      {change && <ModalSection />}
-    
+      {change && <ModalSection />}    
         <NavBar />
         <Unav />
         <Hero onGetClick={handleclicked} />
-        <Footer />
-   
+        <Footer />   
     </>
   );
 }

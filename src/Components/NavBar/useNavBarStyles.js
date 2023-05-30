@@ -3,14 +3,19 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   Navigation: {
     width: "100%",
-    paddingBottom: 7,
     background: theme.color.white,
     boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
   },
   logoNav: {
-    width: "217px",
-    height: "60px",
-    marginLeft: "150px",
-    paddingTop: "6px",
+    padding: "7px 0 7px 150px",
+  },
+
+  [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
+    Navigation: {
+      boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
+    },
+    logoNav: {
+      padding: "32px 0 24px 60px",
+    },
   },
 }));
