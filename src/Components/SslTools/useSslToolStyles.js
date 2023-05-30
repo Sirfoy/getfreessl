@@ -1,30 +1,30 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
-  tmainWrapper: {
-    margin: "0px 150px  157px 150px",
+  ToolsMainWrapper: {
+    margin: "0px 150px  20px 150px",
     display: "flex",
   },
-  tleftWrapper: {
+  ToolsleftWrapper: {
     width: "50%",
     display: "flex",
     alignItems: "center",
   },
-  trightWrapper: {
+  ToolsrightWrapper: {
     width: "50%",
   },
-  tleftContanier: {
+  ToolsLeftContanier: {
     width: "70%",
      height: "388px",
   },
-  tTexHead: {
+  ToolsTexHead: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.bold,    
+    fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 42,
     lineHeight: " 59px",
     paddingLeft: 10,
     color: theme.color.black,
   },
-  tTexPara: {
+  ToolsTexPara: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
     fontSize: theme.size.defaultSize + 4,
@@ -33,7 +33,7 @@ export const styles = createUseStyles((theme) => ({
     alignItems: " center",
     color: theme.color.lightGrey,
   },
-  tChecks: {
+  ToolsChecks: {
     height: "144px",
   },
 }));

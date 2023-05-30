@@ -3,7 +3,8 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   box: {
     width: "100%",
-    background: theme.white,
+    height: "350px",
+    background: theme.color.white,
     boxShadow: "0px 12px 48px rgba(0, 0, 0, 0.08)",
     borderRadius: "4px",
     paddingBottom: 66,
