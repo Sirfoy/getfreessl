@@ -85,7 +85,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick ,onGetClick}) => {
             />
           </div>
         </div>
-        {selected === 2 && <NewCertificate/> }
+        {selected === 2 && <NewCertificate onClick={onGetClick}/> }
         
       </div>
     </div>
