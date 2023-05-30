@@ -2,7 +2,6 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   FooterCoverageMainContanier: {
     height: 91,
-    // background: "red",
     width: "20%",
     display: "flex",
     flexDirection: "column",
@@ -13,7 +12,6 @@ export const styles = createUseStyles((theme) => ({
   },
   FooterCoverageMainContanier2: {
     height: 91,
-    // background: "red",
     width: "20%",
     display: "flex",
     flexDirection: "column",

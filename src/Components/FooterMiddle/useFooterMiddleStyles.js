@@ -3,7 +3,6 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   FooterMiddleMainWrapper: {
     borderTop: `1px solid ${theme.color.placeholdergrey}`,
-
     borderBottom: `1px solid ${theme.color.placeholdergrey}`,
     marginTop: "60px",
     marginBottom: "20px",
@@ -38,12 +37,10 @@ export const styles = createUseStyles((theme) => ({
     bottom: "4.81%",
     position: "absolute",
   },
-
   FooterMiddleleft: {
     margin: "48px 0px 48px 50px",
     width: "80%",
   },
-  FooterMiddleright: {},
   FooterMiddleTextWrapper: {
     width: 432,
     height: 123,
