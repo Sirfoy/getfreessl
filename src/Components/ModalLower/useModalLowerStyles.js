@@ -33,12 +33,10 @@ export const styles = createUseStyles((theme) => ({
     bottom: "5%",
     position: "absolute",
   },
-
   ModalMiddleleft: {
     margin: "48px 0px 18px 50px",
     width: "80%",
   },
-  ModalMiddleright: {},
   ModalMiddleTextWrapper: {
     width: 432,
     height: 123,

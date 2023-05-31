@@ -1,7 +1,7 @@
 import React from "react";
 import { styles } from "./useNewCertificateStyles";
 
-export const NewCertificate = ({onClick}) => {
+export const NewCertificate = ({ onClick }) => {
   const classes = styles();
   return (
     <div className={classes.getCertificateMainWrapper}>
@@ -39,8 +39,6 @@ export const NewCertificate = ({onClick}) => {
           </div>
         </div>
       </div>
-
-      <div></div>
     </div>
   );
 };
