@@ -15,10 +15,15 @@ export const styles = createUseStyles((theme) => ({
   [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
   {
     hlowerMainWrapper: {
-      width:"92%",
+      width:"95%",
       margin:"0 auto",    
     },
-
    },
-   
+   [`@media (max-width: ${theme.breakpoints.md}px) and (min-width:${theme.breakpoints.sm}px)`]:
+  {
+    hlowerMainWrapper: {
+      width:"95%",
+      margin:"0 auto",    
+    },
+   },   
 }));
