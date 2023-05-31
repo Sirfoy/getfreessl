@@ -4,7 +4,7 @@ import { useState } from "react";
 import { NewCertificate } from "../NewCertificate/NewCertificate";
 import { stylesVerify } from "../Verification/verificationStyles";
 import { VerificationSummary } from "../VerificationSummary/VerificationSummary";
-export const HeroVerify = ({ onProceedClick, onRestartClick }) => {
+export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
   const classesVerify = stylesVerify();
   const classes = styles();
   const [selected, setselected] = useState(null);
@@ -85,8 +85,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick }) => {
             />
           </div>
         </div>
-        {selected === 2 && <NewCertificate/> }
-        
+        {selected === 2 && <NewCertificate onClick={onGetClick} />}
       </div>
     </div>
   );

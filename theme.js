@@ -32,7 +32,8 @@ const theme = {
     placeholdergrey2: "#909199",
     buttonPink: "#FFA6B5",
     linkBlue: "#1B9BE2",
-    blackvar: "#2B2C33",   
+    blackvar: "#2B2C33",
+    modalBackground: "#C2C9D1",
   },
 };
 export default theme;

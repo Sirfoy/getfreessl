@@ -1,6 +1,6 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
-  FooterCoverageMainContanier: {
+  FooterCoverageMainContainer: {
     height: 91,
     width: "20%",
     display: "flex",
@@ -10,7 +10,7 @@ export const styles = createUseStyles((theme) => ({
     borderRight: `1px solid ${theme.color.white}`,
     paddingTop: "24px",
   },
-  FooterCoverageMainContanier2: {
+  FooterCoverageMainContainer2: {
     height: 91,
     width: "20%",
     display: "flex",
@@ -19,22 +19,20 @@ export const styles = createUseStyles((theme) => ({
     alignItems: " center",
     paddingTop: "24px",
   },
-  FooterCoverageMainContanierWrapper: {
+  FooterCoverageMainContainerWrapper: {
     width: "100%",
   },
-  FooterCoverageMainContanierHead: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 700,
+  FooterCoverageMainContainerHead: {
+    fontFamily: theme.font.Aeonik,
+    fontWeight: theme.Weight.bold,    
     fontSize: theme.size.defaultSize + 26,
     margin: 0,
     textAlign: "center",
     color: theme.color.white,
   },
-  FooterCoverageMainContanierbody: {
-    fontFamily: "Aeonik",
-    fontStyle: "normal",
-    fontWeight: 400,
+  FooterCoverageMainContainerbody: {
+    fontFamily: theme.font.Aeonik,
+    fontWeight: theme.Weight.light,  
     fontSize: theme.size.defaultSize + 4,
     textAlign: "center",
     color: theme.color.white,

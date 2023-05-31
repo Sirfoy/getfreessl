@@ -1,66 +1,63 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  FooterMiddleMainWrapper: {
-    borderTop: `1px solid ${theme.color.placeholdergrey}`,
-    borderBottom: `1px solid ${theme.color.placeholdergrey}`,
-    marginTop: "60px",
-    marginBottom: "20px",
+  ModalMiddleMainWrapper: {
+    borderRadius: 3,
     height: 411,
-    background: theme.color.lightBlack,
   },
-  FooterMiddleContanier: {
-    height: 291,
-    backgroundColor: theme.color.white,
-    margin: "60px 401px 60px 401px",
+  ModalMiddleContanier: {
+    backgroundColor: theme.color.buttonPink,
+    border: `0.9px solid ${theme.color.lightRed}`,
+    margin: "52px 24px 79px 24px",
     display: "flex",
     position: "relative",
   },
-  FooterMiddleicon1: {
+  ModalMiddleicon1: {
     position: "absolute",
     left: "2%",
     right: "97%",
     top: "7%",
     bottom: "87%",
   },
-  FooterMiddleicon2: {
+  ModalMiddleicon2: {
     position: "absolute",
     left: "49%",
     right: "49%",
     top: "7%",
     bottom: "80%",
   },
-  FooterMiddleicon3: {
+  ModalMiddleicon3: {
     top: "86%",
-    left: "51%",
+    left: "51",
     right: "41%",
     bottom: "5%",
     position: "absolute",
   },
-  FooterMiddleleft: {
-    margin: "48px 0px 48px 50px",
+  ModalMiddleleft: {
+    margin: "48px 0px 18px 50px",
     width: "80%",
   },
-  FooterMiddleTextWrapper: {
+  ModalMiddleTextWrapper: {
     width: 432,
     height: 123,
   },
-  FooterMiddleTextPara: {
+  ModalMiddleTextPara: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
-    fontSize: theme.size.defaultSize + 4,
-    color: theme.color.lightGrey,
+    fontWeight: theme.Weight.medium,
+    fontSize: theme.size.defaultSize + 2,
+    color: theme.color.lightBlack,
     margin: 0,
-    lineHeight: "48px",
+    lineHeight: "28px",
   },
-  FooterMiddleTextHead: {
+  ModalMiddleTextHead: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 18,
     color: theme.color.lightBlack,
+    lineHeight: "45px",
     margin: 0,
   },
-  FooterMiddleButtonsContanier: {
+  ModalMiddleButtonsContanier: {
     display: "flex",
     gap: "16px",
     paddingTop: "16px",
@@ -68,10 +65,10 @@ export const styles = createUseStyles((theme) => ({
   startBuilding: {
     fontFamily: theme.font.Inter,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.defaultSize + 2,
-    color: theme.color.white,
-    backgroundColor: theme.color.lightBlack,
-    padding: "16px 32px",
+    fontSize: theme.size.defaultSize - 1,
+    color: theme.color.lightBlack,
+    backgroundColor: theme.color.white,
+    padding: "13px 26px",
     borderRadius: 4,
     display: "flex",
     alignItems: "center",
@@ -82,11 +79,12 @@ export const styles = createUseStyles((theme) => ({
   explore: {
     fontFamily: theme.font.Inter,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.defaultSize + 2,
+    fontSize: theme.size.defaultSize - 1,
     color: theme.color.lightBlack,
-    backgroundColor: theme.color.white,
-    padding: "16px 32px",
-    borderRadius: 4,
+    backgroundColor: theme.color.buttonPink,
+    padding: "13px 26px",
+    border: `1px solid ${theme.color.white}`,
+    borderRadius: 3.23941,
     display: "flex",
     alignItems: "center",
     textAlign: "right",
