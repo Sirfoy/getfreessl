@@ -7,6 +7,7 @@ export const styles = createUseStyles((theme) => ({
     background: theme.color.white,
     boxShadow: "0px 12px 48px rgba(0, 0, 0, 0.08)",
     borderRadius: "4px",
+    paddingBottom: 66,
   },
   info: {
     display: "flex",

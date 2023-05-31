@@ -36,6 +36,7 @@ export const NewCertificate = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

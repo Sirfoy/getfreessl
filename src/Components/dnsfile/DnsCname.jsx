@@ -1,5 +1,5 @@
 import React from "react";
-import Records from "../Records/Records";
+import {Records} from "../Records/Records";
 import { styles } from "./useDnsCnameStyles";
 import { HttpBox } from "../HttpBox/HttpBox";
 import { Actions } from "../Actions/Actions";

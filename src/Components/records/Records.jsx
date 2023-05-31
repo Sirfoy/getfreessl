@@ -1,7 +1,7 @@
 import React from "react";
 import { styles } from "./useRecordStyle";
 import { RecordBox } from "../RecordBox/RecordBox";
-const Records = () => {
+export const Records = () => {
   const classes = styles();
   return (
     <div className={classes.recordMainWrapper}>
@@ -19,4 +19,4 @@ const Records = () => {
   );
 };
 
-export default Records;
+ 

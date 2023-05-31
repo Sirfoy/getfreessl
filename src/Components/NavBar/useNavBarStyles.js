@@ -3,7 +3,7 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   Navigation: {
     width: "100%",
-    height: "74px",
+    paddingBottom: 7,
     background: theme.color.white,
     boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
   },

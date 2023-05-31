@@ -7,7 +7,6 @@ export const styles = createUseStyles((theme) => ({
     padding: "1px",
   },
   verificationSummary: {
-    height: "166px",
     background: theme.color.white,
     border: `1px solid ${theme.color.placeholdergrey}`,
     borderRadius: 4,

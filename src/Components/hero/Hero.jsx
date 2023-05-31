@@ -6,7 +6,7 @@ import { HeroLowerWrapper } from "../heroLower/HeroLowerWrapper";
 import { SslTool } from "../SslTools/SslTool";
 import { SslProtection } from "../SslProtection/SslProtection";
 import { HeroVerify } from "../HeroVerify/HeroVerify";
-
+import { Footer } from "../Footer/Footer";
 export const Hero = () => {
   const classes = styles();
   const [changed, setchanged] = useState(true);

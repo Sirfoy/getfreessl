@@ -1,8 +1,6 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
-
 export const styles = createUseStyles((theme) => ({
   hheadWrapper: {
-    height: "416px",
     display: "flex",
     flexDirection: "column",
   },
@@ -27,7 +25,6 @@ export const styles = createUseStyles((theme) => ({
     paddingBottom: "10px",
   },
   hheadPara: {
-    height: "48px",
     display: "flex",
     justifyContent: "center",
     paddingTop: "20px",
@@ -42,7 +39,6 @@ export const styles = createUseStyles((theme) => ({
     color: theme.color.lightGrey,
   },
   hsearch: {
-    height: "112px",
     padding: "20px",
     border: "24px solid black",
     borderRadius: "4px",

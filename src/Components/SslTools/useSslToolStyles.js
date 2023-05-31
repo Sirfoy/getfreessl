@@ -1,23 +1,20 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   ToolsMainWrapper: {
-    height: "543px",
     margin: "0px 150px  20px 150px",
     display: "flex",
   },
   ToolsleftWrapper: {
     width: "50%",
-    height: "100%",
     display: "flex",
     alignItems: "center",
   },
   ToolsrightWrapper: {
     width: "50%",
-    height: "100%",
   },
   ToolsLeftContanier: {
     width: "70%",
-    height: "388px",
+     height: "388px",
   },
   ToolsTexHead: {
     fontFamily: theme.font.Aeonik,

@@ -5,7 +5,6 @@ export const styles = createUseStyles((theme) => ({
     margin: '0px 324px 57px 327px',
   },
   hlowerWrapper: {
-    height: "192px",
     display: "flex",
   },
   lastBenefit: {
