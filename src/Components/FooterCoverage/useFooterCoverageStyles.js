@@ -7,7 +7,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " center",
-    borderRight: "1px solid white",
+    borderRight: `1px solid ${theme.color.white}`,
     paddingTop: "24px",
   },
   FooterCoverageMainContanier2: {
