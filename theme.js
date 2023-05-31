@@ -36,5 +36,4 @@ const theme = {
     modalBackground: "#C2C9D1",
   },
 };
-
 export default theme;
