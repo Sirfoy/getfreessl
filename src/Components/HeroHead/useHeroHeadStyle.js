@@ -6,30 +6,27 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
   },
   hhead: {
-    height: "256px",
-    margin: " 8px  111px 5px 111px",
+ 
   },
   hheadHead: {
-    height: "139px",
+   
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
   },
   hheadHead_h: {
-    height: "192px",
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.defaultSize + 49,
+    fontSize: theme.size.defaultSize + 47,
     lineHeight: "88px",
     textAlign: "center",
     color: theme.color.lightBlack,
-    paddingBottom: "10px",
   },
   hheadPara: {
     display: "flex",
     justifyContent: "center",
-    paddingTop: "20px",
-  },
+    margin:0, 
+    },
   hheadParaP: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
@@ -38,6 +35,7 @@ export const styles = createUseStyles((theme) => ({
     textAlign: "center",
     width: "91%",
     color: theme.color.lightGrey,
+    paddingBottom:"48px",
   },
   hsearch: {
     padding: "20px",
@@ -46,7 +44,7 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     justifyContent: " space-between",
     alignItems: "center",
-    margin: "48px",
+  
   },
   hinput: {
     display: "flex",
@@ -72,4 +70,17 @@ export const styles = createUseStyles((theme) => ({
       lineHeight: "27px",
     },
   },
+  
+   [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
+  {
+    hheadHead_h: {
+      width:"85%",
+      margin:"0 auto",    
+    },
+    hheadHead_h: {   
+      fontSize: theme.size.defaultSize + 39,      
+    },
+   },
+   
+  
 }));
