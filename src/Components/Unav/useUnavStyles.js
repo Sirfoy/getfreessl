@@ -1,4 +1,5 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+
 export const styles = createUseStyles((theme) => ({
   mainWrapper: {
     width: "100%",
@@ -20,6 +21,8 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     color: theme.color.white,
+    margin: 0,
+    padding: "24px 0px",
   },
   ownButton: {
     display: "flex",
@@ -35,20 +38,55 @@ export const styles = createUseStyles((theme) => ({
     zIndex: 1,
     border: "none",
     cursor: "pointer",
-    "&:hover": {
-      opacity: 0.8,
-      border: "none",
-      cursor: "pointer",
-    },
-  },
-  btnText: {
     fontFamily: theme.font.Inter,
-    fontWeight: theme.Weight.medium,
+    fontWeight: theme.Weight.large,
     fontSize: theme.size.defaultSize,
     lineHeight: "17px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     color: theme.color.lightBlack,
+    "&:hover": {
+      opacity: 0.8,
+      border: "none",
+      cursor: "pointer",
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
+    {
+      ownButton: {
+        padding: "8px 12px",
+      },
+      btnText: {
+        fontWeight: theme.Weight.large,
+      },
+    },
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    ownWrapper: {
+      paddingRight: "60px",
+    },
+    own: {
+      fontSize: theme.size.defaultSize - 2,
+      padding: "19px 0px 19px 60px",
+    },
+    btnText: {
+      fontWeight: theme.Weight.large,
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    ownWrapper: {
+      paddingRight: "20px",
+      gap: "10px",
+    },
+    own: {
+      fontSize: theme.size.defaultSize - 2,
+      padding: "19px 0px 19px 20px",
+    },
+    ownButton: {
+      padding: "8px 12px",
+    },
+    btnText: {
+      fontWeight: theme.Weight.large,
+    },
   },
 }));

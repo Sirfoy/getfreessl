@@ -4,10 +4,18 @@ const theme = {
     Aeonik: "Aeonik",
     Inter: "Inter",
   },
-  Weight: {
+  breakpoints: {
+    sm: 450,
+    md: 768,
+    lg: 1024,
+    xl: 1440,
+    xxl: 1728,
+  },
+   Weight: {
     bold: 700,
     light: 400,
     medium: 500,
+    large: 600,
   },
   size: {
     defaultSize: 14,
@@ -37,3 +45,6 @@ const theme = {
   },
 };
 export default theme;
+
+
+
