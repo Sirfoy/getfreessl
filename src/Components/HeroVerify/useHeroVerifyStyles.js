@@ -2,7 +2,9 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   HVerifyMainWrapper: {
-    margin: 52,
+    width: "100%",
+    margin: "0 auto",
+    paddingTop: 50,
   },
   verifyHeader: {
     display: "flex",
@@ -14,13 +16,10 @@ export const styles = createUseStyles((theme) => ({
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 14,
-    lineHeight: 36,
     color: theme.color.lightBlack,
   },
   verifyButton: {
     padding: "12px 24px",
-    gap: 8,
-    width: 135,
     height: " 48px",
     border: "none",
     background: theme.color.buttonPink,
@@ -42,8 +41,7 @@ export const styles = createUseStyles((theme) => ({
     padding: 24,
     background: "rgba(255, 166, 181, 0.2)",
     borderRadius: 4,
-    marginTop: 15,
-    marginBottom: 10,
+    margin:"15px 0 10px 0",
   },
   thankYouPara: {
     fontFamily: theme.font.Aeonik,
@@ -56,5 +54,17 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     margin: 0,
     padding: 0,
+  },
+  [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+    thankYouPara: {
+         fontSize: theme.size.defaultSize - 2,
+     
+    },
+    thankYouWrapper: {
+      padding: 16,
+      background: "rgba(255, 166, 181, 0.2)",
+      borderRadius: 4,
+      margin:"15px 0 10px 0",
+    },
   },
 }));

@@ -22,24 +22,18 @@ export const HeroHead = ({ onHeroClick }) => {
       </div>
       <div className={classes.hsearch}>
         <div className={classes.hinput}>
-          <div className={classes.hinputPic}>
-            <img
-              src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/https.svg"
-              alt="https"
-            />
-          </div>
-          <div className={classes.hinputInputField}>
-            <input
-              className={classes.hinputText}
-              type="text"
-              placeholder="Enter Primary Domain"
-            />
-          </div>
+          <img
+            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/https.svg"
+            alt="https"
+          />
+
+          <input
+            className={classes.hinputText}
+            type="text"
+            placeholder="Enter Primary Domain"
+          />
         </div>
-        <div className={classes.hbutton}>
-          <HeroBtn onClick={onHeroClick} 
-          text="Generate SSL Certificate"/>
-        </div>
+        <HeroBtn onClick={onHeroClick} text="Generate SSL Certificate" />
       </div>
     </div>
   );

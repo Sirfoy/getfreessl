@@ -7,7 +7,7 @@ export const Actions = ({ text, onRestartClick, onProceedClick }) => {
   return (
       <div className={classes.actionMainWrapper}>
         <div className={classes.actiontextWrapper}>
-          <p className={classes.actionTextParagraph}>{text}</p>
+         {text}
         </div>
         <div className={classes.actionsBtnWrapper}>
           <RestartBtn onClick={onRestartClick} />

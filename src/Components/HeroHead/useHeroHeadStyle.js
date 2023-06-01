@@ -5,11 +5,8 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
   },
-  hhead: {
- 
-  },
+  hhead: {},
   hheadHead: {
-   
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -25,8 +22,8 @@ export const styles = createUseStyles((theme) => ({
   hheadPara: {
     display: "flex",
     justifyContent: "center",
-    margin:0, 
-    },
+    margin: 0,
+  },
   hheadParaP: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
@@ -35,7 +32,7 @@ export const styles = createUseStyles((theme) => ({
     textAlign: "center",
     width: "91%",
     color: theme.color.lightGrey,
-    paddingBottom:"48px",
+    paddingBottom: "48px",
   },
   hsearch: {
     padding: "20px",
@@ -44,7 +41,6 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     justifyContent: " space-between",
     alignItems: "center",
-  
   },
   hinput: {
     display: "flex",
@@ -70,17 +66,71 @@ export const styles = createUseStyles((theme) => ({
       lineHeight: "27px",
     },
   },
-  
-   [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
-  {
+
+  [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
+    {
+      hheadHead_h: {
+        width: "85%",
+        margin: "0 auto",
+        fontSize: theme.size.defaultSize + 39,
+      },
+    },
+  [`@media (max-width: ${theme.breakpoints.md}px )`]: {
     hheadHead_h: {
-      width:"85%",
-      margin:"0 auto",    
+      width: "90%",
+      margin: "0 auto",
+      fontSize: theme.size.defaultSize + 18,
+      lineHeight: "48px",
     },
-    hheadHead_h: {   
-      fontSize: theme.size.defaultSize + 39,      
+    hheadParaP: {
+      fontSize: theme.size.defaultSize + 2,
+      lineHeight: "21px",
+      width: "100%",
+      color: theme.color.lightGrey,
+      paddingBottom: "24px",
     },
-   },
-   
-  
+    hsearch: {
+      display: "flex",
+      padding: 0,
+      alignItems: "center",
+      borderRadius: 4,
+      flexDirection: "column",
+      justifyContent: "space-between",
+      backgroundColor: theme.color.black,
+      alignItems: "flex-end",
+      gap: 15,
+    },
+    hinput: {
+      display: "flex",
+      alignItems: "center",
+      background: theme.color.white,
+      gap: "5px",
+      width: "100%",
+      borderRadius: "4px",      
+      padding:"10px 0 16px 5px",
+    },
+    hinputText: {
+      width: "90%",
+      fontSize: theme.size.defaultSize,
+      lineHeight: "21px",
+      "&::placeholder": {
+        fontWeight: theme.Weight.light,
+        fontSize: theme.size.defaultSize,
+        lineHeight: "21px",
+      },
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+    hheadHead: {
+      margin: 0,
+      paddingTop: "24px",
+      paddingBottom: "10px",
+    },
+    hheadHead_h: {
+      width: "100%",
+      margin: "0 auto",
+      fontSize: theme.size.defaultSize + 12,
+      lineHeight: "36px",
+    },
+  },
 }));

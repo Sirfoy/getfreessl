@@ -3,13 +3,13 @@ export const styles = createUseStyles((theme) => ({
   httpMainWrapper: {
     padding: 32,
     gap: 10,
-    height: 474,
     color: theme.color.white,
     border: `1px solid ${theme.color.placeholdergrey}`,
     borderRadius: 4,
+    marginBottom: "10px",
   },
   httpTextWrapper: {
-    height: "100%",
+    width: "100%",
     margin: 0,
   },
   httpTextP: {
@@ -18,4 +18,5 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize,
     color: theme.color.lightGrey,
   },
+  
 }));

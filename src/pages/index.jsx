@@ -18,7 +18,7 @@ export default function Home() {
         <NavBar />
         <Unav />
         <Hero onGetClick={handleclicked} />
-        <Footer />   
+        {/* <Footer />    */}
     </>
   );
 }

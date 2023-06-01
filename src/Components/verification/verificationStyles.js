@@ -8,8 +8,7 @@ export const stylesVerify = createUseStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingLeft: "24px",
-    paddingRight: "24px",
+    padding: "0 24px",
     cursor: "pointer",
   },
 
@@ -44,5 +43,19 @@ export const stylesVerify = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize + 2,
     lineHeight: "24px",
     background: theme.color.placeholdergrey2,
+  },
+  [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+    verificationMainWrapper1: {
+      padding: "0 10px",
+      cursor: "pointer",
+    },
+    verificationMainWrapper2: {
+   
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "0 10px",
+      cursor: "pointer",
+    },
   },
 }));

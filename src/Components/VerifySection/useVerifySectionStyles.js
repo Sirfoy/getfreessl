@@ -10,8 +10,7 @@ export const styles = createUseStyles((theme) => ({
   },
   VerifySectionFrame: {
     height: "100%",
-    marginRight: "296px",
-    marginLeft: "64px",
+    margin:"0 auto",
     width: "87%",
   },
   VerifySectionMainText: {
@@ -27,5 +26,8 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: theme.Weight.light,
     lineHeight: "21px",
     color: theme.color.lightGrey,
+  },
+  [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+ 
   },
 }));
