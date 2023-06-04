@@ -46,11 +46,13 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
           </p>
         </div>
         <div>
-          <img
-            className={classesVerify.verifyArrowDown}
-            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"
-            alt="arrow"
-          />
+          <div className={selected === 1 ? classes.arrowUp : classes.arrowDown}>
+            <img
+              className={classesVerify.verifyArrowDown}
+              src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"
+              alt="arrow"
+            />
+          </div>
         </div>
       </div>
       <div style={{ display: selected === 1 ? "block" : "none" }}>
@@ -77,7 +79,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
             />
             <p className={classesVerify.verifyGraph}>Get certificate</p>
           </div>
-          <div className="verify_arrow">
+          <div className={selected === 2 ? classes.arrowUp : classes.arrowDown}>
             <img
               className={classesVerify.verifyArrowDown}
               src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"

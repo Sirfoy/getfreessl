@@ -4,7 +4,7 @@ export const styles = createUseStyles((theme) => ({
   HVerifyMainWrapper: {
     width: "100%",
     margin: "0 auto",
-    paddingTop: 50,
+    padding: "50px 0px 80px 0px",
   },
   verifyHeader: {
     display: "flex",
@@ -41,7 +41,7 @@ export const styles = createUseStyles((theme) => ({
     padding: 24,
     background: "rgba(255, 166, 181, 0.2)",
     borderRadius: 4,
-    margin:"15px 0 10px 0",
+    margin: "15px 0 10px 0",
   },
   thankYouPara: {
     fontFamily: theme.font.Aeonik,
@@ -55,16 +55,23 @@ export const styles = createUseStyles((theme) => ({
     margin: 0,
     padding: 0,
   },
+  arrowUp: {
+    transition: "transform 0.3s ease-in-out",
+    transform: 'rotate(180deg)',
+  },
+  arrowDown: {
+    transition: "transform 0.3s ease-in-out",   
+  },
+
   [`@media (max-width: ${theme.breakpoints.md}px)`]: {
     thankYouPara: {
-         fontSize: theme.size.defaultSize - 2,
-     
+      fontSize: theme.size.defaultSize - 2,
     },
     thankYouWrapper: {
       padding: 16,
       background: "rgba(255, 166, 181, 0.2)",
       borderRadius: 4,
-      margin:"15px 0 10px 0",
+      margin: "15px 0 10px 0",
     },
   },
 }));
