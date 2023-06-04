@@ -5,8 +5,18 @@ export const HttpBox = (props) => {
 
   return (
     <div className={classes.HttpBoxMainWrapper1}>
-      <div className={classes.HttpBoxMethod}>
-        <div className={classes.HttpBoxTextWrapper}>
+      <div
+        className={
+          props?.isHttpBox ? classes.HttpBoxMethod : classes.HttpBoxMethod2
+        }
+      >
+        <div
+          className={
+            props?.isHttpTextwrapper
+              ? classes.HttpBoxTextWrapper2
+              : classes.HttpBoxTextWrapper
+          }
+        >
           <img className={classes.HttpBoxPic} src={props?.pic} alt="check" />
           <p className={classes.HttpBoxGraph}>{props?.graph}</p>
         </div>

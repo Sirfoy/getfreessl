@@ -12,28 +12,30 @@ export const VerificationSummary = ({ onRestartClick }) => {
         </div>
         <div className={classes.VerificationSummaryBoxWrapper}>
           <DomainBox
+            inputfield={true}
             pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain1.svg"
             placeholder="www.lizzy.com"
             Domain="Domain"
           />
           <DomainBox
+            inputfield={true}
             pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain2.svg"
             placeholder="Email"
             Domain="Verification method"
           />
           <DomainBox
+            inputfield={false}
             pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain3.svg"
             placeholder="pending"
             Domain="Verification status"
           />
         </div>
         <div className={classes.VerificationSummaryMainTextWrapper}>
-          <div className={classes.VerificationSummaryTextWrapper}>
-            <p className={classes.VerificationSummaryParagraph}>
-              Once your verification has been approved. you can proceed by
-              clicking “Get certificate” below
-            </p>
-          </div>
+          <p className={classes.VerificationSummaryParagraph}>
+            Once your verification has been approved. you can proceed by
+            clicking “Get certificate” below
+          </p>
+
           <div className={classes.VerificationSummaryBtnWrapper}>
             <RestartBtn onClick={onRestartClick} />
           </div>

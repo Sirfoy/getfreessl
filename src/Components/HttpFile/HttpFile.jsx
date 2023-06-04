@@ -12,6 +12,7 @@ export const HttpFile = ({ onRestartClick, onProceedClick }) => {
           upload.
         </p>
         <HttpBox
+          isHttpBox={true}
           isText="true"
           pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
           graph="Download your auth file using the following link: "
@@ -19,6 +20,7 @@ export const HttpFile = ({ onRestartClick, onProceedClick }) => {
           showBox={true}
         />
         <HttpBox
+          isHttpBox={true}
           istext="false"
           pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step2.svg"
           graph="Upload the Auth file toyour HTTP server under "
@@ -26,25 +28,25 @@ export const HttpFile = ({ onRestartClick, onProceedClick }) => {
           showBox={true}
         />
         <HttpBox
-        showBox={true}
+          isHttpBox={true}
+          showBox={true}
           isText="true"
-          isSpace="true"
           pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step3.svg"
           graph="Make sure your file is available under the following link: "
           src="http://www.lizzy.com/.well-known/pki-validation/FD48F3DD3FCA57D6769E1C3565C955D1.txt"
         />
         <HttpBox
-        showBox={true}
+          isHttpBox={true}
+          showBox={true}
           isText="true"
-          
           pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step4.svg"
           graph="Make sure your file is also available under the following link: "
           src="http://www.lizzy.com/.well-known/pki-validation/FD48F3DD3FCA57D6769E1C3565C955D1.txt"
         />
         <HttpBox
-        showBox={true}
+          isHttpBox={true}
+          showBox={true}
           isText="true"
-         
           pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step4.svg"
           graph="Click “Proceed” to continue"
           src="http://www.lizzy.com/.well-known/pki-validation/FD48F3DD3FCA57D6769E1C3565C955D1.txt"

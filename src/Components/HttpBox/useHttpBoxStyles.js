@@ -13,6 +13,15 @@ export const styles = createUseStyles((theme) => ({
     gap: "8px",
     paddingLeft: "16px",
   },
+  HttpBoxMethod2: {
+    width: "97%",
+    background: theme.color.grey2,
+    border: `1px solid ${theme.color.grey2}`,
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+    paddingLeft: "16px",
+  },
   HttpBoxPic: {
     width: 23.8,
     height: 23,
@@ -49,6 +58,12 @@ export const styles = createUseStyles((theme) => ({
     gap: "8px",
     padding: "0px 14px 0px 16px",
   },
+  HttpBoxTextWrapper2: {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+    padding: "0px 14px 0px 16px",
+  },
   [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
     HttpBoxTextWrapper: {
       display: "flex",
@@ -57,14 +72,27 @@ export const styles = createUseStyles((theme) => ({
       gap: "8px",
       padding: 0,
     },
+    HttpBoxTextWrapper2: {
+      display: "flex",
+      alignItems: "center",
+      gap: "8px",
+      padding: "0px 14px 0px 6px",
+    },
+
     HttpBoxMethod: {
       width: "97%",
       display: "flex",
       flexDirection: "column",
       alignItems: "flex-start",
       gap: "8px",
-      paddingLeft: "16px",
-      paddingBottom: "10px",
+      padding:"10px 0px 10px 16px"
+    },
+    
+    HttpBoxMethod2: {
+      width: "97%",
+      
+      gap: "8px",
+      padding:"10px 0px 10px 16px"
     },
     HttpBoxGraph: {
       margin: 0,
@@ -87,6 +115,26 @@ export const styles = createUseStyles((theme) => ({
       alignItems: "flex-start",
       gap: 8,
       padding: "0px 10px 10px 10px",
+    },
+  },
+
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    HttpBoxMethod: {
+      width: "97%",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      gap: "8px",
+      padding:"10px 0px 10px 16px"
+    },
+    
+    HttpBoxMethod2: {
+      width: "100%",      
+      gap: "8px",
+      padding:"10px 0px 10px 0px"
+    },
+    HttpBoxGraph: {
+      margin: 0,
     },
   },
 }));

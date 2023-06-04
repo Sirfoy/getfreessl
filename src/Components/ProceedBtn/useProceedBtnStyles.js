@@ -22,5 +22,11 @@ export const styles = createUseStyles((theme) => ({
       border: "none",
       cursor: "pointer",
     },
+    [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+      fontSize: theme.size.defaultSize ,
+    },
+    [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+      fontSize: theme.size.defaultSize-5,
+    },
   },
 }));
