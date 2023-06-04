@@ -26,6 +26,7 @@ export const ModalSection = () => {
         </div>
         <div className={classes.ModalSectionMiddle}>
           <img
+          className={classes.ModalSectionMiddleimg}
             src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/RedMail.svg"
             alt="Big Mail"
           />
