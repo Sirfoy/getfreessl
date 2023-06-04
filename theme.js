@@ -11,7 +11,7 @@ const theme = {
     xl: 1440,
     xxl: 1728,
   },
-   Weight: {
+  Weight: {
     bold: 700,
     light: 400,
     medium: 500,
@@ -45,8 +45,6 @@ const theme = {
   },
 };
 export default theme;
-
-
 
 // [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
 //     {

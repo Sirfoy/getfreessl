@@ -3,8 +3,8 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   pmainWrapper: {
     background: theme.color.grey,
-   width:"85%",
-   margin:"70px auto",
+    width: "85%",
+    margin: "70px auto",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -13,15 +13,27 @@ export const styles = createUseStyles((theme) => ({
     width: "90%",
     display: "flex",
     gap: "50px",
-    paddingTop: 109,
-    paddingBottom: 161,
+
+    padding: "109px 0px ",
   },
   pleftWrapper: {
     display: "flex",
-    display: "flex",   
     alignItems: "center",
-    gap: "70px",
+    gap: "80px",
+    width: "60%",
+  },
+  pcolumn: {
     width: "50%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "70px",
+  },
+  prow: {
+    width: "50%",
+    alignItems: "center",
+    justifyContent: "center",
   },
   prightWrapper: {
     width: "50%",
@@ -29,20 +41,21 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
+
   pcontent: {
     width: "80%",
   },
   psslHeader: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
-    fontSize: theme.size.defaultSize + 38,
+    fontSize: theme.size.defaultSize + 42,
     lineHeight: "67px",
   },
   psslP: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
     fontSize: theme.size.defaultSize + 4,
-    lineHeight: "24px",
+    lineHeight: "27px",
     color: theme.color.lightGrey,
   },
   psslButton: {
@@ -67,16 +80,58 @@ export const styles = createUseStyles((theme) => ({
     color: theme.color.white,
     textAlign: "center",
   },
-  pcolumn: {
-    width:"50%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "70px",
+  [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
+    contentWrapper: {
+      flexDirection: "column",
+    },
+    pleftWrapper: {
+      alignItems: "center",
+      gap: "80px",
+      width: "69%",
+      margin: "0px auto",
+    },
+    prightWrapper: {
+      width: "94%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      margin: "0 auto",
+    },
   },
-  prow: {
-    margin:"50%",
-    margin: "auto",
+  [`@media (max-width: ${theme.breakpoints.xl}px) `]: {
+    pleftWrapper: {
+      width: "85%",
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    pleftWrapper: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: "80px",
+      width: "100%",
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    pcolumn: {
+      width: "100%",
+    },
+    prow: {
+      width: "100%",
+      marginRight: 20,
+    },
+    psslHeader: {
+      fontFamily: theme.font.Aeonik,
+      fontWeight: theme.Weight.bold,
+      fontSize: theme.size.defaultSize + 18,
+      lineHeight: "48px",
+    },
+    psslP: {
+      fontFamily: theme.font.Aeonik,
+      fontWeight: theme.Weight.light,
+      fontSize: theme.size.defaultSize,
+      lineHeight: "21px",
+      color: theme.color.lightGrey,
+    },
   },
 }));
