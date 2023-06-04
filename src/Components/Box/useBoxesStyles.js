@@ -2,19 +2,17 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   box: {
-    width: "100%",
-    height: "350px",
+    width: "100%",    
     background: theme.color.white,
     boxShadow: "0px 12px 48px rgba(0, 0, 0, 0.08)",
-    borderRadius: "4px",
-    paddingBottom: 66,
-  },
-  info: {
+    borderRadius: "4px",   
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-Start",
-    padding: "50px 0 0 21px",
+    padding: "50px 0 88px 21px",
+
   },
+ 
   verif: {
     position: "relative",
     width: "80px",
@@ -30,12 +28,13 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "flex-start",
   },
   verifyOwner: {
-    height: "12px",
+ 
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 2,
-    lineHeight: "36px",
+  
     color: theme.color.lightBlack,
+    margin:0,
   },
   verify_para: {
     fontFamily: theme.font.Aeonik,
