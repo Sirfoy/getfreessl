@@ -2,6 +2,7 @@ import React from "react";
 import { styles } from "./useModalSectionStyles";
 import { ModalMiddle } from "../ModalLower/ModalLower";
 import { useRouter } from "next/router";
+
 export const ModalSection = () => {
   const router = useRouter();
   const handleRefreshPage = () => {

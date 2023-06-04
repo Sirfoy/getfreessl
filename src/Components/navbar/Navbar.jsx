@@ -1,6 +1,7 @@
 import React from "react";
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 import { styles } from "./useNavBarStyles";
+
 export const NavBar = () => {
   const classes = styles();
   return (
