@@ -85,14 +85,13 @@ export const styles = createUseStyles((theme) => ({
       flexDirection: "column",
       alignItems: "flex-start",
       gap: "8px",
-      padding:"10px 0px 10px 16px"
+      padding: "10px 0px 10px 16px",
     },
-    
+
     HttpBoxMethod2: {
       width: "97%",
-      
       gap: "8px",
-      padding:"10px 0px 10px 16px"
+      padding: "10px 0px 10px 16px",
     },
     HttpBoxGraph: {
       margin: 0,
@@ -125,13 +124,13 @@ export const styles = createUseStyles((theme) => ({
       flexDirection: "column",
       alignItems: "flex-start",
       gap: "8px",
-      padding:"10px 0px 10px 16px"
+      padding: "10px 0px 10px 16px",
     },
-    
+
     HttpBoxMethod2: {
-      width: "100%",      
+      width: "100%",
       gap: "8px",
-      padding:"10px 0px 10px 0px"
+      padding: "10px 0px 10px 0px",
     },
     HttpBoxGraph: {
       margin: 0,
