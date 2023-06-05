@@ -5,7 +5,6 @@ export const styles = createUseStyles((theme) => ({
     width: "67%",
     margin: "0 auto",
   },
-  hupperWrapper: {},
   [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
     {
       HeroWrapper: {

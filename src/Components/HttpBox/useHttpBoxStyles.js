@@ -78,7 +78,6 @@ export const styles = createUseStyles((theme) => ({
       gap: "8px",
       padding: "0px 14px 0px 6px",
     },
-
     HttpBoxMethod: {
       width: "97%",
       display: "flex",
@@ -87,7 +86,6 @@ export const styles = createUseStyles((theme) => ({
       gap: "8px",
       padding: "10px 0px 10px 16px",
     },
-
     HttpBoxMethod2: {
       width: "97%",
       gap: "8px",
@@ -97,7 +95,6 @@ export const styles = createUseStyles((theme) => ({
       margin: 0,
     },
   },
-
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     HttpBoxTextWrapper: {
       display: "flex",
@@ -116,7 +113,6 @@ export const styles = createUseStyles((theme) => ({
       padding: "0px 10px 10px 10px",
     },
   },
-
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
     HttpBoxMethod: {
       width: "97%",
@@ -126,7 +122,6 @@ export const styles = createUseStyles((theme) => ({
       gap: "8px",
       padding: "10px 0px 10px 16px",
     },
-
     HttpBoxMethod2: {
       width: "100%",
       gap: "8px",

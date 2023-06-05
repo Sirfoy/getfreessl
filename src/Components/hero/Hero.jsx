@@ -21,7 +21,7 @@ export const Hero = ({ onGetClick }) => {
           <HeroVerify onRestartClick={handleclicked} onGetClick={onGetClick} />
         )}
       </div>
-      {/* <div>
+      <div>
         {!changed && (
           <>
           <HeroLowerWrapper />
@@ -29,7 +29,7 @@ export const Hero = ({ onGetClick }) => {
             <SslTool />
           </>
         )}
-      </div> */}
+      </div>
     </>
   );
 };

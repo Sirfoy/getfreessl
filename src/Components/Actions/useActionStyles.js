@@ -6,7 +6,6 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "space-between",
     width: "98%",
   },
-
   actiontextWrapper: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
@@ -28,19 +27,16 @@ export const styles = createUseStyles((theme) => ({
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     actionMainWrapper: {
       display: "flex",
-      flexDirection:"column",
+      flexDirection: "column",
       justifyContent: "space-between",
-      gap:"24px",
-      width: '95%',
-     
+      gap: "24px",
+      width: "95%",
     },
     actionsBtnWrapper: {
       display: "flex",
       gap: 16,
-      width:"100%",
-      justifyContent:"flex-end",
-     
+      width: "100%",
+      justifyContent: "flex-end",
     },
-   
   },
 }));
