@@ -26,7 +26,6 @@ export const HeroHead = ({ onHeroClick }) => {
             src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/https.svg"
             alt="https"
           />
-
           <input
             className={classes.hinputText}
             type="text"
