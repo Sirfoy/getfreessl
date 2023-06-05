@@ -13,14 +13,13 @@ export const styles = createUseStyles((theme) => ({
     width: "90%",
     display: "flex",
     gap: "50px",
-
     padding: "109px 0px ",
   },
   pleftWrapper: {
     display: "flex",
     alignItems: "center",
     gap: "80px",
-    width: "60%",
+    width: "50%",
   },
   pcolumn: {
     width: "50%",
@@ -41,7 +40,6 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-
   pcontent: {
     width: "80%",
   },
@@ -121,17 +119,21 @@ export const styles = createUseStyles((theme) => ({
       marginRight: 20,
     },
     psslHeader: {
-      fontFamily: theme.font.Aeonik,
-      fontWeight: theme.Weight.bold,
       fontSize: theme.size.defaultSize + 18,
       lineHeight: "48px",
     },
     psslP: {
-      fontFamily: theme.font.Aeonik,
-      fontWeight: theme.Weight.light,
       fontSize: theme.size.defaultSize,
       lineHeight: "21px",
-      color: theme.color.lightGrey,
+    },
+    prightWrapper: {
+      width: "100%",
+    },
+    pcontent: {
+      width: "100%",
+    },
+    pmainWrapper: {
+      width: "95%",
     },
   },
 }));

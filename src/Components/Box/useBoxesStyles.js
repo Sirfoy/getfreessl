@@ -9,7 +9,7 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-Start",
-    padding: "50px 0 88px 21px",
+    padding: "50px 0 35px 21px",
   },
 
   verif: {

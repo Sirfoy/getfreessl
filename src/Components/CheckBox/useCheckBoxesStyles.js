@@ -18,4 +18,9 @@ export const styles = createUseStyles((theme) => ({
     color: theme.color.lightblack,
     alignItems: "center",
   },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    tcheckText: {      
+      fontSize: theme.size.defaultSize - 2,     
+    },
+  },
 }));

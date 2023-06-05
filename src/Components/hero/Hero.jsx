@@ -26,7 +26,7 @@ export const Hero = ({ onGetClick }) => {
           <>
             <HeroLowerWrapper />
             <SslProtection />
-            {/* <SslTool /> */}
+            <SslTool />
           </>
         )}
       </div>

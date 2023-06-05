@@ -24,12 +24,13 @@ export const SslTool = () => {
           </div>
         </div>
       </div>
-      <div className={classes.ToolsrightWrapper}>
+       
         <img
+          className={classes.ToolsrightWrapper}
           src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/bigpadlock.svg"
           alt="getfreessl"
         />
-      </div>
+      
     </div>
   );
 };
