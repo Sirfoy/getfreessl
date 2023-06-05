@@ -9,7 +9,7 @@ export const FooterLast = () => {
         <img
           className={classes.Footercopyright}
           src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/copyright.svg"
-          alt="C"
+          alt="social media"
         />
         <p className={classes.FooterLastLeftcopyright}>
           Getfreessl All Rights Reserved,2023.

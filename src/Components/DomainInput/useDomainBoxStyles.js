@@ -7,10 +7,8 @@ export const styles = createUseStyles((theme) => ({
     height: 41,
     display: "flex",
     alignItems: "center",
-    paddingLeft:"11px",
-   
-    justifyContent: "center",
- 
+    paddingLeft:"11px",   
+    justifyContent: "center", 
   },
   domainBoxWrapper: {
     width:"30%",  
@@ -42,14 +40,9 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize,
     color: theme.color.lightBlack,
   },
-  [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
-   
-  },
-
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     domainBoxWrapper: {
       width:"100%",  
     },
-  }
-
+  },
 }));

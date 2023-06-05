@@ -1,9 +1,8 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   FooterLastMainWrapper: {
-    color: "red",
-    marginRight: "200px",
-    marginLeft: "200px",
+    width: "85%",
+    margin: "0 auto",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -24,5 +23,12 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     gap: "32px",
+  },
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    FooterLastMainWrapper: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "20px",
+    },
   },
 }));

@@ -37,12 +37,11 @@ export const FooterMiddle = () => {
             <button className={classes.explore}>Expore templates</button>
           </div>
         </div>
-        <div className={classes.FooterMiddleright}>
-          <img
-            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/114.svg"
-            alt="yess"
-          />
-        </div>
+        <img
+          className={classes.FooterMiddleright}
+          src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/114.svg"
+          alt="yess"
+        />
       </div>
     </div>
   );

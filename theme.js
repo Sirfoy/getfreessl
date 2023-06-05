@@ -46,7 +46,7 @@ const theme = {
 };
 export default theme;
 
-// [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
+  // [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
 //     {
 //       Navigation: {
 //        boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
