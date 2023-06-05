@@ -8,8 +8,8 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " flex-start",
-    paddingBottom: "10px",
-    paddingTop: "10px",
+    padding:"10px 0px",
+   
   },
   benefitsMainWrapper2: {
     width: "33%",
@@ -18,8 +18,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " flex-start",
-    paddingBottom: "10px",
-    paddingTop: "10px",
+    padding:"10px 0px",    
   },
   benefitImage: {
     width: "24px",
