@@ -1,6 +1,7 @@
 import { styles } from "./useHeroVerifyStyles";
 import { VerifySection } from "../VerifySection/VerifySection";
 import { useState } from "react";
+import { data } from "../../../data";
 import { NewCertificate } from "../NewCertificate/NewCertificate";
 import { stylesVerify } from "../Verification/verificationStyles";
 import { VerificationSummary } from "../VerificationSummary/VerificationSummary";
@@ -18,18 +19,15 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
   return (
     <div className={classes.HVerifyMainWrapper}>
       <div className={classes.verifyHeader}>
-        <h1 className={classes.verifyTitle}>Verify Domain</h1>
+        <h1 className={classes.verifyTitle}>{data.heroverify.title}</h1>
         <button className={classes.verifyButton}>
-          <span className={classes.verifyButonText}>Verify later</span>
+          <span className={classes.verifyButonText}>
+            {data.heroverify.title}
+          </span>
         </button>
       </div>
       <div className={classes.thankYouWrapper}>
-        <p className={classes.thankYouPara}>
-          Thank you for providing a domain, before you get a SSL certificate, we
-          need you to verify ownership of the domain you have provided with your
-          preferred verification method. Please click “choose verification
-          method”
-        </p>
+        <p className={classes.thankYouPara}>{data.heroverify.thankyoupara}</p>
       </div>
       <div
         className={classesVerify.verificationMainWrapper1}
@@ -42,7 +40,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
             alt="check"
           />
           <p className={classesVerify.verifyGraph}>
-            Choose a verification method
+            {data.heroverify.verificationmethod}
           </p>
         </div>
         <div>

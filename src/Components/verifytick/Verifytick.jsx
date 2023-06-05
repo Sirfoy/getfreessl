@@ -2,6 +2,7 @@ import { useState } from "react";
 import { styles } from "./useVerifytickStyles";
 import { HttpFile } from "../HttpFile/HttpFile";
 import { DnsCname } from "../DnsFile/DnsCname.jsx";
+import { data } from "../../../data";
 export function VerifyCheck({ onRestartClick, onProceedClick }) {
   const classes = styles();
   const [isChecked1, setIsChecked1] = useState(false);
@@ -30,7 +31,7 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
           checked={isChecked1}
           onChange={handleCheckbox1Change}
         />
-        HTTP file upload
+        {data.verifycheck.placeholder1}
       </label>
       {selected === 1 && (
         <HttpFile
@@ -38,7 +39,7 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
           onProceedClick={onProceedClick}
         />
       )}
-    
+
       <label
         className={classes.checkBoxLabel}
         onClick={() => toggle(selected === 2 ? 0 : 2)}
@@ -50,7 +51,7 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
           onChange={handleCheckbox2Change}
         />
         <span className={classes.checkedRadioButton} />
-        DNS (CNAME)
+        {data.verifycheck.placeholder2}
       </label>
       {selected === 2 && (
         <DnsCname

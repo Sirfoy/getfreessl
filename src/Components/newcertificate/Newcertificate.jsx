@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./useNewCertificateStyles";
-
+import { data } from "../../../data";
 export const NewCertificate = ({ onClick }) => {
   const classes = styles();
   return (
@@ -12,26 +12,23 @@ export const NewCertificate = ({ onClick }) => {
           alt=""
         />
         <p className={classes.getCertificateFrametext}>
-          Congratulations!! Your domain has been successfully verified. You a
-          just a step away from owning a SSL certificate that will secure your
-          website for 90 days . Please enter your email address below to get
-          your certificate.
+          {data.newcertificate.head}
         </p>
       </div>
       <div className={classes.getCertificateText}>
         <div className={classes.getCertificateTextHead}>
-          Please enter an email address below
+          {data.newcertificate.paragraph}
         </div>
         <div className={classes.inputGetCertificateWrapper}>
           <input
             className={classes.inputGetCertificate}
             type="text"
-            placeholder="Email address"
+            placeholder={data.newcertificate.placeholder}
           />
         </div>
         <div className={classes.getCertificateButton}>
           <button className={classes.getCertificateBtn} onClick={onClick}>
-            Submit
+            {data.newcertificate.certificatebtn}
           </button>
         </div>
       </div>

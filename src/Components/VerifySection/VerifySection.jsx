@@ -1,6 +1,7 @@
 import React from "react";
 import { styles } from "./useVerifySectionStyles";
 import { VerifyCheck } from "../VerifyTick/Verifytick";
+import { data } from "../../../data";
 
 export const VerifySection = ({ onRestartClick, onProceedClick }) => {
   const classes = styles();
@@ -9,11 +10,10 @@ export const VerifySection = ({ onRestartClick, onProceedClick }) => {
       <div className={classes.VerifySectionFrame}>
         <div className={classes.VerifySectionHead}>
           <h1 className={classes.VerifySectionMainText}>
-            Verification methods
+            {data.verifysection.head}
           </h1>
           <p className={classes.VerifySectionParagraph}>
-            We need you to verifiy ownership of the domain you provided, please
-            choose a preferred verification method and click “Proceed”
+            {data.verifysection.title}
           </p>
         </div>
         <div>

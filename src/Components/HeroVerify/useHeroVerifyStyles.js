@@ -57,12 +57,11 @@ export const styles = createUseStyles((theme) => ({
   },
   arrowUp: {
     transition: "transform 0.3s ease-in-out",
-    transform: 'rotate(180deg)',
+    transform: "rotate(180deg)",
   },
   arrowDown: {
-    transition: "transform 0.3s ease-in-out",   
+    transition: "transform 0.3s ease-in-out",
   },
-
   [`@media (max-width: ${theme.breakpoints.md}px)`]: {
     thankYouPara: {
       fontSize: theme.size.defaultSize - 2,

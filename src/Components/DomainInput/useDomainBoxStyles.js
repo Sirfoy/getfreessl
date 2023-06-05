@@ -1,4 +1,5 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+
 export const styles = createUseStyles((theme) => ({
   domainBoxWrapperframe: {
     gap: 9,
@@ -11,7 +12,7 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center", 
   },
   domainBoxWrapper: {
-    width:"30%",  
+    width: "30%",
   },
   domainBoxWrapperBox: {
     width: "100%",
@@ -39,10 +40,10 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
     color: theme.color.lightBlack,
-  },
+  }, 
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     domainBoxWrapper: {
-      width:"100%",  
+      width: "100%",
     },
   },
 }));
