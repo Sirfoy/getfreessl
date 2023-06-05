@@ -3,6 +3,7 @@ import { Records } from "../Records/Records";
 import { styles } from "./useDnsCnameStyles";
 import { HttpBox } from "../HttpBox/HttpBox";
 import { Actions } from "../Actions/Actions";
+import { data } from "../../../data";
 export const DnsCname = ({ onRestartClick, onProceedClick }) => {
   const classes = styles();
 
@@ -11,31 +12,30 @@ export const DnsCname = ({ onRestartClick, onProceedClick }) => {
       <HttpBox
         isHttpBox={false}
         isHttpTextwrapper={true}
+        graph={data.dnscname.placeholder1}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
-        graph="Sign In to your DNS provider, typically the registrar of your domain. "
       />
       <HttpBox
         isHttpBox={false}
         isHttpTextwrapper={true}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step2.svg"
-        graph="Navigate to the section where DNS records are managed. "
+        graph={data.dnscname.placeholder2}
       />
       <HttpBox
         isHttpBox={false}
         isHttpTextwrapper={true}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step3.svg"
-        graph="Add the following CNAME record "
+        graph={data.dnscname.placeholder3}
       />
       <Records />
       <HttpBox
         isHttpTextwrapper={true}
         isHttpBox={false}
-        // isText={true}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step4.svg"
-        graph="Save your CNAME record and click “Proceed” to continue"
+        graph={data.dnscname.placeholder4}
       />
       <Actions
-        text="How to use DNS verification?"
+        text={data.dnscname.actions}
         onRestartClick={onRestartClick}
         onProceedClick={onProceedClick}
       />

@@ -4,7 +4,6 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
   },
-  hhead: {},
   hheadHead: {
     display: "flex",
     justifyContent: "center",
@@ -105,8 +104,8 @@ export const styles = createUseStyles((theme) => ({
       background: theme.color.white,
       gap: "5px",
       width: "100%",
-      borderRadius: "4px",      
-      padding:"10px 0 16px 5px",
+      borderRadius: "4px",
+      padding: "10px 0 16px 5px",
     },
     hinputText: {
       width: "90%",
