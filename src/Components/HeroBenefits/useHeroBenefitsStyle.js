@@ -5,18 +5,20 @@ export const styles = createUseStyles((theme) => ({
     borderRight: ` 0.5px solid ${theme.color.placeholdergrey}`,
     margin: " 9px",
     display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: " flex-start",
+    padding:"10px 0px",
+   
   },
   benefitsMainWrapper2: {
     width: "33%",
     margin: " 9px",
     display: "flex",
-  },
-  benefitWrapped: {
-    display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " flex-start",
-    padding: "10px",
+    padding:"10px 0px",    
   },
   benefitImage: {
     width: "24px",
@@ -41,5 +43,19 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize,
     lineHeight: "21px",
     color: theme.color.light,
+  },
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    benefitsMainWrapper: {
+      width: "90%",
+      borderRight: 0,
+      borderBottom: ` 0.5px solid ${theme.color.placeholdergrey}`,
+      margin: "0 auto",
+    },
+    benefitsMainWrapper2: {
+      width: "90%",
+      margin: " 9px",
+      display: "flex",
+      margin: "0 auto",
+    },
   },
 }));

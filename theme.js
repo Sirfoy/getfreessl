@@ -1,4 +1,3 @@
-import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 const theme = {
   font: {
     Aeonik: "Aeonik",
@@ -45,6 +44,4 @@ const theme = {
   },
 };
 export default theme;
-
-
 

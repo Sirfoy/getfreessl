@@ -1,22 +1,18 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+
 export const styles = createUseStyles((theme) => ({
   domainBoxWrapperframe: {
     gap: 9,
-    width: "93%",
+    width: "100%",
     border: `1px dashed ${theme.color.placeholdergrey}`,
     height: 41,
     display: "flex",
     alignItems: "center",
-    paddingLeft: 11,
+    paddingLeft: "11px",
     justifyContent: "center",
-    paddingRight: 0,
-    marginRight: 29,
   },
   domainBoxWrapper: {
-    fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.medium,
-    fontSize: theme.size.defaultSize,
-    color: theme.color.lightBlack,
+    width: "30%",
   },
   domainBoxWrapperBox: {
     width: "100%",
@@ -44,5 +40,10 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
     color: theme.color.lightBlack,
+  }, 
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    domainBoxWrapper: {
+      width: "100%",
+    },
   },
 }));

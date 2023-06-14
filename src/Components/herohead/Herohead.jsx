@@ -1,4 +1,5 @@
 import React from "react";
+import { data } from "../../../data";
 import { styles } from "./useHeroHeadStyle";
 import { HeroBtn } from "../HeroButton/HeroBtn";
 export const HeroHead = ({ onHeroClick }) => {
@@ -8,38 +9,28 @@ export const HeroHead = ({ onHeroClick }) => {
       <div className={classes.hhead}>
         <h1 className={classes.hheadHead}>
           <span className={classes.hheadHead_h}>
-            Get free SSL certificate,
-            <br /> valid for 90 days.
+            {data.herohead.heroHeader}
+            <br />
+            {data.herohead.heroHeader2}
           </span>
         </h1>
         <p className={classes.hheadPara}>
-          <span className={classes.hheadParaP}>
-            Get a headstart for three months of free certification. You can get
-            your website up and running and serve clients without worries about
-            cyber threats and data theft.
-          </span>
+          <span className={classes.hheadParaP}>{data.herohead.hheadParaP}</span>
         </p>
       </div>
       <div className={classes.hsearch}>
         <div className={classes.hinput}>
-          <div className={classes.hinputPic}>
-            <img
-              src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/https.svg"
-              alt="https"
-            />
-          </div>
-          <div className={classes.hinputInputField}>
-            <input
-              className={classes.hinputText}
-              type="text"
-              placeholder="Enter Primary Domain"
-            />
-          </div>
+          <img
+            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/https.svg"
+            alt="https"
+          />
+          <input
+            className={classes.hinputText}
+            type="text"
+            placeholder={data.herohead.placeholder}
+          />
         </div>
-        <div className={classes.hbutton}>
-          <HeroBtn onClick={onHeroClick} 
-          text="Generate SSL Certificate"/>
-        </div>
+        <HeroBtn onClick={onHeroClick} text={data.herohead.herobtn} />
       </div>
     </div>
   );

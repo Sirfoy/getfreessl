@@ -25,6 +25,6 @@
     "src/pages/_document.jsx",
     "src/pages/_app.jsx",
     "src/pages/index.jsx"
-  ],
+, "src/Components/Container/Container.jsx"  ],
   "exclude": ["node_modules"]
 }

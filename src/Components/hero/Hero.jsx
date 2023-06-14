@@ -16,11 +16,7 @@ export const Hero = ({ onGetClick }) => {
   return (
     <>
       <div className={classes.HeroWrapper}>
-        <div className={classes.hupperWrapper}>
-          <div>
-            <HeroHead onHeroClick={handleclicked} />
-          </div>
-        </div>
+        <HeroHead onHeroClick={handleclicked} />
         {changed && (
           <HeroVerify onRestartClick={handleclicked} onGetClick={onGetClick} />
         )}
@@ -28,7 +24,7 @@ export const Hero = ({ onGetClick }) => {
       <div>
         {!changed && (
           <>
-            <HeroLowerWrapper />
+          <HeroLowerWrapper />
             <SslProtection />
             <SslTool />
           </>

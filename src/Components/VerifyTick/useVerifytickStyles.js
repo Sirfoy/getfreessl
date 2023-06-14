@@ -20,21 +20,15 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     gap: 5,
     marginBottom: 15,
-    color: theme.color.lightBlack,
+    
     "& input": {
-      appearance: "none",
-      WebkitAppearance: "none",
-      MozAppearance: "none",
-      backgroundColor: "white",
+      accentColor:"black",
       width: 24,
       height: "24px ",
       borderRadius: "50%",
       border: `1px solid ${theme.color.placeholdergrey}`,
     },
     "& input:checked": {
-      appearance: "none",
-      WebkitAppearance: "none",
-      MozAppearance: "none",
       width: 24,
       height: "24px",
       borderRadius: "50%",

@@ -9,19 +9,27 @@ export const styles = createUseStyles((theme) => ({
     paddingBottom: 24,
     background: theme.color.grey,
   },
-  getCertificateFrame: {
-    height: 91,
+  getCertificateFrameWrapper: {
     background: "rgba(255, 166, 181, 0.2)",
     borderRadius: 4,
     display: "flex",
-    alignItems: "center",
+    alignItems: 'flex-start',
+    display: "flex",
+   
+    gap: "10px",
+   padding:"10px",
   },
-  getCertificateText: {
-    height: 209,
+  getCertificateTextHead: {
     background: theme.color.white,
-    border: `"1px solid ${theme.color.placeholdergrey}`,
     borderRadius: 4,
-    marginTop: "20px",
+
+    fontFamily: theme.font.Aeonik,
+    fontWeight: theme.Weight.medium,
+    fontSize: theme.size.defaultSize,
+    display: "flex",
+    alignItems: "center",
+    color: theme.color.lightGrey ,
+    paddingBottom:"16px",
   },
   getCertificateFramePic: {
     width: 64,
@@ -34,31 +42,26 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     color: theme.color.lightBlack,
+    paddingRight:"5px",
+    lineHeight:"21px",
+    wordWrap:"break-word",
+    margin:0,
   },
-  getCertificateFrameWrapper: {
-    width: "90%",
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
-    paddingLeft: "10px",
-  },
+
   getCertificateText: {
-    height: 209,
     background: theme.color.white,
-    border: `"1px solid ${theme.color.placeholdergrey}`,
+    border: `1px solid ${theme.color.placeholdergrey}`,
     borderRadius: 4,
     marginTop: "20px",
     display: "flex",
     flexDirection: "column",
-  },
-  getCertificateTextHeadWrapper: {
-    height: 145,
     padding: 32,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     gap: 16,
   },
+
   inputGetCertificateWrapper: {
     height: 50,
     border: `1px solid ${theme.color.blackvar}`,
@@ -107,7 +110,22 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   getCertificateButton: {
+    paddingTop:"10px",
     display: "flex",
     justifyContent: "flex-end",
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    getCertificateFrametext: {
+      fontFamily: theme.font.Aeonik,
+      fontWeight: theme.Weight.light,
+      fontSize: theme.size.defaultSize - 2,
+      display: "flex",
+      alignItems: "center",
+      color: theme.color.lightBlack,
+      paddingRight:"5px",
+      lineHeight:"18px",
+      wordWrap:"break-word",
+      margin:0,
+    },
   },
 }));
