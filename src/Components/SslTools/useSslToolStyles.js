@@ -20,7 +20,6 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 42,
     lineHeight: " 59px",
-
     color: theme.color.black,
   },
   ToolsTexPara: {
@@ -81,7 +80,7 @@ export const styles = createUseStyles((theme) => ({
         fontSize: theme.size.defaultSize + 22,
       },
       ToolsTexPara: {
-      fontSize: theme.size.defaultSize,
+        fontSize: theme.size.defaultSize,
       },
     },
   },

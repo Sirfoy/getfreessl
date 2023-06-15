@@ -12,7 +12,7 @@ export const SslTool = () => {
             <h1 className={classes.ToolsTexHead}>{data.ssltool.head}</h1>
             <p className={classes.ToolsTexPara}>{data.ssltool.paragraph}</p>
           </div>
-          <div className={classes.ToolsChecks}>            
+          <div className={classes.ToolsChecks}>
             <CheckBoxes title={data.ssltool.placeholder1} />
             <CheckBoxes title={data.ssltool.placeholder2} />
             <CheckBoxes title={data.ssltool.placeholder3} />
@@ -20,13 +20,11 @@ export const SslTool = () => {
           </div>
         </div>
       </div>
-       
-        <img
-          className={classes.ToolsrightWrapper}
-          src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/bigpadlock.svg"
-          alt="getfreessl"
-        />
-      
+      <img
+        className={classes.ToolsrightWrapper}
+        src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/bigpadlock.svg"
+        alt="getfreessl"
+      />
     </div>
   );
 };

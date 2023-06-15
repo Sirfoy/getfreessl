@@ -10,8 +10,7 @@ export const Boxes = (props) => {
         <div className={classes.content}>
           <h1 className={classes.verifyOwner}> {props?.title}</h1>
           <p className={classes.verify_para}>{props?.graph}</p>
-        </div>
-    
+        </div>    
     </div>
   );
 };
