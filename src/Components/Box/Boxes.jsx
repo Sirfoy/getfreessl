@@ -3,8 +3,7 @@ import { styles } from "./useBoxesStyles";
 export const Boxes = (props) => {
   const classes = styles();
   return (
-    <div className={classes.box}>
-     
+    <div className={classes.box}>     
         <div className={classes.icon}>
           <img className={classes.pimage} src={props?.pic} alt="verify" />
         </div>
