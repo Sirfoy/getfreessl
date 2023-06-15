@@ -2,6 +2,7 @@ import React from "react";
 import { styles } from "./useModalSectionStyles";
 import { ModalMiddle } from "../ModalLower/ModalLower";
 import { useRouter } from "next/router";
+import { data } from "../../../data";
 
 export const ModalSection = () => {
   const router = useRouter();
@@ -26,15 +27,15 @@ export const ModalSection = () => {
         </div>
         <div className={classes.ModalSectionMiddle}>
           <img
-          className={classes.ModalSectionMiddleimg}
+            className={classes.ModalSectionMiddleimg}
             src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/RedMail.svg"
             alt="Big Mail"
           />
-          <h1 className={classes.ModalSectionMiddleHead}>Congratulations</h1>
+          <h1 className={classes.ModalSectionMiddleHead}>
+            {data.modalsection.head}
+          </h1>
           <p className={classes.ModalSectionMiddlePara}>
-            Your 90 days free SSL certificate has been issued and will arrive in
-            your email right about now. go to your email account to access the
-            link to download and enjoy free, premium security.
+            {data.modalsection.paragraph}
           </p>
         </div>
         <div className={classes.ModalSectionLast}>

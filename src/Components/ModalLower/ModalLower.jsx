@@ -1,5 +1,6 @@
 import React from "react";
 import { styles } from "./useModalLowerStyles";
+import { data } from "../../../data";
 
 export const ModalMiddle = () => {
   const classes = styles();
@@ -22,19 +23,18 @@ export const ModalMiddle = () => {
             alt="rect"
             className={classes.ModalMiddleicon3}
           />
-          <p className={classes.ModalMiddleTextPara}>Do you need a website?</p>
+          <p className={classes.ModalMiddleTextPara}>{data.modallower.head}</p>
           <h1 className={classes.ModalMiddleTextHead}>
-            Own a website for free in 5 minutes without any hassle.
+            {data.modallower.paragraph}
           </h1>
         </div>
         <div className={classes.ModalMiddleButtonsContanier}>
           <button className={classes.startBuilding}>
-            Start building for free
+            {data.modallower.button2}
           </button>
-          <button className={classes.explore}>Expore templates</button>
+          <button className={classes.explore}>{data.modallower.button1}</button>
         </div>
       </div>
-
       <img
         className={classes.ModalMiddleright}
         src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/modalpicture.svg"
