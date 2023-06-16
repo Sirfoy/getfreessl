@@ -126,4 +126,15 @@ export const data = {
   footerlast:{
     head:"Getfreessl All Rights Reserved,2023.",
   },
+  modalsection: {
+    paragraph:
+      " Your 90 days free SSL certificate has been issued and will arrive in your email right about now. go to your email account to access the link to download and enjoy free, premium security.",
+    head: "Congratulations",
+  },
+  modallower: {
+    paragraph: "Own a website for free in 5 minutes without any hassle",
+    head: "Do you need a website?",
+    button1: "Expore templates",
+    button2: "Start building for free",
+  },
 };

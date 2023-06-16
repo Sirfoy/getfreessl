@@ -4,7 +4,6 @@ export const styles = createUseStyles((theme) => ({
   ModalMiddleContanier: {
     backgroundColor: theme.color.buttonPink,
     border: `0.9px solid ${theme.color.lightRed}`,
-
     margin: "24px auto",
     display: "flex",
     position: "relative",
@@ -38,7 +37,6 @@ export const styles = createUseStyles((theme) => ({
   ModalMiddleright: {
     width: "40%",
   },
-
   ModalMiddleTextPara: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.medium,
@@ -107,7 +105,7 @@ export const styles = createUseStyles((theme) => ({
     },
   [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
     ModalMiddleright: {
-      width:"60%",        
+      width: "60%",
     },
     ModalMiddleContanier: {
       alignItems: "center",
@@ -118,9 +116,8 @@ export const styles = createUseStyles((theme) => ({
       position: "relative",
     },
     ModalMiddleButtonsContanier: {
-     
-      alignItems:"center",
-      justifyContent:"center",
+      alignItems: "center",
+      justifyContent: "center",
     },
     ModalMiddleleft: {
       width: "80%",
@@ -151,11 +148,11 @@ export const styles = createUseStyles((theme) => ({
       position: "absolute",
     },
     ModalMiddleicon3: {
-      top: '91%',
-      left: '6%',
-      right: '41%',
-      bottom: '5%',
-      position: 'absolute',
+      top: "91%",
+      left: "6%",
+      right: "41%",
+      bottom: "5%",
+      position: "absolute",
     },
     startBuilding: {
       fontSize: theme.size.defaultSize - 3,
@@ -164,26 +161,22 @@ export const styles = createUseStyles((theme) => ({
       fontSize: theme.size.defaultSize - 3,
     },
   },
-  [`@media (max-width: ${theme.breakpoints.md}px) `]:
-    {
-      ModalMiddleright: {
-        width:"70%",        
-      },
-      ModalMiddleleft: {
-        width: "100%",        
-      },    
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    ModalMiddleright: {
+      width: "70%",
     },
-    [`@media (max-width: ${theme.breakpoints.sm}px) `]:
-    {
-      startBuilding: {
-    
-        fontWeight: theme.Weight.medium,
-        fontSize: theme.size.defaultSize - 3,
-       
-      },
-      explore: {
-        fontWeight: theme.Weight.medium,
-        fontSize: theme.size.defaultSize - 3,   
-      },       
+    ModalMiddleleft: {
+      width: "100%",
     },
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    startBuilding: {
+      fontWeight: theme.Weight.medium,
+      fontSize: theme.size.defaultSize - 3,
+    },
+    explore: {
+      fontWeight: theme.Weight.medium,
+      fontSize: theme.size.defaultSize - 3,
+    },
+  },
 }));

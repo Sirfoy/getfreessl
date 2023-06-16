@@ -13,7 +13,6 @@ export const styles = createUseStyles((theme) => ({
     backgroundColor: theme.color.white,
     width: "63%",
     height: "85%",
-    backgroundColor: "#FFFFFF",
     margin: "4% auto",
   },
   ModalSectionUpper: {
@@ -30,7 +29,7 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     justifyContent: "flex-end",
     paddingRight: 16,
-    cursor:"pointer",
+    cursor: "pointer",
   },
   ModalSectionMiddle: {
     backgroundColor: theme.color.white,
@@ -60,56 +59,42 @@ export const styles = createUseStyles((theme) => ({
     lineHeight: "27px",
     paddingTop: "10px",
   },
-  ModalSectionMiddleimg:{
-    // width:"80%",
-  },
-
-   
   [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
     ModalSectionMainWrapper: {
       backgroundColor: theme.color.white,
       width: "63%",
       height: "94%",
-      backgroundColor: "#FFFFFF",
       margin: "4% auto",
     },
   },
-  [`@media (max-width: ${theme.breakpoints.md}px) `]:
-    {
-      ModalSectionMainWrapper: {
-        backgroundColor: theme.color.white,
-        width: "90%",
-        height: "70%",
-        backgroundColor: "#FFFFFF",
-        margin: "9% auto",
-      },
-      ModalSectionMiddleHead: {
-        fontSize: theme.size.defaultSize + 10,     
-      },
-      ModalSectionMiddlePara: {
-        fontSize: theme.size.defaultSize,      
-        lineHeight: "21px",     
-      },
-      
-    
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    ModalSectionMainWrapper: {
+      backgroundColor: theme.color.white,
+      width: "90%",
+      height: "70%",
+      margin: "9% auto",
     },
-    [`@media (max-width: ${theme.breakpoints.sm}px) `]:
-    {
-      ModalSectionMainWrapper: {
-        backgroundColor: theme.color.white,
-        width: "90%",
-        height: "70%",
-        backgroundColor: "#FFFFFF",
-        margin: "4% auto",
-      },
-      ModalSectionMiddleHead: {
-        fontSize: theme.size.defaultSize + 10,     
-      },
-      ModalSectionMiddlePara: {
-        fontSize: theme.size.defaultSize,      
-        lineHeight: "21px",     
-      },
-      
-    
+    ModalSectionMiddleHead: {
+      fontSize: theme.size.defaultSize + 10,
     },
+    ModalSectionMiddlePara: {
+      fontSize: theme.size.defaultSize,
+      lineHeight: "21px",
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    ModalSectionMainWrapper: {
+      backgroundColor: theme.color.white,
+      width: "90%",
+      height: "70%",
+      margin: "4% auto",
+    },
+    ModalSectionMiddleHead: {
+      fontSize: theme.size.defaultSize + 10,
+    },
+    ModalSectionMiddlePara: {
+      fontSize: theme.size.defaultSize,
+      lineHeight: "21px",
+    },
+  },
 }));
