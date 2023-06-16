@@ -11,7 +11,6 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "flex-Start",
     padding: "50px 0 35px 21px",
   },
-
   verif: {
     position: "relative",
     width: "80px",
@@ -30,7 +29,6 @@ export const styles = createUseStyles((theme) => ({
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 2,
-
     color: theme.color.lightBlack,
     margin: 0,
   },
@@ -50,12 +48,9 @@ export const styles = createUseStyles((theme) => ({
     box: {
       padding: "50px 0 44px 21px",
     },
-    verify_para: {     
-      fontSize: theme.size.defaultSize - 2 ,
+    verify_para: {
+      fontSize: theme.size.defaultSize - 2,
       lineHeight: "18px",
     },
-  },
-  [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
- 
   },
 }));
