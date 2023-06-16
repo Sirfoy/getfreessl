@@ -12,26 +12,26 @@ export const Footer = () => {
       <div className={classes.MainFooterUpperContanier}>
         <div className={classes.MainFooterTextContanier}>
           <h1 className={classes.MainFooterTextContanierHead}>
-            {data.footer.head}
+            {data?.footer?.head}
           </h1>
           <p className={classes.MainFooterTextContanierPara}>
-            {data.footer.paragraph}
+            {data?.footer?.paragraph}
           </p>
         </div>
         <div className={classes.FooterCoverageWrapper}>
           <FooterCoverage
-            head={data.footer.header1}
-            graph={data.footer.placeholder1}
+            head={data?.footer?.header1}
+            graph={data?.footer?.placeholder1}
             isborder="true"
           />
           <FooterCoverage
-            head={data.footer.header2}
-            graph={data.footer.placeholder2}
+            head={data?.footer?.header2}
+            graph={data?.footer?.placeholder2}
             isborder="true"
           />
           <FooterCoverage
-            head={data.footer.header3}
-            graph={data.footer.placeholder3}
+            head={data?.footer?.header3}
+            graph={data?.footer?.placeholder3}
           />
         </div>
       </div>

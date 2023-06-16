@@ -1,28 +1,28 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
-  ToolsMainWrapper: {
+  toolsMainWrapper: {
     width: "85%",
     margin: "0 auto",
     display: "flex",
     gap: "70px",
   },
-  ToolsleftWrapper: {
+  toolsleftWrapper: {
     width: "50%",
     display: "flex",
     alignItems: "center",
   },
-  ToolsrightWrapper: {
+  toolsrightWrapper: {
     width: "50%",
   },
-  ToolsLeftContanier: {},
-  ToolsTexHead: {
+  toolsLeftContanier: {},
+  toolsTexHead: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 42,
     lineHeight: " 59px",
     color: theme.color.black,
   },
-  ToolsTexPara: {
+  toolsTexPara: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
     fontSize: theme.size.defaultSize + 4,
@@ -32,30 +32,30 @@ export const styles = createUseStyles((theme) => ({
     color: theme.color.lightGrey,
     width: "80%",
   },
-  ToolsChecks: {
+  toolsChecks: {
     height: "144px",
   },
   [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
-    ToolsMainWrapper: {
+    toolsMainWrapper: {
       flexDirection: "column-reverse",
     },
-    ToolsleftWrapper: {
+    toolsleftWrapper: {
       width: "100%",
       paddingLeft: 52,
     },
-    ToolsrightWrapper: {
+    toolsrightWrapper: {
       width: "100%",
     },
-    ToolsTexHead: {
+    toolsTexHead: {
       width: "80%",
     },
   },
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
-    ToolsTexHead: {
+    toolsTexHead: {
       fontSize: theme.size.defaultSize + 22,
       lineHeight: " 49px",
     },
-    ToolsTexPara: {
+    toolsTexPara: {
       fontFamily: theme.font.Aeonik,
       fontWeight: theme.Weight.light,
       fontSize: theme.size.defaultSize + 4,
@@ -67,19 +67,19 @@ export const styles = createUseStyles((theme) => ({
     },
 
     [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
-      ToolsMainWrapper: {
+      toolsMainWrapper: {
         width: "100%",
         margin: "0 auto",
         display: "flex",
       },
-      ToolsleftWrapper: {
+      toolsleftWrapper: {
         paddingLeft: 40,
       },
 
-      ToolsTexHead: {
+      toolsTexHead: {
         fontSize: theme.size.defaultSize + 22,
       },
-      ToolsTexPara: {
+      toolsTexPara: {
         fontSize: theme.size.defaultSize,
       },
     },

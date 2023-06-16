@@ -25,25 +25,25 @@ export const FooterMiddle = () => {
               className={classes.FooterMiddleicon3}
             />
             <p className={classes.FooterMiddleTextPara}>
-              {data.footermiddle.head}
+              {data?.footermiddle?.head}
             </p>
             <h1 className={classes.FooterMiddleTextHead}>
-              {data.footermiddle.paragraph}
+              {data?.footermiddle?.paragraph}
             </h1>
           </div>
           <div className={classes.FooterMiddleButtonsContanier}>
             <button className={classes.startBuilding}>
-              {data.footermiddle.button1}
+              {data?.footermiddle?.button1}
             </button>
             <button className={classes.explore}>
-              {data.footermiddle.button2}
+              {data?.footermiddle?.button2}
             </button>
           </div>
         </div>
         <img
           className={classes.FooterMiddleright}
           src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/114.svg"
-          alt="yess"
+          alt="icon"
         />
       </div>
     </div>

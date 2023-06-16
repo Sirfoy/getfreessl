@@ -1,7 +1,7 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  pmainWrapper: {
+  paragraphmainWrapper: {
     background: theme.color.grey,
     width: "85%",
     margin: "70px auto",
@@ -15,13 +15,13 @@ export const styles = createUseStyles((theme) => ({
     gap: "50px",
     padding: "109px 0px ",
   },
-  pleftWrapper: {
+  paragraphleftWrapper: {
     display: "flex",
     alignItems: "center",
     gap: "80px",
     width: "50%",
   },
-  pcolumn: {
+  paragraphcolumn: {
     width: "50%",
     display: "flex",
     flexDirection: "column",
@@ -29,18 +29,18 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     gap: "70px",
   },
-  prow: {
+  paragraphrow: {
     width: "50%",
     alignItems: "center",
     justifyContent: "center",
   },
-  prightWrapper: {
+  paragraphrightWrapper: {
     width: "50%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
-  pcontent: {
+  paragraphcontent: {
     width: "80%",
   },
   psslHeader: {
@@ -82,13 +82,13 @@ export const styles = createUseStyles((theme) => ({
     contentWrapper: {
       flexDirection: "column",
     },
-    pleftWrapper: {
+    paragraphleftWrapper: {
       alignItems: "center",
       gap: "80px",
       width: "69%",
       margin: "0px auto",
     },
-    prightWrapper: {
+    paragraphrightWrapper: {
       width: "94%",
       display: "flex",
       alignItems: "center",
@@ -97,12 +97,12 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   [`@media (max-width: ${theme.breakpoints.xl}px) `]: {
-    pleftWrapper: {
+    paragraphleftWrapper: {
       width: "85%",
     },
   },
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
-    pleftWrapper: {
+    paragraphleftWrapper: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -111,10 +111,10 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
-    pcolumn: {
+    paragraphcolumn: {
       width: "100%",
     },
-    prow: {
+    paragraphrow: {
       width: "100%",
       marginRight: 20,
     },
@@ -126,13 +126,13 @@ export const styles = createUseStyles((theme) => ({
       fontSize: theme.size.defaultSize,
       lineHeight: "21px",
     },
-    prightWrapper: {
+    paragraphrightWrapper: {
       width: "100%",
     },
-    pcontent: {
+    paragraphcontent: {
       width: "100%",
     },
-    pmainWrapper: {
+    paragraphmainWrapper: {
       width: "95%",
     },
   },

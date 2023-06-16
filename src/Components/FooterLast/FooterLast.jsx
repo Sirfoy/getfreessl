@@ -13,7 +13,7 @@ export const FooterLast = () => {
           alt="social media"
         />
         <p className={classes.FooterLastLeftcopyright}>
-          {data.footerlast.head}
+          {data?.footerlast?.head}
         </p>
       </div>
       <div className={classes.FooterLastRightSection}>
