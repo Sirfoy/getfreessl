@@ -1,5 +1,6 @@
 import React from "react";
 import { styles } from "./useFooterMiddleStyles";
+import { data } from "../../../data";
 
 export const FooterMiddle = () => {
   const classes = styles();
@@ -24,17 +25,19 @@ export const FooterMiddle = () => {
               className={classes.FooterMiddleicon3}
             />
             <p className={classes.FooterMiddleTextPara}>
-              Do you need a website?
+              {data.footermiddle.head}
             </p>
             <h1 className={classes.FooterMiddleTextHead}>
-              Own a website for free in 5 minutes without any hassle.
+              {data.footermiddle.paragraph}
             </h1>
           </div>
           <div className={classes.FooterMiddleButtonsContanier}>
             <button className={classes.startBuilding}>
-              Start building for free
+              {data.footermiddle.button1}
             </button>
-            <button className={classes.explore}>Expore templates</button>
+            <button className={classes.explore}>
+              {data.footermiddle.button2}
+            </button>
           </div>
         </div>
         <img

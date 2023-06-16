@@ -1,5 +1,6 @@
 import React from "react";
 import { styles } from "./useFooterLastStyles";
+import { data } from "../../../data";
 
 export const FooterLast = () => {
   const classes = styles();
@@ -12,7 +13,7 @@ export const FooterLast = () => {
           alt="social media"
         />
         <p className={classes.FooterLastLeftcopyright}>
-          Getfreessl All Rights Reserved,2023.
+          {data.footerlast.head}
         </p>
       </div>
       <div className={classes.FooterLastRightSection}>

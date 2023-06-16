@@ -102,7 +102,6 @@ export const styles = createUseStyles((theme) => ({
       fontSize: theme.size.defaultSize - 2,
     },
   },
-
   [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
     FooterMiddleContanier: {
       display: "flex",
@@ -164,6 +163,6 @@ export const styles = createUseStyles((theme) => ({
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
     FooterMiddleleft: {
       paddingLeft: 0,
-    }
+    },
   },
 }));
