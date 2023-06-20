@@ -1,7 +1,7 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
-  paragraphmainWrapper: {
+  paragraphMainWrapper: {
     background: theme.color.grey,
     width: "85%",
     margin: "70px auto",
@@ -21,7 +21,7 @@ export const styles = createUseStyles((theme) => ({
     gap: "80px",
     width: "50%",
   },
-  paragraphcolumn: {
+  paragraphColumn: {
     width: "50%",
     display: "flex",
     flexDirection: "column",
@@ -29,7 +29,7 @@ export const styles = createUseStyles((theme) => ({
     justifyContent: "center",
     gap: "70px",
   },
-  paragraphrow: {
+  paragraphRow: {
     width: "50%",
     alignItems: "center",
     justifyContent: "center",
@@ -49,7 +49,7 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize + 42,
     lineHeight: "67px",
   },
-  psslP: {
+  psslParagraph: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
     fontSize: theme.size.defaultSize + 4,
@@ -111,10 +111,10 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
-    paragraphcolumn: {
+    paragraphColumn: {
       width: "100%",
     },
-    paragraphrow: {
+    paragraphRow: {
       width: "100%",
       marginRight: 20,
     },
@@ -122,7 +122,7 @@ export const styles = createUseStyles((theme) => ({
       fontSize: theme.size.defaultSize + 18,
       lineHeight: "48px",
     },
-    psslP: {
+    psslParagraph: {
       fontSize: theme.size.defaultSize,
       lineHeight: "21px",
     },
@@ -132,7 +132,7 @@ export const styles = createUseStyles((theme) => ({
     paragraphcontent: {
       width: "100%",
     },
-    paragraphmainWrapper: {
+    paragraphMainWrapper: {
       width: "95%",
     },
   },

@@ -11,17 +11,17 @@ export const SslProtection = () => {
   };
   const classes = styles();
   return (
-    <div className={classes.paragraphmainWrapper}>
+    <div className={classes.paragraphMainWrapper}>
       <div className={classes.contentWrapper}>
         <div className={classes.paragraphleftWrapper}>
-          <div className={classes.paragraphrow}>
+          <div className={classes.paragraphRow}>
             <Boxes
               title={data.sslprotection.head1}
               graph={data.sslprotection.body1}
               pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain.svg"
             />
           </div>
-          <div className={classes.paragraphcolumn}>
+          <div className={classes.paragraphColumn}>
             <Boxes
               title={data.sslprotection.head2}
               graph={data.sslprotection.body2}
@@ -39,7 +39,7 @@ export const SslProtection = () => {
             <h1 className={classes.psslHeader}>
               {data.sslprotection.mainHead}
             </h1>
-            <p className={classes.psslP}>{data.sslprotection.mainHeadbody}</p>
+            <p className={classes.psslParagraph}>{data.sslprotection.mainHeadbody}</p>
             <button className={classes.psslButton} onClick={handleClick}>
               <span className={classes.psslBtnText}>
                 {data.sslprotection.sslprobtn}

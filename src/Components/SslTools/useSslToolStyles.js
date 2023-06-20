@@ -22,7 +22,7 @@ export const styles = createUseStyles((theme) => ({
     lineHeight: " 59px",
     color: theme.color.black,
   },
-  toolsTexPara: {
+  toolsTexParagraph: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
     fontSize: theme.size.defaultSize + 4,
@@ -55,7 +55,7 @@ export const styles = createUseStyles((theme) => ({
       fontSize: theme.size.defaultSize + 22,
       lineHeight: " 49px",
     },
-    toolsTexPara: {
+    toolsTexParagraph: {
       fontFamily: theme.font.Aeonik,
       fontWeight: theme.Weight.light,
       fontSize: theme.size.defaultSize + 4,
@@ -79,7 +79,7 @@ export const styles = createUseStyles((theme) => ({
       toolsTexHead: {
         fontSize: theme.size.defaultSize + 22,
       },
-      toolsTexPara: {
+      toolsTexParagraph: {
         fontSize: theme.size.defaultSize,
       },
     },

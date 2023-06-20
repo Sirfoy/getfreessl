@@ -10,7 +10,9 @@ export const SslTool = () => {
         <div className={classes.toolsLeftContanier}>
           <div className={classes.tText}>
             <h1 className={classes.toolsTexHead}>{data.ssltool.head}</h1>
-            <p className={classes.toolsTexPara}>{data.ssltool.paragraph}</p>
+            <p className={classes.toolsTexParagraph}>
+              {data.ssltool.paragraph}
+            </p>
           </div>
           <div className={classes.toolsChecks}>
             <CheckBoxes title={data.ssltool.placeholder1} />
