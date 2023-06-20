@@ -1,30 +1,28 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
-  ToolsMainWrapper: {
-    margin: "0px 150px  20px 150px",
+  toolsMainWrapper: {
+    width: "85%",
+    margin: "0 auto",
     display: "flex",
+    gap: "70px",
   },
-  ToolsleftWrapper: {
+  toolsleftWrapper: {
     width: "50%",
     display: "flex",
     alignItems: "center",
   },
-  ToolsrightWrapper: {
+  toolsrightWrapper: {
     width: "50%",
   },
-  ToolsLeftContanier: {
-    width: "70%",
-     height: "388px",
-  },
-  ToolsTexHead: {
+  toolsLeftContanier: {},
+  toolsTexHead: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.bold,
     fontSize: theme.size.defaultSize + 42,
     lineHeight: " 59px",
-    paddingLeft: 10,
     color: theme.color.black,
   },
-  ToolsTexPara: {
+  toolsTexParagraph: {
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.light,
     fontSize: theme.size.defaultSize + 4,
@@ -32,8 +30,58 @@ export const styles = createUseStyles((theme) => ({
     display: " flex",
     alignItems: " center",
     color: theme.color.lightGrey,
+    width: "80%",
   },
-  ToolsChecks: {
+  toolsChecks: {
     height: "144px",
+  },
+  [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
+    toolsMainWrapper: {
+      flexDirection: "column-reverse",
+    },
+    toolsleftWrapper: {
+      width: "100%",
+      paddingLeft: 52,
+    },
+    toolsrightWrapper: {
+      width: "100%",
+    },
+    toolsTexHead: {
+      width: "80%",
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    toolsTexHead: {
+      fontSize: theme.size.defaultSize + 22,
+      lineHeight: " 49px",
+    },
+    toolsTexParagraph: {
+      fontFamily: theme.font.Aeonik,
+      fontWeight: theme.Weight.light,
+      fontSize: theme.size.defaultSize + 4,
+      lineHeight: "27px",
+      display: " flex",
+      alignItems: " center",
+      color: theme.color.lightGrey,
+      width: "80%",
+    },
+
+    [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+      toolsMainWrapper: {
+        width: "100%",
+        margin: "0 auto",
+        display: "flex",
+      },
+      toolsleftWrapper: {
+        paddingLeft: 40,
+      },
+
+      toolsTexHead: {
+        fontSize: theme.size.defaultSize + 22,
+      },
+      toolsTexParagraph: {
+        fontSize: theme.size.defaultSize,
+      },
+    },
   },
 }));

@@ -106,6 +106,26 @@ export const data = {
     placeholder3: "One step validation",
     placeholder4: "SSL Rest API",
   },
+  footer: {
+    paragraph:
+      "Join the list of satisfied users worldwide, from startups to multinationals, using Getfreessl to protect their websites and customer data.",
+    head: "Trusted Worldwide",
+    placeholder1: "Certificates",
+    placeholder2: "Browser coverage",
+    placeholder3: "Global customers",
+    header1: "40+",
+    header2: "90%",
+    header3: "4k+",
+  },
+  footermiddle: {
+    head: "Do you need a website?",
+    paragraph: "Own a website for free in 5 minutes without any hassle.",
+    button1: "Start building for free",
+    button2: "Expore templates",
+  },
+  footerlast:{
+    head:"Getfreessl All Rights Reserved,2023.",
+  },
   modalsection: {
     paragraph:
       " Your 90 days free SSL certificate has been issued and will arrive in your email right about now. go to your email account to access the link to download and enjoy free, premium security.",

@@ -24,7 +24,7 @@ export const Hero = ({ onGetClick }) => {
       <div>
         {!changed && (
           <>
-          <HeroLowerWrapper />
+            <HeroLowerWrapper />
             <SslProtection />
             <SslTool />
           </>

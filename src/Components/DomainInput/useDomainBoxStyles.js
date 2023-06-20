@@ -8,8 +8,8 @@ export const styles = createUseStyles((theme) => ({
     height: 41,
     display: "flex",
     alignItems: "center",
-    paddingLeft: "11px",
-    justifyContent: "center",
+    paddingLeft:"11px",   
+    justifyContent: "center", 
   },
   domainBoxWrapper: {
     width: "30%",
