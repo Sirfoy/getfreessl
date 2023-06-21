@@ -8,7 +8,7 @@ const App = ({ Component, pageProps }) => {
   const [appData, setAppData] = useState({
     domain: "",
     email: "",
-    step: 2,
+    step: 0,
     loading: false,
     type: null,
     task_id: null,

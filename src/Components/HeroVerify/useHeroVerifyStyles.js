@@ -4,7 +4,7 @@ export const styles = createUseStyles((theme) => ({
   HVerifyMainWrapper: {
     width: "100%",
     margin: "0 auto",
-    padding: "50px 0px 80px 0px",
+    padding: "20px 0px 80px 0px",
   },
   verifyHeader: {
     display: "flex",

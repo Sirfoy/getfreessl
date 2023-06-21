@@ -5,7 +5,8 @@ import { HeroBtn } from "../HeroButton/HeroBtn";
 import { AppContext } from "@/contexts";
 
 export const HeroHead = ({ onHeroClick }) => {
-  const { domain, updateAppData, email, validation } = useContext(AppContext);
+  const { domain, type, updateAppData, email, validation } =
+    useContext(AppContext);
   const [isError, setIsError] = useState(false);
 
   const handleDomainChange = (event) => {
@@ -57,7 +58,9 @@ export const HeroHead = ({ onHeroClick }) => {
             onChange={handleDomainChange}
           />
         </div>
-        <HeroBtn onClick={handleButtonClick} text={data.herohead.herobtn} />
+        {!type && (
+          <HeroBtn onClick={handleButtonClick} text={data.herohead.herobtn} />
+        )}
       </div>
       {isError && (
         <div className={classes.hheadError}>

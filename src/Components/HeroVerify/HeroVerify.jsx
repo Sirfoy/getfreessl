@@ -10,7 +10,7 @@ import { VerifyCheck } from "../VerifyTick/Verifytick";
 
 export const HeroVerify = () => {
   const { step, type, validation, updateAppData } = useContext(AppContext);
-  const [showContent, setShowContent] = useState(true);
+  const [showContent, setShowContent] = useState(false);
   const classesVerify = stylesVerify();
   const classes = styles();
 
@@ -27,11 +27,6 @@ export const HeroVerify = () => {
     <div className={classes.HVerifyMainWrapper}>
       <div className={classes.verifyHeader}>
         <h1 className={classes.verifyTitle}>{data.heroverify.title}</h1>
-        <button className={classes.verifyButton}>
-          <span className={classes.verifyButonText}>
-            {data.heroverify.title}
-          </span>
-        </button>
       </div>
       <div className={classes.thankYouWrapper}>
         <p className={classes.thankYouPara}>{data.heroverify.thankyoupara}</p>
