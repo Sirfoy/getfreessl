@@ -1,21 +1,27 @@
+import { useState, useContext } from "react";
 import { styles } from "./useHeroVerifyStyles";
 import { VerifySection } from "../VerifySection/VerifySection";
-import { useState } from "react";
 import { data } from "../../../data";
 import { NewCertificate } from "../NewCertificate/NewCertificate";
 import { stylesVerify } from "../Verification/verificationStyles";
 import { VerificationSummary } from "../VerificationSummary/VerificationSummary";
-export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
+import { AppContext } from "@/contexts";
+
+export const HeroVerify = ({ onRestartClick, onGetClick }) => {
+  const { step, type, validation, updateAppData } = useContext(AppContext);
+  const [showContent, setShowContent] = useState(false);
   const classesVerify = stylesVerify();
   const classes = styles();
-  const [selected, setselected] = useState(null);
-  const toggle = (i) => {
-    setselected(i);
+
+  const handleStepChange = (newStep) => {
+    if (newStep === 2 && (!type || !validation)) return;
+
+    updateAppData({ step: newStep });
+
+    if (step === newStep) setShowContent(!showContent);
+    else setShowContent(true);
   };
-  const [change, setchange] = useState(true);
-  const handleclick = () => {
-    setchange(false);
-  };
+
   return (
     <div className={classes.HVerifyMainWrapper}>
       <div className={classes.verifyHeader}>
@@ -31,7 +37,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
       </div>
       <div
         className={classesVerify.verificationMainWrapper1}
-        onClick={() => toggle(selected === 1 ? 0 : 1)}
+        onClick={() => handleStepChange(1)}
       >
         <div className={classesVerify.verifyMethod}>
           <img
@@ -44,7 +50,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
           </p>
         </div>
         <div>
-          <div className={selected === 1 ? classes.arrowUp : classes.arrowDown}>
+          <div className={step === 1 ? classes.arrowUp : classes.arrowDown}>
             <img
               className={classesVerify.verifyArrowDown}
               src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"
@@ -53,23 +59,25 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
           </div>
         </div>
       </div>
-      <div style={{ display: selected === 1 ? "block" : "none" }}>
-        <div style={{ display: change === true ? "block" : "none" }}>
+      {step === 1 && showContent && (
+        <div>
           <VerifySection
-            onProceedClick={handleclick}
+            onProceedClick={() => {}}
             onRestartClick={onRestartClick}
           />
+          {/* <VerificationSummary onRestartClick={onRestartClick} /> */}
         </div>
-        <div style={{ display: change === false ? "block" : "none" }}>
-          <VerificationSummary onRestartClick={onRestartClick} />
-        </div>
-      </div>
+      )}
       <div className={classes.verificationMainWrapper2}>
         <div
           className={classesVerify.verificationMainWrapper2}
-          onClick={() => toggle(selected === 2 ? 0 : 2)}
+          onClick={() => handleStepChange(2)}
         >
-          <div className={classesVerify.verifyMethod}>
+          <div
+            className={`${classesVerify.verifyMethod} ${
+              !(type && validation) && classesVerify.verifyInactive
+            }`}
+          >
             <img
               className={classesVerify.verifyPic}
               src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step2.svg"
@@ -77,7 +85,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
             />
             <p className={classesVerify.verifyGraph}>Get certificate</p>
           </div>
-          <div className={selected === 2 ? classes.arrowUp : classes.arrowDown}>
+          <div className={step === 2 ? classes.arrowUp : classes.arrowDown}>
             <img
               className={classesVerify.verifyArrowDown}
               src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"
@@ -85,7 +93,7 @@ export const HeroVerify = ({ onProceedClick, onRestartClick, onGetClick }) => {
             />
           </div>
         </div>
-        {selected === 2 && <NewCertificate onClick={onGetClick} />}
+        {step === 2 && showContent && <NewCertificate onClick={onGetClick} />}
       </div>
     </div>
   );

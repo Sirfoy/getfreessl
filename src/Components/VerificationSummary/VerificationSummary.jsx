@@ -3,6 +3,7 @@ import { styles } from "./useVerificationSummaryStyles";
 import { DomainBox } from "../DomainInput/DomainBox";
 import { RestartBtn } from "../RestartBtn/RestartBtn";
 import { data } from "../../../data";
+
 export const VerificationSummary = ({ onRestartClick }) => {
   const classes = styles();
   return (
@@ -33,7 +34,7 @@ export const VerificationSummary = ({ onRestartClick }) => {
         </div>
         <div className={classes.VerificationSummaryMainTextWrapper}>
           <p className={classes.VerificationSummaryParagraph}>
-          {data.verificationsummary.paragraph}
+            {data.verificationsummary.paragraph}
           </p>
 
           <div className={classes.VerificationSummaryBtnWrapper}>

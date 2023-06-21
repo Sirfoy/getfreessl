@@ -1,39 +1,35 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { styles } from "./useVerifytickStyles";
 import { HttpFile } from "../HttpFile/HttpFile";
 import { DnsCname } from "../DnsFile/DnsCname.jsx";
 import { data } from "../../../data";
+import { AppContext } from "@/contexts";
+import { ProceedBtn } from "../ProceedBtn/ProceedBtn";
+
 export function VerifyCheck({ onRestartClick, onProceedClick }) {
+  const { type, validation, updateAppData } = useContext(AppContext);
   const classes = styles();
-  const [isChecked1, setIsChecked1] = useState(false);
-  const [isChecked2, setIsChecked2] = useState(false);
-  function handleCheckbox1Change() {
-    setIsChecked1(!isChecked1);
-    setIsChecked2(false);
-  }
-  function handleCheckbox2Change() {
-    setIsChecked2(!isChecked2);
-    setIsChecked1(false);
-  }
-  const [selected, setselected] = useState(null);
-  const toggle = (i) => {
-    setselected(i);
+
+  const handleTypeChange = (type) => {
+    updateAppData({ type });
   };
+
   return (
     <div className={classes.checkBoxWrapper}>
       <label
         className={classes.checkBoxLabel}
-        onClick={() => toggle(selected === 1 ? 0 : 1)}
+        onChange={() => {
+          handleTypeChange(1);
+        }}
       >
         <input
           className={classes.checkInput}
           type="radio"
-          checked={isChecked1}
-          onChange={handleCheckbox1Change}
+          checked={type === 1}
         />
         {data.verifycheck.placeholder1}
       </label>
-      {selected === 1 && (
+      {type === 1 && validation && (
         <HttpFile
           onRestartClick={onRestartClick}
           onProceedClick={onProceedClick}
@@ -42,22 +38,29 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
 
       <label
         className={classes.checkBoxLabel}
-        onClick={() => toggle(selected === 2 ? 0 : 2)}
+        onChange={() => {
+          handleTypeChange(2);
+        }}
       >
         <input
           className={classes.checkInput}
           type="radio"
-          checked={isChecked2}
-          onChange={handleCheckbox2Change}
+          checked={type === 2}
         />
         <span className={classes.checkedRadioButton} />
         {data.verifycheck.placeholder2}
       </label>
-      {selected === 2 && (
+      {type === 2 && validation && (
         <DnsCname
           onRestartClick={onRestartClick}
           onProceedClick={onProceedClick}
         />
+      )}
+
+      {!validation && (
+        <div className={classes.requestButtonParent}>
+          <ProceedBtn text="Request Certificate" isDisabled={!Boolean(type)} />
+        </div>
       )}
     </div>
   );

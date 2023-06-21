@@ -11,7 +11,6 @@ export const stylesVerify = createUseStyles((theme) => ({
     padding: "0 24px",
     cursor: "pointer",
   },
-
   verificationMainWrapper2: {
     display: "none",
     height: "72px",
@@ -23,12 +22,14 @@ export const stylesVerify = createUseStyles((theme) => ({
     padding: "0 24px",
     cursor: "pointer",
   },
-
   verifyMethod: {
     display: "flex",
     justifyContent: " flex-start",
     alignItems: "center",
     gap: "8px",
+  },
+  verifyInactive: {
+    opacity: 0.4,
   },
   verifyGraph: {
     fontFamily: theme.font.Aeonik,
@@ -50,7 +51,6 @@ export const stylesVerify = createUseStyles((theme) => ({
       cursor: "pointer",
     },
     verificationMainWrapper2: {
-   
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",

@@ -1,15 +1,28 @@
-import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+import { useState } from "react";
+import { ThemeProvider } from "react-jss";
 import "../styles/index.css";
-import theme from '../../theme'
-
+import theme from "../../theme";
+import { AppContext } from "../contexts";
 
 const App = ({ Component, pageProps }) => {
+  const [appData, setAppData] = useState({
+    domain: "",
+    step: 1,
+    loading: false,
+    type: null,
+    validation: null,
+  });
+
+  const updateAppData = (newAppData) => {
+    setAppData({ ...appData, ...newAppData });
+  };
+
   return (
     <ThemeProvider theme={theme}>
-  
-          <Component {...pageProps} />
-       
+      <AppContext.Provider value={{ ...appData, updateAppData }}>
+        <Component {...pageProps} />
+      </AppContext.Provider>
     </ThemeProvider>
   );
 };
-export default (App)
+export default App;

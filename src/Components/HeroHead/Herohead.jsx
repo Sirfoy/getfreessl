@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { data } from "../../../data";
 import { styles } from "./useHeroHeadStyle";
 import { HeroBtn } from "../HeroButton/HeroBtn";
+import { AppContext } from "@/contexts";
+
 export const HeroHead = ({ onHeroClick }) => {
+  const { domain, updateAppData } = useContext(AppContext);
+
+  const handleDomainChange = (event) => {
+    updateAppData({ domain: event.target.value });
+  };
+
   const classes = styles();
   return (
     <div className={classes.hheadWrapper}>
@@ -28,6 +36,8 @@ export const HeroHead = ({ onHeroClick }) => {
             className={classes.hinputText}
             type="text"
             placeholder={data.herohead.placeholder}
+            value={domain}
+            onChange={handleDomainChange}
           />
         </div>
         <HeroBtn onClick={onHeroClick} text={data.herohead.herobtn} />

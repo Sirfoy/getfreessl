@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Records } from "../Records/Records";
 import { styles } from "./useDnsCnameStyles";
 import { HttpBox } from "../HttpBox/HttpBox";
 import { Actions } from "../Actions/Actions";
 import { data } from "../../../data";
+import { AppContext } from "@/contexts";
+
 export const DnsCname = ({ onRestartClick, onProceedClick }) => {
+  const { type, validation } = useContext(AppContext);
   const classes = styles();
 
   return (

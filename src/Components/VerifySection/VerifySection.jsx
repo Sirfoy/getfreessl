@@ -16,12 +16,10 @@ export const VerifySection = ({ onRestartClick, onProceedClick }) => {
             {data.verifysection.title}
           </p>
         </div>
-        <div>
-          <VerifyCheck
-            onRestartClick={onRestartClick}
-            onProceedClick={onProceedClick}
-          />
-        </div>
+        <VerifyCheck
+          onRestartClick={onRestartClick}
+          onProceedClick={onProceedClick}
+        />
       </div>
     </div>
   );

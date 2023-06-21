@@ -20,9 +20,9 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     gap: 5,
     marginBottom: 15,
-    
+
     "& input": {
-      accentColor:"black",
+      accentColor: "black",
       width: 24,
       height: "24px ",
       borderRadius: "50%",
@@ -34,5 +34,10 @@ export const styles = createUseStyles((theme) => ({
       borderRadius: "50%",
       border: `1px solid ${theme.color.lightBlack}`,
     },
+  },
+  requestButtonParent: {
+    width: "fit-content",
+    marginTop: "8px",
+    marginBottom: "16px",
   },
 }));

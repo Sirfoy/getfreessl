@@ -7,11 +7,12 @@ class MyDocument extends Document {
     const originalRenderPage = ctx.renderPage;
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App) => (props) => (
-          <JssProvider registry={registry} generateId={generateId}>
-            <App {...props} />
-          </JssProvider>
-        ),
+        enhanceApp: (App) => (props) =>
+          (
+            <JssProvider registry={registry} generateId={generateId}>
+              <App {...props} />
+            </JssProvider>
+          ),
       });
     const initialProps = await Document.getInitialProps(ctx);
     return {
@@ -29,7 +30,11 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="link to favicon" />
-          <link href="link to font" rel="stylesheet"/>
+          <link href="link to font" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
