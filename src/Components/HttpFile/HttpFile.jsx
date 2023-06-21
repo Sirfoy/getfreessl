@@ -4,10 +4,30 @@ import { HttpBox } from "../HttpBox/HttpBox";
 import { Actions } from "../Actions/Actions";
 import { data } from "../../../data";
 import { AppContext } from "@/contexts";
+import { useGenerateSsl } from "@/store";
 
-export const HttpFile = ({ onRestartClick, onProceedClick }) => {
-  const { type, validation } = useContext(AppContext);
+export const HttpFile = () => {
+  const { domain, type, validation } = useContext(AppContext);
   const classes = styles();
+  const generateSsl = useGenerateSsl();
+
+  const downloadAuthLink = () => {
+    const element = document.createElement("a");
+    element.setAttribute(
+      "href",
+      "data:text/text;charset=utf-8," +
+        encodeURIComponent(validation?.validation?.value)
+    );
+    element.setAttribute("download", validation?.validation?.token);
+
+    element.style.display = "none";
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+  };
+
   return (
     <div className={classes.httpMainWrapper}>
       <div className={classes.httpTextWrapper}>
@@ -19,7 +39,9 @@ export const HttpFile = ({ onRestartClick, onProceedClick }) => {
               isText="true"
               pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
               graph={data.httpfile.title1}
-              src={data.httpfile.source1}
+              src={
+                <div onClick={downloadAuthLink}>{data.httpfile.source1}</div>
+              }
               showBox={true}
             />
             <HttpBox
@@ -27,7 +49,7 @@ export const HttpFile = ({ onRestartClick, onProceedClick }) => {
               istext="false"
               pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step2.svg"
               graph={data.httpfile.title2}
-              src={data.httpfile.source2}
+              src={"/.well-known/acme-challenge"}
               showBox={true}
             />
             <HttpBox
@@ -36,15 +58,7 @@ export const HttpFile = ({ onRestartClick, onProceedClick }) => {
               isText="true"
               pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step3.svg"
               graph={data.httpfile.title3}
-              src={data.httpfile.source3}
-            />
-            <HttpBox
-              isHttpBox={true}
-              showBox={true}
-              isText="true"
-              pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step4.svg"
-              graph={data.httpfile.title4}
-              src={data.httpfile.source4}
+              src={`http://${domain}/.well-known/acme-challenge/${validation?.validation?.token}`}
             />
             <HttpBox
               isHttpBox={true}
@@ -52,12 +66,12 @@ export const HttpFile = ({ onRestartClick, onProceedClick }) => {
               isText="true"
               pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step4.svg"
               graph={data.httpfile.title5}
-              src={data.httpfile.source5}
+              src={""}
             />
             <Actions
               src={data.httpfile.actions}
-              onRestartClick={onRestartClick}
-              onProceedClick={onProceedClick}
+              onRestartClick={() => {}}
+              onProceedClick={generateSsl}
             />
           </>
         )}

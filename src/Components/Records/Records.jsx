@@ -1,22 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { styles } from "./useRecordStyle";
 import { RecordBox } from "../RecordBox/RecordBox";
+import { AppContext } from "@/contexts";
+
 export const Records = () => {
+  const { domain, validation } = useContext(AppContext);
   const classes = styles();
+
   return (
     <div className={classes.recordMainWrapper}>
+      <RecordBox title="Name" placeholder="" value={"_acme-challenge"} />
       <RecordBox
-        title="Name"
-        placeholder="585830023030FD48F3DD3FCA57547594940304945757.lizzy.com"
+        title="Value"
+        placeholder=""
+        value={`${validation?.value}.${domain}`}
       />
-      <RecordBox
-        title="Point to"
-        placeholder="585830023030FD48F3DD3FCA5754759494030494783249503947
-        565840303448577754930029384479291012337447475757gf.gtfssl.com"
-      />
-      <RecordBox title="TTL" placeholder="3600 ( or lower)" />
+      <RecordBox title="TTL" placeholder="" value="30 seconds" />
     </div>
   );
 };
-
- 

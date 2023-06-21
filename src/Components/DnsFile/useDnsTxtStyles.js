@@ -5,5 +5,6 @@ export const styles = createUseStyles((theme) => ({
     background: theme.color.white,
     border: `1px solid ${theme.color.placeholdergrey}`,
     borderRadius: 4,
+    margin: "0 6px",
   },
 }));

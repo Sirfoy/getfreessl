@@ -4,6 +4,9 @@ export const styles = createUseStyles((theme) => ({
   checkBoxWrapper: {
     display: "flex",
     flexDirection: "column",
+    padding: "16px 24px",
+    background: "rgb(242, 242, 242, 0.6)",
+    marginTop: "1px",
   },
   checkInput: {
     cursor: "pointer",

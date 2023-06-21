@@ -6,15 +6,16 @@ import { NewCertificate } from "../NewCertificate/NewCertificate";
 import { stylesVerify } from "../Verification/verificationStyles";
 import { VerificationSummary } from "../VerificationSummary/VerificationSummary";
 import { AppContext } from "@/contexts";
+import { VerifyCheck } from "../VerifyTick/Verifytick";
 
-export const HeroVerify = ({ onRestartClick, onGetClick }) => {
+export const HeroVerify = () => {
   const { step, type, validation, updateAppData } = useContext(AppContext);
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true);
   const classesVerify = stylesVerify();
   const classes = styles();
 
   const handleStepChange = (newStep) => {
-    if (newStep === 2 && (!type || !validation)) return;
+    if (newStep === 2 && (!type || !validation?.is_cert_generated)) return;
 
     updateAppData({ step: newStep });
 
@@ -42,7 +43,11 @@ export const HeroVerify = ({ onRestartClick, onGetClick }) => {
         <div className={classesVerify.verifyMethod}>
           <img
             className={classesVerify.verifyPic}
-            src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
+            src={
+              validation?.is_cert_generated
+                ? ""
+                : "https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
+            }
             alt="check"
           />
           <p className={classesVerify.verifyGraph}>
@@ -61,11 +66,11 @@ export const HeroVerify = ({ onRestartClick, onGetClick }) => {
       </div>
       {step === 1 && showContent && (
         <div>
-          <VerifySection
-            onProceedClick={() => {}}
-            onRestartClick={onRestartClick}
-          />
-          {/* <VerificationSummary onRestartClick={onRestartClick} /> */}
+          {validation?.is_cert_generated ? (
+            <VerificationSummary />
+          ) : (
+            <VerifyCheck />
+          )}
         </div>
       )}
       <div className={classes.verificationMainWrapper2}>
@@ -93,7 +98,7 @@ export const HeroVerify = ({ onRestartClick, onGetClick }) => {
             />
           </div>
         </div>
-        {step === 2 && showContent && <NewCertificate onClick={onGetClick} />}
+        {step === 2 && showContent && <NewCertificate />}
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   httpMainWrapper: {
     padding: 32,
+    margin: "0 6px",
     gap: 10,
     color: theme.color.white,
     border: `1px solid ${theme.color.placeholdergrey}`,
@@ -18,5 +19,4 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize,
     color: theme.color.lightGrey,
   },
-  
 }));

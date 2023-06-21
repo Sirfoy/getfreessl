@@ -1,14 +1,31 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { data } from "../../../data";
 import { styles } from "./useHeroHeadStyle";
 import { HeroBtn } from "../HeroButton/HeroBtn";
 import { AppContext } from "@/contexts";
 
 export const HeroHead = ({ onHeroClick }) => {
-  const { domain, updateAppData } = useContext(AppContext);
+  const { domain, updateAppData, email, validation } = useContext(AppContext);
+  const [isError, setIsError] = useState(false);
 
   const handleDomainChange = (event) => {
     updateAppData({ domain: event.target.value });
+  };
+
+  const handleButtonClick = () => {
+    let newDomain = domain;
+    newDomain = domain.replace(/www./g, "");
+    updateAppData({ domain: newDomain });
+
+    if (
+      !/^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/.test(
+        newDomain
+      )
+    )
+      return setIsError(true);
+
+    setIsError(false);
+    onHeroClick();
   };
 
   const classes = styles();
@@ -40,8 +57,18 @@ export const HeroHead = ({ onHeroClick }) => {
             onChange={handleDomainChange}
           />
         </div>
-        <HeroBtn onClick={onHeroClick} text={data.herohead.herobtn} />
+        <HeroBtn onClick={handleButtonClick} text={data.herohead.herobtn} />
       </div>
+      {isError && (
+        <div className={classes.hheadError}>
+          The specified domain name is not valid
+        </div>
+      )}
+      {validation?.is_mailed && (
+        <div className={classes.hheadError}>
+          SSL certificate generated successfully and mailed to {email}
+        </div>
+      )}
     </div>
   );
 };

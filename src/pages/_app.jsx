@@ -7,7 +7,8 @@ import { AppContext } from "../contexts";
 const App = ({ Component, pageProps }) => {
   const [appData, setAppData] = useState({
     domain: "",
-    step: 1,
+    email: "",
+    step: 2,
     loading: false,
     type: null,
     task_id: null,

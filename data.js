@@ -23,12 +23,12 @@ export const data = {
       "Enjoy website's credibility and search engine rankings. Improve your chances of being seen by potential customers.",
   },
 
-  dnscname: {
+  dnstxt: {
     placeholder1:
       "Sign In to your DNS provider, typically the registrar of your domain. ",
     placeholder2: "Navigate to the section where DNS records are managed.",
-    placeholder3: "Add the following CNAME record",
-    placeholder4: "Save your CNAME record and click “Proceed” to continue",
+    placeholder3: "Add the following TXT record",
+    placeholder4: "Save your TXT record and click “Proceed” to continue",
     actions: "How to use DNS verification?",
   },
 
@@ -73,13 +73,12 @@ export const data = {
     domain2: "Verification method",
     placeholder3: "pending",
     domain3: "Verification status",
-    paragraph:
-      "Once your verification has been approved. you can proceed by clicking “Get certificate” below",
+    paragraph: "Proceed by clicking “Get certificate” below",
   },
   newcertificate: {
-    head: "Congratulations!! Your domain has been successfully verified. You ajust a step away from owning a SSL certificate that will secure your website for 90 days . Please enter your email address below to get your certificate.",
+    head: "Congratulations!! Your domain has been successfully verified. You are just a step away from owning a SSL certificate that will secure your website for 90 days . Please enter your email address below to get your certificate.",
     paragraph: "Please enter an email address below",
-    certificatebtn: "submit",
+    certificatebtn: "Submit",
     placeholder: "Email address",
   },
   sslprotection: {
@@ -123,8 +122,8 @@ export const data = {
     button1: "Start building for free",
     button2: "Expore templates",
   },
-  footerlast:{
-    head:"Getfreessl All Rights Reserved,2023.",
+  footerlast: {
+    head: "Getfreessl All Rights Reserved,2023.",
   },
   modalsection: {
     paragraph:

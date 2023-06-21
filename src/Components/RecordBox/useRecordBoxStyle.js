@@ -14,6 +14,10 @@ export const styles = createUseStyles((theme) => ({
   inputRecordBox: {
     width: "100%",
     border: 0,
+    fontFamily: theme.font.Aeonik,
+    fontWeight: theme.Weight.light,
+    fontSize: theme.size.defaultSize,
+
     "&:focus": {
       outline: "none",
       fontFamily: theme.font.Aeonik,

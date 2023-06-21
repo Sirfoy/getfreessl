@@ -13,11 +13,11 @@ export const styles = createUseStyles((theme) => ({
     background: "rgba(255, 166, 181, 0.2)",
     borderRadius: 4,
     display: "flex",
-    alignItems: 'flex-start',
+    alignItems: "flex-start",
     display: "flex",
-   
+
     gap: "10px",
-   padding:"10px",
+    padding: "10px",
   },
   getCertificateTextHead: {
     background: theme.color.white,
@@ -28,8 +28,8 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize,
     display: "flex",
     alignItems: "center",
-    color: theme.color.lightGrey ,
-    paddingBottom:"16px",
+    color: theme.color.lightGrey,
+    paddingBottom: "16px",
   },
   getCertificateFramePic: {
     width: 64,
@@ -42,10 +42,10 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     color: theme.color.lightBlack,
-    paddingRight:"5px",
-    lineHeight:"21px",
-    wordWrap:"break-word",
-    margin:0,
+    paddingRight: "5px",
+    lineHeight: "21px",
+    wordWrap: "break-word",
+    margin: 0,
   },
 
   getCertificateText: {
@@ -62,33 +62,30 @@ export const styles = createUseStyles((theme) => ({
     gap: 16,
   },
 
-  inputGetCertificateWrapper: {
-    height: 50,
+  inputGetCertificateWrapper: {},
+  inputGetCertificate: {
     border: `1px solid ${theme.color.blackvar}`,
     borderRadius: 4,
-    display: "flex",
+    width: "100%",
+    padding: "12px",
+    boxSizing: "border-box",
+    fontSize: theme.size.defaultSize + 2,
+    fontWeight: theme.Weight.light,
+    fontFamily: theme.font.Aeonik,
+
     "&:hover": {
       border: `1px solid ${theme.color.lightBlack}`,
       cursor: "pointer",
     },
-  },
-  inputGetCertificate: {
-    width: "80%",
-    border: 0,
-    paddingLeft: "20px",
 
     "&:focus": {
       fontWeight: theme.Weight.medium,
       outline: "none",
-      fontFamily: theme.font.Inter,
       fontWeight: theme.Weight.light,
-      fontSize: theme.size.defaultSize + 2,
       color: theme.color.lightBlack,
     },
     "&::placeholder": {
-      fontFamily: theme.font.Aeonik,
       fontWeight: theme.Weight.light,
-      fontSize: theme.size.defaultSize,
       color: theme.color.placeholdergrey2,
     },
   },
@@ -103,6 +100,10 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize + 2,
     textAlign: "center",
     color: theme.color.white,
+    width: "fit-content",
+    display: "flex",
+    alignItems: "center",
+
     "&:hover": {
       background: theme.color.LightRedHover,
       border: "none",
@@ -110,7 +111,7 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   getCertificateButton: {
-    paddingTop:"10px",
+    paddingTop: "10px",
     display: "flex",
     justifyContent: "flex-end",
   },
@@ -122,10 +123,10 @@ export const styles = createUseStyles((theme) => ({
       display: "flex",
       alignItems: "center",
       color: theme.color.lightBlack,
-      paddingRight:"5px",
-      lineHeight:"18px",
-      wordWrap:"break-word",
-      margin:0,
+      paddingRight: "5px",
+      lineHeight: "18px",
+      wordWrap: "break-word",
+      margin: 0,
     },
   },
 }));

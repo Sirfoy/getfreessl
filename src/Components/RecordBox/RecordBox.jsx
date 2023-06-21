@@ -9,6 +9,7 @@ export const RecordBox = (props) => {
         <input
           className={classes.inputRecordBox}
           type="text"
+          value={props?.value}
           placeholder={props?.placeholder}
         />
       </div>

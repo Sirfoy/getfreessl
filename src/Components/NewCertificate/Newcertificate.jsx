@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import { styles } from "./useNewCertificateStyles";
 import { data } from "../../../data";
-export const NewCertificate = ({ onClick }) => {
+import { AppContext } from "@/contexts";
+import { useMailSsl } from "@/store";
+import { Spinner } from "../Spinner";
+
+export const NewCertificate = () => {
   const classes = styles();
+  const { email, loading, validation, updateAppData } = useContext(AppContext);
+  const mailSsl = useMailSsl();
+
+  const handleEmailChange = (event) => {
+    updateAppData({ email: event.target.value });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    mailSsl();
+  };
+
   return (
     <div className={classes.getCertificateMainWrapper}>
       <div className={classes.getCertificateFrameWrapper}>
@@ -19,18 +35,25 @@ export const NewCertificate = ({ onClick }) => {
         <div className={classes.getCertificateTextHead}>
           {data.newcertificate.paragraph}
         </div>
-        <div className={classes.inputGetCertificateWrapper}>
+        <form
+          className={classes.inputGetCertificateWrapper}
+          onSubmit={handleSubmit}
+        >
           <input
             className={classes.inputGetCertificate}
-            type="text"
+            type="email"
+            value={email}
+            onChange={handleEmailChange}
             placeholder={data.newcertificate.placeholder}
+            disabled={Boolean(validation?.is_mailed)}
+            required
           />
-        </div>
-        <div className={classes.getCertificateButton}>
-          <button className={classes.getCertificateBtn} onClick={onClick}>
-            {data.newcertificate.certificatebtn}
-          </button>
-        </div>
+          <div className={classes.getCertificateButton}>
+            <button type="submit" className={classes.getCertificateBtn}>
+              {data.newcertificate.certificatebtn} {loading && <Spinner />}
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );

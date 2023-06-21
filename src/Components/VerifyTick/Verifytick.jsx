@@ -1,13 +1,13 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { styles } from "./useVerifytickStyles";
 import { HttpFile } from "../HttpFile/HttpFile";
-import { DnsCname } from "../DnsFile/DnsCname.jsx";
+import DnsTxt from "../DnsFile/DnsTxt";
 import { data } from "../../../data";
 import { AppContext } from "@/contexts";
 import { ProceedBtn } from "../ProceedBtn/ProceedBtn";
 import { useCreateTask } from "../../store";
 
-export function VerifyCheck({ onRestartClick, onProceedClick }) {
+export function VerifyCheck() {
   const { type, task_id, validation, updateAppData } = useContext(AppContext);
   const classes = styles();
   const createTask = useCreateTask();
@@ -28,15 +28,11 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
           className={classes.checkInput}
           type="radio"
           checked={type === 1}
+          onChange={() => {}}
         />
         {data.verifycheck.placeholder1}
       </label>
-      {type === 1 && validation && (
-        <HttpFile
-          onRestartClick={onRestartClick}
-          onProceedClick={onProceedClick}
-        />
-      )}
+      {type === 1 && validation && <HttpFile />}
 
       <label
         className={classes.checkBoxLabel}
@@ -48,16 +44,12 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
           className={classes.checkInput}
           type="radio"
           checked={type === 2}
+          onChange={() => {}}
         />
         <span className={classes.checkedRadioButton} />
         {data.verifycheck.placeholder2}
       </label>
-      {type === 2 && validation && (
-        <DnsCname
-          onRestartClick={onRestartClick}
-          onProceedClick={onProceedClick}
-        />
-      )}
+      {type === 2 && validation && <DnsTxt />}
 
       {!task_id && !validation && (
         <div className={classes.requestButtonParent}>

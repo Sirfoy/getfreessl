@@ -16,7 +16,7 @@ export const useCreateTask = () => {
       if (data?.task_id) {
         let counter = 0;
 
-        while (counter < 4) {
+        while (counter < 5) {
           const validation = await verifyTask(data?.task_id);
 
           if (validation) {
@@ -28,7 +28,7 @@ export const useCreateTask = () => {
             counter = 4;
           }
           counter += 1;
-          await new Promise((r) => setTimeout(r, 1500));
+          await new Promise((r) => setTimeout(r, 2000));
         }
       }
     } catch (error) {

@@ -1,4 +1,5 @@
 import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+
 export const styles = createUseStyles((theme) => ({
   hheadWrapper: {
     display: "flex",
@@ -117,6 +118,12 @@ export const styles = createUseStyles((theme) => ({
         lineHeight: "21px",
       },
     },
+  },
+  hheadError: {
+    padding: "20px",
+    margin: "10px 0",
+    background: "#F09A00",
+    fontFamily: theme.font.Aeonik,
   },
   [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
     hheadHead: {
