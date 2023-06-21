@@ -10,6 +10,7 @@ const App = ({ Component, pageProps }) => {
     step: 1,
     loading: false,
     type: null,
+    task_id: null,
     validation: null,
   });
 

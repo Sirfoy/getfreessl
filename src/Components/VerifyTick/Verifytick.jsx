@@ -5,10 +5,12 @@ import { DnsCname } from "../DnsFile/DnsCname.jsx";
 import { data } from "../../../data";
 import { AppContext } from "@/contexts";
 import { ProceedBtn } from "../ProceedBtn/ProceedBtn";
+import { useCreateTask } from "../../store";
 
 export function VerifyCheck({ onRestartClick, onProceedClick }) {
-  const { type, validation, updateAppData } = useContext(AppContext);
+  const { type, task_id, validation, updateAppData } = useContext(AppContext);
   const classes = styles();
+  const createTask = useCreateTask();
 
   const handleTypeChange = (type) => {
     updateAppData({ type });
@@ -57,9 +59,13 @@ export function VerifyCheck({ onRestartClick, onProceedClick }) {
         />
       )}
 
-      {!validation && (
+      {!task_id && !validation && (
         <div className={classes.requestButtonParent}>
-          <ProceedBtn text="Request Certificate" isDisabled={!Boolean(type)} />
+          <ProceedBtn
+            text="Request Certificate"
+            isDisabled={!Boolean(type)}
+            onClick={createTask}
+          />
         </div>
       )}
     </div>
