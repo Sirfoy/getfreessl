@@ -18,8 +18,11 @@
   format:('truetype');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-style: normal; 
-
 }

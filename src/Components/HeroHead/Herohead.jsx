@@ -1,13 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { data } from "../../../data";
 import { styles } from "./useHeroHeadStyle";
 import { HeroBtn } from "../HeroButton/HeroBtn";
 import { AppContext } from "@/contexts";
 
 export const HeroHead = ({ onHeroClick }) => {
-  const { domain, type, updateAppData, email, validation } =
+  const { domain, type, updateAppData, email, validation, error } =
     useContext(AppContext);
-  const [isError, setIsError] = useState(false);
 
   const handleDomainChange = (event) => {
     updateAppData({ domain: event.target.value });
@@ -23,9 +22,9 @@ export const HeroHead = ({ onHeroClick }) => {
         newDomain
       )
     )
-      return setIsError(true);
+      return updateAppData({ error: "The specified domain name is not valid" });
 
-    setIsError(false);
+    updateAppData({ error: null });
     onHeroClick();
   };
 
@@ -58,17 +57,15 @@ export const HeroHead = ({ onHeroClick }) => {
             onChange={handleDomainChange}
           />
         </div>
-        {!type && (
-          <HeroBtn onClick={handleButtonClick} text={data.herohead.herobtn} />
-        )}
+        <HeroBtn
+          onClick={handleButtonClick}
+          text={data.herohead.herobtn}
+          visibility={!Boolean(type)}
+        />
       </div>
-      {isError && (
-        <div className={classes.hheadError}>
-          The specified domain name is not valid
-        </div>
-      )}
+      {error && <div className={classes.hheadError}>{error}</div>}
       {validation?.is_mailed && (
-        <div className={classes.hheadError}>
+        <div className={classes.hheadSuccess}>
           SSL certificate generated successfully and mailed to {email}
         </div>
       )}

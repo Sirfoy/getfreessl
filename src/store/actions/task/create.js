@@ -20,16 +20,22 @@ export const useCreateTask = () => {
           const validation = await verifyTask(data?.task_id);
 
           if (validation) {
-            updateAppData({
+            counter = 4;
+            return updateAppData({
               loading: false,
               task_id: data?.task_id,
               validation,
             });
-            counter = 4;
           }
           counter += 1;
           await new Promise((r) => setTimeout(r, 2000));
         }
+
+        updateAppData({
+          loading: false,
+          task_id: data?.task_id,
+          validation: { is_polling: true },
+        });
       }
     } catch (error) {
       console.log(error);

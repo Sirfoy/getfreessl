@@ -1,15 +1,36 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { styles } from "./useHttpFileStyles";
 import { HttpBox } from "../HttpBox/HttpBox";
 import { Actions } from "../Actions/Actions";
 import { data } from "../../../data";
-import { AppContext } from "@/contexts";
+import { AppContext, initialAppData } from "@/contexts";
 import { useGenerateSsl } from "@/store";
+import { getCountdown } from "@/utilities";
 
 export const HttpFile = () => {
-  const { domain, type, validation } = useContext(AppContext);
+  const { domain, type, validation, updateAppData } = useContext(AppContext);
+  const countdownExpiry = Date.now() + 5 * 60 * 1000;
+  const [countdown, setCountdown] = useState(getCountdown(countdownExpiry));
   const classes = styles();
   const generateSsl = useGenerateSsl();
+
+  useEffect(() => {
+    const countdownInterval = setInterval(() => {
+      const countdown = getCountdown(countdownExpiry);
+      if (countdown === "00m 00s") {
+        window.scrollTo(0, 0);
+        updateAppData({
+          ...initialAppData,
+          error: "Domain verification failed",
+        });
+      }
+      setCountdown(countdown);
+    }, 1000);
+
+    return () => {
+      clearInterval(countdownInterval);
+    };
+  }, []);
 
   const downloadAuthLink = () => {
     const element = document.createElement("a");
@@ -24,7 +45,6 @@ export const HttpFile = () => {
     document.body.appendChild(element);
 
     element.click();
-
     document.body.removeChild(element);
   };
 
@@ -33,7 +53,12 @@ export const HttpFile = () => {
       <div className={classes.httpTextWrapper}>
         {type === 1 && validation && (
           <>
-            <p className={classes.httpTextP}>{data.httpfile.head}</p>
+            <div className={classes.httpTextParent}>
+              <p className={classes.httpTextP}>{data.httpfile.head}</p>
+              <div className={classes.httpCountdown}>
+                <p className="countdown">{countdown}</p>
+              </div>
+            </div>
             <HttpBox
               isHttpBox={true}
               isText="true"

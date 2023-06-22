@@ -122,7 +122,13 @@ export const styles = createUseStyles((theme) => ({
   hheadError: {
     padding: "20px",
     margin: "10px 0",
-    background: "#F09A00",
+    background: "#F9A40A",
+    fontFamily: theme.font.Aeonik,
+  },
+  hheadSuccess: {
+    background: "#ACF0DF",
+    padding: "20px",
+    margin: "10px 0",
     fontFamily: theme.font.Aeonik,
   },
   [`@media (max-width: ${theme.breakpoints.sm}px)`]: {

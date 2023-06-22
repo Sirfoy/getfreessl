@@ -49,7 +49,7 @@ export const data = {
     placeholder2: "DNS (CNAME) ",
   },
   httpfile: {
-    head: "Please follow the steps below to verify your domain using HTTP file  upload.",
+    head: "Please follow the steps below to verify your domain using HTTP file upload within the next 5 minutes.",
     title1: "Download your auth file using the following link: ",
     source1: "Download auth file",
     title2: "Upload the Auth file toyour HTTP server under ",
