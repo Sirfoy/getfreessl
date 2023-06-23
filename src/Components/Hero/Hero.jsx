@@ -9,20 +9,21 @@ import { HeroVerify } from "../HeroVerify/HeroVerify";
 
 export const Hero = ({ onGetClick }) => {
   const classes = styles();
-  const [changed, setchanged] = useState(false);
+  const [isVerify, setIsVerify] = useState(false);
   const handleclicked = () => {
-    setchanged(!changed);
+    if (isVerify) return;
+    setIsVerify(!isVerify);
   };
   return (
     <>
       <div className={classes.HeroWrapper}>
-        <HeroHead onHeroClick={handleclicked} />
-        {changed && (
+        <HeroHead onHeroClick={handleclicked} isVerify={isVerify} />
+        {isVerify && (
           <HeroVerify onRestartClick={handleclicked} onGetClick={onGetClick} />
         )}
       </div>
       <div>
-        {!changed && (
+        {!isVerify && (
           <>
             <HeroLowerWrapper />
             <SslProtection />

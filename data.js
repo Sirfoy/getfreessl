@@ -9,7 +9,7 @@ export const data = {
     hheadParaP:
       " Get a headstart for three months of free certification. You can get    your website up and running and serve clients without worries about cyber threats and data theft.",
     placeholder: "Enter Primary Domain",
-    herobtn: "Generate SSL Certificate",
+    herobtn: "Proceed",
   },
   HeroLowerWrapper: {
     title1: "Free forever",

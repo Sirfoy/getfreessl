@@ -1,11 +1,13 @@
 import { useContext } from "react";
 import { AppContext } from "@/contexts";
+import { useErrorHandler } from "@/utilities";
 import { client } from "../client";
 import { useVerifyTask } from "./verify";
 
 export const useCreateTask = () => {
   const { domain, type, updateAppData } = useContext(AppContext);
   const verifyTask = useVerifyTask();
+  const errorHandler = useErrorHandler();
 
   return async () => {
     updateAppData({ loading: true });
@@ -38,8 +40,7 @@ export const useCreateTask = () => {
         });
       }
     } catch (error) {
-      console.log(error);
-      updateAppData({ loading: false });
+      errorHandler(error);
     }
   };
 };

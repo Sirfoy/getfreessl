@@ -12,6 +12,7 @@ export const PollValidation = () => {
   const verifyTask = useVerifyTask();
 
   useEffect(() => {
+    pollValidation();
     const countdownInterval = setInterval(() => {
       const countdown = getCountdown(countdownExpiry);
       if (countdown === "00m 00s") {
@@ -30,18 +31,19 @@ export const PollValidation = () => {
   }, []);
 
   const pollValidation = async () => {
-    while (1 === 1) {
+    let counter = 0;
+    let now = Date.now();
+    while (counter < 30 && countdownExpiry - now >= 5000) {
       const validation = await verifyTask(task_id);
-      if (validation) {
-        updateAppData({
+      if (validation)
+        return updateAppData({
           validation,
         });
-        await new Promise((r) => setTimeout(r, 5000));
-      }
+      counter += 1;
+      now = Date.now();
+      await new Promise((r) => setTimeout(r, 5000));
     }
   };
-
-  pollValidation();
 
   return (
     <div className={classes.root}>

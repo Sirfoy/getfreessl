@@ -4,11 +4,13 @@ import { styles } from "./useHeroHeadStyle";
 import { HeroBtn } from "../HeroButton/HeroBtn";
 import { AppContext } from "@/contexts";
 
-export const HeroHead = ({ onHeroClick }) => {
-  const { domain, type, updateAppData, email, validation, error } =
+export const HeroHead = ({ onHeroClick, isVerify }) => {
+  const { domain, updateAppData, email, validation, error } =
     useContext(AppContext);
 
   const handleDomainChange = (event) => {
+    if (isVerify) return;
+
     updateAppData({ domain: event.target.value });
   };
 
@@ -60,7 +62,7 @@ export const HeroHead = ({ onHeroClick }) => {
         <HeroBtn
           onClick={handleButtonClick}
           text={data.herohead.herobtn}
-          visibility={!Boolean(type)}
+          visibility={!isVerify}
         />
       </div>
       {error && <div className={classes.hheadError}>{error}</div>}

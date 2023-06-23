@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { AppContext } from "@/contexts";
 import { client } from "../client";
+import { useErrorHandler } from "@/utilities";
 
 export const useMailSsl = () => {
   const { email, validation, updateAppData } = useContext(AppContext);
+  const errorHandler = useErrorHandler();
 
   return async () => {
     if (!validation) return;
@@ -16,8 +18,7 @@ export const useMailSsl = () => {
       updateAppData({ loading: false, validation: newValidation });
       window.scrollTo(0, 0);
     } catch (error) {
-      console.log(error);
-      updateAppData({ loading: false });
+      errorHandler(error);
     }
   };
 };

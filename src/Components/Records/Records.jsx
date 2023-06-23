@@ -9,11 +9,7 @@ export const Records = () => {
 
   return (
     <div className={classes.recordMainWrapper}>
-      <RecordBox
-        title="Name"
-        placeholder=""
-        value={`_acme-challenge.${domain}`}
-      />
+      <RecordBox title="Name" placeholder="" value={`_acme-challenge`} />
       <RecordBox
         title="Value"
         placeholder=""

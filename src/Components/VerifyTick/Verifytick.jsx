@@ -32,7 +32,7 @@ export function VerifyCheck() {
         />
         {data.verifycheck.placeholder1}
       </label>
-      {type === 1 && validation && <HttpFile />}
+      {type === 1 && validation?.uuid && <HttpFile />}
 
       <label
         className={classes.checkBoxLabel}
@@ -49,7 +49,7 @@ export function VerifyCheck() {
         <span className={classes.checkedRadioButton} />
         {data.verifycheck.placeholder2}
       </label>
-      {type === 2 && validation && <DnsTxt />}
+      {type === 2 && validation?.uuid && <DnsTxt />}
 
       {!task_id && !validation && (
         <div className={classes.requestButtonParent}>
