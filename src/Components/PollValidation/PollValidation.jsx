@@ -33,15 +33,18 @@ export const PollValidation = () => {
   const pollValidation = async () => {
     let counter = 0;
     let now = Date.now();
-    while (counter < 30 && countdownExpiry - now >= 5000) {
-      const validation = await verifyTask(task_id);
+    const pause = async () => {
+      await new Promise((res) => setTimeout(res, 5000));
+    };
+    for (counter = 0; counter < 30; counter++) {
+      const validation =
+        countdownExpiry - now >= 5000 ? await verifyTask(task_id) : null;
       if (validation)
         return updateAppData({
           validation,
         });
-      counter += 1;
       now = Date.now();
-      await new Promise((r) => setTimeout(r, 5000));
+      await pause();
     }
   };
 

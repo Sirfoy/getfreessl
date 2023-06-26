@@ -11,10 +11,12 @@ export const NewCertificate = () => {
   const mailSsl = useMailSsl();
 
   const handleEmailChange = (event) => {
+    if (validation?.is_mailed) return;
     updateAppData({ email: event.target.value });
   };
 
   const handleSubmit = (event) => {
+    if (validation?.is_mailed) return;
     event.preventDefault();
     mailSsl();
   };

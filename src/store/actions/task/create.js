@@ -10,6 +10,7 @@ export const useCreateTask = () => {
   const errorHandler = useErrorHandler();
 
   return async () => {
+    if (!domain || domain?.trim() === "") return;
     updateAppData({ loading: true });
 
     try {
@@ -22,7 +23,7 @@ export const useCreateTask = () => {
           const validation = await verifyTask(data?.task_id);
 
           if (validation) {
-            counter = 4;
+            counter = 6;
             return updateAppData({
               loading: false,
               task_id: data?.task_id,

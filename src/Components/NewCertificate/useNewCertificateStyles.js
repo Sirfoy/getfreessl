@@ -75,7 +75,6 @@ export const styles = createUseStyles((theme) => ({
 
     "&:hover": {
       border: `1px solid ${theme.color.lightBlack}`,
-      cursor: "pointer",
     },
 
     "&:focus": {

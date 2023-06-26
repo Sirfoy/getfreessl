@@ -28,7 +28,8 @@ export const data = {
       "Sign In to your DNS provider, typically the registrar of your domain. ",
     placeholder2: "Navigate to the section where DNS records are managed.",
     placeholder3: "Add the following TXT record",
-    placeholder4: "Save your TXT record and click “Proceed” to continue",
+    placeholder4:
+      "Save your TXT record, wait a few seconds for the change to propagate and click “Proceed” to continue",
     actions: "How to use DNS verification?",
   },
 
@@ -45,8 +46,8 @@ export const data = {
       " We need you to verifiy ownership of the domain you provided, please choose a preferred verification method and click “Proceed” ",
   },
   verifycheck: {
-    placeholder1: " HTTP file upload ",
-    placeholder2: "DNS (CNAME) ",
+    placeholder1: " HTTP File Upload",
+    placeholder2: "DNS",
   },
   httpfile: {
     head: "Please follow the steps below to verify your domain using HTTP file upload within the next 5 minutes.",
