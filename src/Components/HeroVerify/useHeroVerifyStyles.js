@@ -45,7 +45,7 @@ export const styles = createUseStyles((theme) => ({
   },
   thankYouPara: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
     display: "flex",
     alignItems: "center",
@@ -53,7 +53,8 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     margin: 0,
-    padding: 0,
+    padding: 0,     
+    lineHeight: "21px",
   },
   arrowUp: {
     transition: "transform 0.3s ease-in-out",

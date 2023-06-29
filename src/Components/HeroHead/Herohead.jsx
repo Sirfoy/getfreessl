@@ -13,7 +13,6 @@ export const HeroHead = ({ onHeroClick, isVerify }) => {
 
     updateAppData({ domain: event.target.value });
   };
-
   const handleButtonClick = () => {
     let newDomain = domain;
     newDomain = domain.replace(/www./g, "");
@@ -29,7 +28,6 @@ export const HeroHead = ({ onHeroClick, isVerify }) => {
     updateAppData({ error: null });
     onHeroClick();
   };
-
   const classes = styles();
   return (
     <div className={classes.hheadWrapper}>

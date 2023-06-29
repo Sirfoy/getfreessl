@@ -13,7 +13,6 @@ export const HeroVerify = () => {
   const [showContent, setShowContent] = useState(false);
   const classesVerify = stylesVerify();
   const classes = styles();
-
   const handleStepChange = (newStep) => {
     if (newStep === 2 && (!type || !validation?.is_cert_generated)) return;
 
@@ -22,7 +21,6 @@ export const HeroVerify = () => {
     if (step === newStep) setShowContent(!showContent);
     else setShowContent(true);
   };
-
   return (
     <div className={classes.HVerifyMainWrapper}>
       <div className={classes.verifyHeader}>
@@ -40,7 +38,7 @@ export const HeroVerify = () => {
             className={classesVerify.verifyPic}
             src={
               validation?.is_cert_generated
-                ? ""
+                ? "https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/dablack.svg"
                 : "https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
             }
             alt="check"
@@ -87,7 +85,9 @@ export const HeroVerify = () => {
           </div>
           <div className={step === 2 ? classes.arrowUp : classes.arrowDown}>
             <img
-              className={classesVerify.verifyArrowDown}
+              className={`${classesVerify.verifyArrowDown} ${
+                !(type && validation) && classesVerify.verifyInactive
+              }`}
               src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/arrowdown.png"
               alt="arrow"
             />

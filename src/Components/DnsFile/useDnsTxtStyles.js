@@ -17,7 +17,6 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     gap: "3px",
     alignItems: "flex-end",
-
     "& .countdown": {
       fontSize: theme.size.defaultSize - 2.5,
       margin: 0,
@@ -36,5 +35,11 @@ export const styles = createUseStyles((theme) => ({
     fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
     color: theme.color.lightGrey,
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    dnsMainWrapper: {
+      padding: "32px 10px",
+      margin: 0,
+    },
   },
 }));

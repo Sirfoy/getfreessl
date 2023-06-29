@@ -44,4 +44,11 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize,
     color: theme.color.lightGrey,
   },
+
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    httpMainWrapper: {
+      padding: "32px 10px",
+     margin:"10px 0px",
+    },
+  },
 }));

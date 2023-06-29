@@ -13,7 +13,6 @@ export const HttpFile = () => {
   const [countdown, setCountdown] = useState(getCountdown(countdownExpiry));
   const classes = styles();
   const generateSsl = useGenerateSsl();
-
   useEffect(() => {
     const countdownInterval = setInterval(() => {
       const countdown = getCountdown(countdownExpiry);
@@ -31,7 +30,6 @@ export const HttpFile = () => {
       clearInterval(countdownInterval);
     };
   }, []);
-
   const downloadAuthLink = () => {
     const element = document.createElement("a");
     element.setAttribute(

@@ -28,7 +28,7 @@ export const styles = createUseStyles((theme) => ({
       fontFamily: theme.font.Aeonik,
       fontWeight: theme.Weight.light,
       fontSize: theme.size.defaultSize,
-      color: theme.color.placeholdergrey2,
+      color: theme.color.placeholdergrey3,
     },
     "&:disabled": {
       background: "none",

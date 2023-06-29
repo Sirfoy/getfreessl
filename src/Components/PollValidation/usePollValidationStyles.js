@@ -63,4 +63,19 @@ export const usePollValidationStyles = createUseStyles((theme) => ({
       fontWeight: theme.Weight.bold,
     },
   },
+  [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    pollDialog: {
+      width: "66vw",
+      padding: "0 20px 20px 20px",
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
+    pollDialog: {
+      width: "66vw",
+      padding: "0 10px 40px 10px",
+    },
+    pollImage: {
+      width: "80%",
+    },
+  },  
 }));

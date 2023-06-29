@@ -5,6 +5,7 @@ export const styles = createUseStyles((theme) => ({
     margin: "0 auto",
     display: "flex",
     gap: "70px",
+    marginBottom: "150px",
   },
   toolsleftWrapper: {
     width: "50%",
@@ -24,7 +25,7 @@ export const styles = createUseStyles((theme) => ({
   },
   toolsTexParagraph: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize + 4,
     lineHeight: "27px",
     display: " flex",
@@ -38,9 +39,10 @@ export const styles = createUseStyles((theme) => ({
   [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
     toolsMainWrapper: {
       flexDirection: "column-reverse",
+      marginBottom: "50px",
     },
     toolsleftWrapper: {
-      width: "100%",
+      width: "97%",
       paddingLeft: 52,
     },
     toolsrightWrapper: {
@@ -56,14 +58,15 @@ export const styles = createUseStyles((theme) => ({
       lineHeight: " 49px",
     },
     toolsTexParagraph: {
-      fontFamily: theme.font.Aeonik,
-      fontWeight: theme.Weight.light,
       fontSize: theme.size.defaultSize + 4,
       lineHeight: "27px",
       display: " flex",
       alignItems: " center",
       color: theme.color.lightGrey,
       width: "80%",
+    },
+    toolsleftWrapper: {
+      paddingLeft: 10,
     },
 
     [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
@@ -72,15 +75,18 @@ export const styles = createUseStyles((theme) => ({
         margin: "0 auto",
         display: "flex",
       },
-      toolsleftWrapper: {
-        paddingLeft: 40,
-      },
-
       toolsTexHead: {
         fontSize: theme.size.defaultSize + 22,
       },
       toolsTexParagraph: {
         fontSize: theme.size.defaultSize,
+      },
+      toolsleftWrapper: {
+        width: "97%",
+        paddingBottom: "50px",
+      },
+      toolsrightWrapper: {
+        width: "100%",
       },
     },
   },

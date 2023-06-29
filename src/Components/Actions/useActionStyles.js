@@ -4,7 +4,7 @@ export const styles = createUseStyles((theme) => ({
   actionMainWrapper: {
     display: "flex",
     justifyContent: "space-between",
-    width: "98%",
+    width: "100%",
   },
   actiontextWrapper: {
     fontFamily: theme.font.Aeonik,
@@ -30,7 +30,7 @@ export const styles = createUseStyles((theme) => ({
       flexDirection: "column",
       justifyContent: "space-between",
       gap: "24px",
-      width: "95%",
+      width: "100%",
     },
     actionsBtnWrapper: {
       display: "flex",

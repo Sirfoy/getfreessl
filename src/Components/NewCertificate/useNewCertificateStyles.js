@@ -15,14 +15,12 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "flex-start",
     display: "flex",
-
     gap: "10px",
     padding: "10px",
   },
   getCertificateTextHead: {
     background: theme.color.white,
     borderRadius: 4,
-
     fontFamily: theme.font.Aeonik,
     fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
@@ -37,7 +35,7 @@ export const styles = createUseStyles((theme) => ({
   },
   getCertificateFrametext: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
     display: "flex",
     alignItems: "center",
@@ -47,22 +45,17 @@ export const styles = createUseStyles((theme) => ({
     wordWrap: "break-word",
     margin: 0,
   },
-
   getCertificateText: {
     background: theme.color.white,
     border: `1px solid ${theme.color.placeholdergrey}`,
     borderRadius: 4,
     marginTop: "20px",
     display: "flex",
-    flexDirection: "column",
     padding: 32,
-    display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     gap: 16,
   },
-
-  inputGetCertificateWrapper: {},
   inputGetCertificate: {
     border: `1px solid ${theme.color.blackvar}`,
     borderRadius: 4,
@@ -72,11 +65,9 @@ export const styles = createUseStyles((theme) => ({
     fontSize: theme.size.defaultSize + 2,
     fontWeight: theme.Weight.light,
     fontFamily: theme.font.Aeonik,
-
     "&:hover": {
       border: `1px solid ${theme.color.lightBlack}`,
     },
-
     "&:focus": {
       fontWeight: theme.Weight.medium,
       outline: "none",
@@ -126,6 +117,12 @@ export const styles = createUseStyles((theme) => ({
       lineHeight: "18px",
       wordWrap: "break-word",
       margin: 0,
+    },
+    getCertificateMainWrapper: {
+      padding: "24px 0px ",
+    },
+    getCertificateText: {
+      padding: "32px 12px",
     },
   },
 }));

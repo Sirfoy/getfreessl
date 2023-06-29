@@ -164,5 +164,14 @@ export const styles = createUseStyles((theme) => ({
     FooterMiddleleft: {
       paddingLeft: 0,
     },
+    FooterMiddleButtonsContanier: {
+      padding: "16px 10px 0px 10px",
+    },
+    startBuilding: {
+      padding: "16px 10px",
+    },
+    explore: {
+      padding: "16px 10px",
+    },
   },
 }));

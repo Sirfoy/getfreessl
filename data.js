@@ -22,7 +22,6 @@ export const data = {
     placeholder3:
       "Enjoy website's credibility and search engine rankings. Improve your chances of being seen by potential customers.",
   },
-
   dnstxt: {
     placeholder1:
       "Sign In to your DNS provider, typically the registrar of your domain. ",
@@ -32,7 +31,6 @@ export const data = {
       "Save your TXT record, wait a few seconds for the change to propagate and click “Proceed” to continue",
     actions: "How to use DNS verification?",
   },
-
   heroverify: {
     title: "Verify Domain",
     verifybtn: "Verify later",
@@ -72,7 +70,7 @@ export const data = {
     domain1: "Domain",
     placeholder2: "Email",
     domain2: "Verification method",
-    placeholder3: "pending",
+    placeholder3: "Approved",
     domain3: "Verification status",
     paragraph: "Proceed by clicking “Get certificate” below",
   },
@@ -88,12 +86,12 @@ export const data = {
       "To begin your short but valuable journey to protection, input your domain name in the box provided, and follow the instructions to proceed.",
     head2: "Verify domain ownership",
     body2:
-      "Check any of the three options to choose a verification method and confirm ownership of your domain. This could be via email, HTTPS file upload, or DNS(CNAME).",
+      "Check any of the two options to choose a verification method and confirm ownership of your domain. This could be via HTTP file upload or DNS.",
     head3: "Certificate issued",
     body3:
       " Congratulations, you’ve verified your domain, and your certificate will be sent to you immediately. Input your preferred email address to receive it instantly. That’s all, Yaaaaay!!.",
     mainHeadbody:
-      " Save time and money, secure your website data with three simple steps; enter a domain, verify domain ownership, submit an email and congratulations! you’re protected.  Your data and your visitors&apos; information will be protected, giving your users a sense of security. You also gain an online credibility with HTTPS encryption. It is free, fast and favourable.",
+      " Save time and money, secure your website data with three simple steps; enter a domain, verify domain ownership, submit an email and congratulations! you’re protected. our data and your visitors' information will be protected, giving your users a sense of security. You also gain an online credibility with HTTPS encryption. It is free, fast and favourable.",
     mainHead: " SSL Protection for everyone in 3 steps",
     sslprobtn: "Get yours now",
   },

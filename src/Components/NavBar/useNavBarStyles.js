@@ -9,7 +9,6 @@ export const styles = createUseStyles((theme) => ({
   logoNav: {
     padding: "7px 0 7px 150px",
   },
-
   [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
     Navigation: {
       boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",

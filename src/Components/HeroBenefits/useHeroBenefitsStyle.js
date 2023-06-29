@@ -39,10 +39,10 @@ export const styles = createUseStyles((theme) => ({
   },
   benefitsPara: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
     lineHeight: "21px",
-    color: theme.color.light,
+    color: theme.color.lightGrey,
   },
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     benefitsMainWrapper: {

@@ -34,7 +34,7 @@ export const styles = createUseStyles((theme) => ({
   },
   verify_para: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize,
     lineHeight: "21px",
     color: theme.color.lightGrey,

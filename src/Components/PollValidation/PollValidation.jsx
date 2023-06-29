@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import { usePollValidationStyles } from "./styles";
+import { usePollValidationStyles } from "./usePollValidationStyles";
 import { AppContext, initialAppData } from "@/contexts";
 import { getCountdown } from "@/utilities";
 import { useVerifyTask } from "@/store";

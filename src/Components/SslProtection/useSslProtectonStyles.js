@@ -51,7 +51,7 @@ export const styles = createUseStyles((theme) => ({
   },
   psslParagraph: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize + 4,
     lineHeight: "27px",
     color: theme.color.lightGrey,
@@ -78,14 +78,25 @@ export const styles = createUseStyles((theme) => ({
     color: theme.color.white,
     textAlign: "center",
   },
+  [`@media (max-width: ${theme.breakpoints.xl}px) `]: {
+    paragraphMainWrapper: {
+      width: "95%",
+    },
+    paragraphleftWrapper: {
+      width: "65%",
+    },
+  },
   [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
+    paragraphMainWrapper: {
+      width: "85%",
+    },
     contentWrapper: {
       flexDirection: "column",
     },
     paragraphleftWrapper: {
       alignItems: "center",
       gap: "80px",
-      width: "69%",
+      width: "80%",
       margin: "0px auto",
     },
     paragraphrightWrapper: {
@@ -95,12 +106,7 @@ export const styles = createUseStyles((theme) => ({
       justifyContent: "center",
       margin: "0 auto",
     },
-  },
-  [`@media (max-width: ${theme.breakpoints.xl}px) `]: {
-    paragraphleftWrapper: {
-      width: "85%",
-    },
-  },
+  }, 
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     paragraphleftWrapper: {
       display: "flex",

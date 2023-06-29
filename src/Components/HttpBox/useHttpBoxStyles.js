@@ -109,7 +109,7 @@ export const styles = createUseStyles((theme) => ({
     },
     HttpBoxMethod: {
       paddingTop: "10px",
-      width: "90%",
+      width: "100%",
       display: "flex",
       flexDirection: "column",
       alignItems: "flex-start",

@@ -1,5 +1,6 @@
 import React from "react";
 import { styles } from "./useHeroBenefitsStyle";
+
 export const HeroBenefits = (props) => {
   const classes = styles();
   return (

@@ -29,7 +29,7 @@ export const styles = createUseStyles((theme) => ({
   },
   MainFooterTextContanierPara: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize + 4,
     margin: 0,
     color: theme.color.white,
@@ -59,8 +59,7 @@ export const styles = createUseStyles((theme) => ({
     MainFooterTextContanierPara: {
       fontSize: theme.size.defaultSize ,
       lineHeight: "21px",
-    },
-  
+    },  
     MainFooterTextContanierHead: { 
       fontSize: theme.size.defaultSize + 18,  
     },

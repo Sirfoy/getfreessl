@@ -23,7 +23,6 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     gap: 5,
     marginBottom: 15,
-
     "& input": {
       accentColor: "black",
       width: 24,
@@ -40,7 +39,6 @@ export const styles = createUseStyles((theme) => ({
   },
   requestButtonParent: {
     width: "fit-content",
-    marginTop: "8px",
-    marginBottom: "16px",
+    margin:"8px 0px 16px 7px"
   },
 }));

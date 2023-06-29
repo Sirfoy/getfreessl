@@ -6,7 +6,6 @@ import { AppContext } from "@/contexts";
 
 export const VerificationSummary = () => {
   const { domain, type, validation } = useContext(AppContext);
-
   const classes = styles();
   return (
     <div className={classes.verificationSummaryWrapper}>
@@ -18,23 +17,20 @@ export const VerificationSummary = () => {
           <DomainBox
             inputfield={true}
             pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain1.svg"
-            placeholder={data.verificationsummary.placeholder1}
             label="Domain"
-            value={domain}
+            value={"Domain"}
           />
           <DomainBox
             inputfield={true}
             pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain2.svg"
-            placeholder={data.verificationsummary.placeholder2}
             label="Verification Method"
             value={type === 1 ? "HTTP File Upload" : "DNS"}
           />
           <DomainBox
             inputfield={false}
-            pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain3.svg"
+            pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/verified.svg"
             placeholder={data.verificationsummary.placeholder3}
             label="Verification Status"
-            value={"Approved"}
           />
         </div>
         <div className={classes.VerificationSummaryMainTextWrapper}>

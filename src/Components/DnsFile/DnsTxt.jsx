@@ -27,12 +27,10 @@ export const DnsTxt = () => {
       }
       setCountdown(countdown);
     }, 1000);
-
     return () => {
       clearInterval(countdownInterval);
     };
   }, []);
-
   return (
     <div className={classes.dnsMainWrapper}>
       <div className={classes.dnsTextParent}>
@@ -46,25 +44,25 @@ export const DnsTxt = () => {
       </div>
       <HttpBox
         isHttpBox={false}
-        isdnsTextwrapper={true}
+        isHttpTextwrapper={true}
         graph={data.dnstxt.placeholder1}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step1.svg"
       />
       <HttpBox
         isHttpBox={false}
-        isdnsTextwrapper={true}
+        isHttpTextwrapper={true}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step2.svg"
         graph={data.dnstxt.placeholder2}
       />
       <HttpBox
         isHttpBox={false}
-        isdnsTextwrapper={true}
+        isHttpTextwrapper={true}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step3.svg"
         graph={data.dnstxt.placeholder3}
       />
       <Records />
       <HttpBox
-        isdnsTextwrapper={true}
+        isHttpTextwrapper={true}
         isHttpBox={false}
         pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/step4.svg"
         graph={data.dnstxt.placeholder4}

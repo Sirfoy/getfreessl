@@ -25,7 +25,7 @@ export const styles = createUseStyles((theme) => ({
   },
   hheadParaP: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.light,
+    fontWeight: theme.Weight.medium,
     fontSize: theme.size.defaultSize + 6,
     lineHeight: "32px",
     textAlign: "center",
@@ -65,7 +65,6 @@ export const styles = createUseStyles((theme) => ({
       lineHeight: "27px",
     },
   },
-
   [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
     {
       hheadHead_h: {

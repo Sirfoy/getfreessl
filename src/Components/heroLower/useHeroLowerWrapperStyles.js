@@ -2,7 +2,7 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   hlowerMainWrapper: {
-    width: "70%",
+    width: "67%",
     margin: "0px auto",
   },
   hlowerWrapper: {
