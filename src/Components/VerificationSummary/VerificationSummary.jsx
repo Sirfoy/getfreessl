@@ -22,7 +22,11 @@ export const VerificationSummary = () => {
           />
           <DomainBox
             inputfield={true}
-            pic="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/domain2.svg"
+            pic={
+              type === 1
+                ? "https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/httpfile.svg "
+                : "https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/dns.svg"
+            }
             label="Verification Method"
             value={type === 1 ? "HTTP File Upload" : "DNS"}
           />
