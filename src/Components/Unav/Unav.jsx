@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./useUnavStyles";
-import {data} from "../../../data";
+import { data } from "../../../data";
 
 export const Unav = () => {
   const classes = styles();

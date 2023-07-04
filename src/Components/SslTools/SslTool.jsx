@@ -1,5 +1,5 @@
 import React from "react";
-import { styles } from "./useSsltoolstyles";
+import { styles } from "./useSslToolStyles";
 import { CheckBoxes } from "../CheckBox/CheckBoxes";
 import { data } from "../../../data";
 export const SslTool = () => {

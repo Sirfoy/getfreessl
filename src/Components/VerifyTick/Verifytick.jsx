@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { styles } from "./useVerifytickStyles";
 import { HttpFile } from "../HttpFile/HttpFile";
-import DnsTxt from "../DnsFile/DnsTxt";
+import { DnsTxt } from "../DnsFile/DnsTxt";
 import { data } from "../../../data";
 import { AppContext } from "@/contexts";
 import { ProceedBtn } from "../ProceedBtn/ProceedBtn";

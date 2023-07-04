@@ -75,4 +75,3 @@ export const DnsTxt = () => {
     </div>
   );
 };
-export default DnsTxt;

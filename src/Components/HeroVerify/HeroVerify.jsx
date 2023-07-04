@@ -3,7 +3,7 @@ import { styles } from "./useHeroVerifyStyles";
 import { VerifySection } from "../VerifySection/VerifySection";
 import { data } from "../../../data";
 import { NewCertificate } from "../NewCertificate/NewCertificate";
-import { stylesVerify } from "../Verification/verificationStyles";
+import { stylesVerify } from "../verification/useVerificationStyles";
 import { VerificationSummary } from "../VerificationSummary/VerificationSummary";
 import { AppContext } from "@/contexts";
 import { VerifyCheck } from "../VerifyTick/Verifytick";
