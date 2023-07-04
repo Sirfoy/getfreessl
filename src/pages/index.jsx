@@ -6,7 +6,7 @@ import { Unav } from "../Components/Unav/Unav.jsx";
 import { ModalSection } from "../Components/Modal/ModalSection.jsx";
 import { AppContext } from "@/contexts";
 import { PollValidation } from "../Components/PollValidation/PollValidation.jsx";
-import { Meta } from "../../Meta.js";
+import { Meta } from "../Components/Meta/Meta.jsx";
 export default function Home() {
   const { validation } = useContext(AppContext);
   const [change, setchange] = useState(false);

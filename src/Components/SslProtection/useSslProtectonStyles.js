@@ -27,7 +27,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    gap: "70px",
+    gap: "50px",
   },
   paragraphRow: {
     width: "50%",
