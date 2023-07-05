@@ -16,6 +16,7 @@ export const NewCertificate = () => {
   };
 
   const handleSubmit = (event) => {
+    console.log(validation);
     if (validation?.is_mailed) return;
     event.preventDefault();
     mailSsl();

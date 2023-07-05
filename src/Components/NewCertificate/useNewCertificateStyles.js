@@ -54,7 +54,6 @@ export const styles = createUseStyles((theme) => ({
     padding: 32,
     flexDirection: "column",
     justifyContent: "center",
-    gap: 16,
   },
   inputGetCertificate: {
     border: `1px solid ${theme.color.blackvar}`,

@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <>   
+    <>
       <Meta />
       {change && <ModalSection />}
       <NavBar />
