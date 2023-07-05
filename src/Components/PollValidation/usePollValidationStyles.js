@@ -74,8 +74,11 @@ export const usePollValidationStyles = createUseStyles((theme) => ({
       width: "90vw",
       padding: "0 10px 40px 10px",
     },
+    pollHeading: {
+      fontSize: theme.size.defaultSize + 7,
+    },
     pollImage: {
       width: "80%",
     },
-  },  
+  },
 }));
