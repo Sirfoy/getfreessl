@@ -14,7 +14,7 @@ export const data = {
   HeroLowerWrapper: {
     title1: "Free forever",
     placeholder1:
-      "Lorem ipsum dolor sit amet, consectetur adipis elit.    Sit enim nec,    proin faucibus nibh et sagittis a. Lacinia purus ac amet.",
+      "Never have to worry about the financial cost of protecting your website. Enjoy fully free SSL certificate with all the latest security tools.",
     title2: "Trusted, Trusted, Reliable",
     placeholder2:
       "Our SSL certificates guarantee full protection for any domain or website. your visitors' information   is protected, and secured.",

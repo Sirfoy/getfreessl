@@ -24,6 +24,7 @@ export default function Home() {
       <Hero onGetClick={handleclicked} />
       <Footer />
       {validation?.is_polling && <PollValidation />}
+      
     </>
   );
 }

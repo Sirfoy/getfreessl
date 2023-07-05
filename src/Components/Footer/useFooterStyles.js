@@ -63,5 +63,9 @@ export const styles = createUseStyles((theme) => ({
     MainFooterTextContanierHead: { 
       fontSize: theme.size.defaultSize + 18,  
     },
+    MainFooterUpperContanier: {
+      width:"100%",
+     
+    },
   },
 }));

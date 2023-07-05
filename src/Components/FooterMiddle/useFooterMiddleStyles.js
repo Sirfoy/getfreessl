@@ -173,5 +173,12 @@ export const styles = createUseStyles((theme) => ({
     explore: {
       padding: "16px 10px",
     },
+    FooterMiddleicon2: {
+      top: "26%",
+      left: "7%",
+      right: "49%",
+      bottom: "80%",
+      position: "absolute",
+    },
   },
 }));

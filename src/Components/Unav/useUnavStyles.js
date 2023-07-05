@@ -75,12 +75,12 @@ export const styles = createUseStyles((theme) => ({
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
     ownWrapper: {
-      paddingRight: "20px",
+      paddingRight: "12px",
       gap: "10px",
     },
     own: {
       fontSize: theme.size.defaultSize - 2,
-      padding: "19px 0px 19px 20px",
+      padding: "19px 0px 19px 10px",
     },
     ownButton: {
       padding: "8px 12px",
