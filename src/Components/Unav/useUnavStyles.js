@@ -75,7 +75,7 @@ export const styles = createUseStyles((theme) => ({
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
     ownWrapper: {
-      paddingRight: "12px",
+      paddingRight: "10px",
       gap: "10px",
     },
     own: {

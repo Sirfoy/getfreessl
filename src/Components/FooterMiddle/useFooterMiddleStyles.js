@@ -2,8 +2,8 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   FooterMiddleMainWrapper: {
-    borderTop: `1px solid ${theme.color.placeholdergrey}`,
-    borderBottom: `1px solid ${theme.color.placeholdergrey}`,
+    borderTop: "1px solid rgba(92, 93, 102, 0.5)",
+    borderBottom: "1px solid rgba(92, 93, 102, 0.5)",
     marginTop: "60px",
     marginBottom: "20px",
     background: theme.color.lightBlack,
@@ -168,10 +168,10 @@ export const styles = createUseStyles((theme) => ({
       padding: "16px 10px 0px 10px",
     },
     startBuilding: {
-      padding: "16px 10px",
+      padding: "16px 9px",
     },
     explore: {
-      padding: "16px 10px",
+      padding: "16px 9px",
     },
     FooterMiddleicon2: {
       top: "26%",

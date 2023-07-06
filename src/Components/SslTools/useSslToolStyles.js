@@ -53,9 +53,13 @@ export const styles = createUseStyles((theme) => ({
     },
   },
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
+    toolsMainWrapper: {
+      gap: 0,
+    },
     toolsTexHead: {
-      fontSize: theme.size.defaultSize + 22,
+      fontSize: theme.size.defaultSize + 18,
       lineHeight: " 49px",
+      margin:0,
     },
     toolsTexParagraph: {
       fontSize: theme.size.defaultSize + 4,
@@ -76,9 +80,11 @@ export const styles = createUseStyles((theme) => ({
         display: "flex",
       },
       toolsTexHead: {
-        fontSize: theme.size.defaultSize + 22,
+        width:"100%",
+        fontSize: theme.size.defaultSize + 18,
       },
       toolsTexParagraph: {
+        width:"100%",
         fontSize: theme.size.defaultSize,
       },
       toolsleftWrapper: {

@@ -18,7 +18,7 @@ export const styles = createUseStyles((theme) => ({
   paragraphleftWrapper: {
     display: "flex",
     alignItems: "center",
-    gap: "80px",
+    gap: "72px",
     width: "50%",
   },
   paragraphColumn: {
@@ -33,6 +33,8 @@ export const styles = createUseStyles((theme) => ({
     width: "50%",
     alignItems: "center",
     justifyContent: "center",
+    display: "flex",
+    flexDirection: "column",
   },
   paragraphrightWrapper: {
     width: "50%",
@@ -84,6 +86,7 @@ export const styles = createUseStyles((theme) => ({
     },
     paragraphleftWrapper: {
       width: "65%",
+      margin: "50px auto",
     },
   },
   [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
@@ -92,10 +95,11 @@ export const styles = createUseStyles((theme) => ({
     },
     contentWrapper: {
       flexDirection: "column",
+      padding: "40px 0px ",
     },
     paragraphleftWrapper: {
       alignItems: "center",
-      gap: "80px",
+      gap: "54px",
       width: "80%",
       margin: "0px auto",
     },
@@ -106,23 +110,29 @@ export const styles = createUseStyles((theme) => ({
       justifyContent: "center",
       margin: "0 auto",
     },
-  }, 
+    paragraphColumn: {
+      gap: "32px",
+    },
+  },
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     paragraphleftWrapper: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      gap: "80px",
+      gap: "32px",
       width: "100%",
+    },
+    paragraphMainWrapper: {
+      margin: "50px auto",
     },
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
     paragraphColumn: {
       width: "100%",
+      gap: "32px",
     },
     paragraphRow: {
       width: "100%",
-      marginRight: 20,
     },
     psslHeader: {
       fontSize: theme.size.defaultSize + 18,
@@ -139,7 +149,17 @@ export const styles = createUseStyles((theme) => ({
       width: "100%",
     },
     paragraphMainWrapper: {
-      width: "95%",
+      width: "80%",
+      margin: "20px auto",
+    },
+    paragraphleftWrapper: {
+      gap: "32px",
+    },
+    contentWrapper: {
+      width: "90%",
+      display: "flex",
+      gap: "50px",
+      padding: "21px 0px ",
     },
   },
 }));

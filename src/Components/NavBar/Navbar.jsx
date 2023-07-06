@@ -6,12 +6,11 @@ export const NavBar = () => {
   const classes = styles();
   return (
     <div className={classes.Navigation}>
-      <div className={classes.logoNav}>
-        <img
-          src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/getfreessllogo.svg"
-          alt="logo"
-        />
-      </div>
+      <img
+        className={classes.logoNav}
+        src="https://sytbuildr.s3.eu-west-2.amazonaws.com/gfssl/assets/getfreessllogo.svg"
+        alt="logo"
+      />
     </div>
   );
 };

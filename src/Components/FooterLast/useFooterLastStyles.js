@@ -6,7 +6,7 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingBottom: "60px",
+    paddingBottom: "20px",
   },
   FooterLastLeftSection: {
     display: "flex",

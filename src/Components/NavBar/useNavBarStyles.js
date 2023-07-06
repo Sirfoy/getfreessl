@@ -14,7 +14,17 @@ export const styles = createUseStyles((theme) => ({
       boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
     },
     logoNav: {
-      padding: "32px 0 24px 60px",
+      padding: "20px 0 20px 20px",
+      width: "20%",
+    },
+  },
+  [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+    Navigation: {
+      boxShadow: "0px 1px 8px rgba(0, 0, 0, 0.04)",
+    },
+    logoNav: {
+      width: "35%",
+      padding: "16px 0 16px 16px",
     },
   },
 }));
