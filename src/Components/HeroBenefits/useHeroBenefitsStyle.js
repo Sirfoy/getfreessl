@@ -46,16 +46,18 @@ export const styles = createUseStyles((theme) => ({
   },
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     benefitsMainWrapper: {
-      width: "90%",
+      width: "94%",
       borderRight: 0,
       borderBottom: ` 0.5px solid ${theme.color.placeholdergrey}`,
       margin: "0 auto",
+      paddingLeft:"18px",
     },
     benefitsMainWrapper2: {
-      width: "90%",
+      width: "94%",
       margin: " 9px",
       display: "flex",
       margin: "0 auto",
+      paddingLeft:"18px",
     },
   },
 }));

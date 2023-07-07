@@ -6,7 +6,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " center",
-    borderRight: `1px solid ${theme.color.white}`,
+    borderRight: "1px solid rgba(92, 93, 102, 0.5)",  
     paddingTop: "24px",
   },
   FooterCoverageMainContainer2: {

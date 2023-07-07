@@ -2,6 +2,8 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 
 export const styles = createUseStyles((theme) => ({
   box: {
+    display:"flex",
+    maxWidth:"361px",
     width: "100%",
     background: theme.color.white,
     boxShadow: "0px 12px 48px rgba(0, 0, 0, 0.08)",

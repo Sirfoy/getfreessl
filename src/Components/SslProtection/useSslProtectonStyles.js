@@ -22,6 +22,7 @@ export const styles = createUseStyles((theme) => ({
     width: "50%",
   },
   paragraphColumn: {
+    // maxWidth:"361px",
     width: "50%",
     display: "flex",
     flexDirection: "column",
@@ -125,6 +126,19 @@ export const styles = createUseStyles((theme) => ({
     paragraphMainWrapper: {
       margin: "50px auto",
     },
+    paragraphColumn: {
+      // maxWidth:"361px",
+      width: "70%",
+      display: 'flex',
+      maxWidth: 270,
+     
+    },
+    paragraphRow: {
+      width: "70%",
+      display: 'flex',
+      maxWidth: 270,
+     
+    },
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
     paragraphColumn: {
@@ -149,8 +163,8 @@ export const styles = createUseStyles((theme) => ({
       width: "100%",
     },
     paragraphMainWrapper: {
-      width: "80%",
-      margin: "20px auto",
+      width: "100%",
+      margin: "10px auto",
     },
     paragraphleftWrapper: {
       gap: "32px",
