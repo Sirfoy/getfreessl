@@ -8,8 +8,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " flex-start",
-    padding:"10px 0px",
-   
+    padding: "10px 0px",
   },
   benefitsMainWrapper2: {
     width: "33%",
@@ -18,7 +17,7 @@ export const styles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: " flex-start",
-    padding:"10px 0px",    
+    padding: "10px 0px",
   },
   benefitImage: {
     width: "24px",
@@ -50,14 +49,14 @@ export const styles = createUseStyles((theme) => ({
       borderRight: 0,
       borderBottom: ` 0.5px solid ${theme.color.placeholdergrey}`,
       margin: "0 auto",
-      paddingLeft:"18px",
+      paddingLeft: "18px",
     },
     benefitsMainWrapper2: {
       width: "94%",
       margin: " 9px",
       display: "flex",
       margin: "0 auto",
-      paddingLeft:"18px",
+      paddingLeft: "18px",
     },
   },
 }));

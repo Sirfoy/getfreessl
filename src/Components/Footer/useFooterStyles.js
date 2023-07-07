@@ -5,19 +5,19 @@ export const styles = createUseStyles((theme) => ({
     paddingTop: 60,
   },
   MainFooterUpperContanier: {
-    width:"85%",
-    margin:"0 auto",     
+    width: "85%",
+    margin: "0 auto",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
   },
-  MainFooterTextContanier: {   
+  MainFooterTextContanier: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     textAlign: "center",
-    alignItems:"center",
+    alignItems: "center",
   },
   MainFooterTextContanierHead: {
     fontFamily: theme.font.Aeonik,
@@ -34,7 +34,7 @@ export const styles = createUseStyles((theme) => ({
     margin: 0,
     color: theme.color.white,
     lineHeight: "27px",
-    width:"60%",
+    width: "60%",
   },
   FooterCoverageWrapper: {
     display: "flex",
@@ -43,29 +43,28 @@ export const styles = createUseStyles((theme) => ({
     paddingTop: "24px",
   },
   [`@media (max-width: ${theme.breakpoints.lg}px) `]: {
-    MainFooterTextContanierPara: {  
-      width:"80%",
+    MainFooterTextContanierPara: {
+      width: "80%",
     },
   },
   [`@media (max-width: ${theme.breakpoints.md}px) `]: {
     MainFooterTextContanierPara: {
-      fontSize: theme.size.defaultSize ,
+      fontSize: theme.size.defaultSize,
     },
-    MainFooterTextContanierHead: { 
-      fontSize: theme.size.defaultSize + 26,  
+    MainFooterTextContanierHead: {
+      fontSize: theme.size.defaultSize + 26,
     },
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
     MainFooterTextContanierPara: {
-      fontSize: theme.size.defaultSize ,
+      fontSize: theme.size.defaultSize,
       lineHeight: "21px",
-    },  
-    MainFooterTextContanierHead: { 
-      fontSize: theme.size.defaultSize + 18,  
+    },
+    MainFooterTextContanierHead: {
+      fontSize: theme.size.defaultSize + 18,
     },
     MainFooterUpperContanier: {
-      width:"100%",
-     
+      width: "100%",
     },
   },
 }));
