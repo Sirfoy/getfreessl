@@ -45,6 +45,7 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     gap: "5px",
+    width: "100%",
   },
   hinputPic: {
     height: "27px",
@@ -57,6 +58,7 @@ export const styles = createUseStyles((theme) => ({
     lineHeight: "27px",
     border: "none",
     outline: "none",
+    width: "100%",
     "&::placeholder": {
       color: theme.color.placeholdergrey,
       fontFamily: theme.font.Aeonik,
