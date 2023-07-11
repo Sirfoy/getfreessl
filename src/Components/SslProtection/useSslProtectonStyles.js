@@ -22,7 +22,6 @@ export const styles = createUseStyles((theme) => ({
     width: "50%",
   },
   paragraphColumn: {
-    // maxWidth:"361px",
     width: "50%",
     display: "flex",
     flexDirection: "column",

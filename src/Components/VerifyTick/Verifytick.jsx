@@ -28,7 +28,6 @@ export function VerifyCheck() {
           className={classes.checkInput}
           type="radio"
           checked={type === 1}
-          onChange={() => { }}
         />
         {data.verifycheck.placeholder1}
       </label>
@@ -42,8 +41,7 @@ export function VerifyCheck() {
         <input
           className={classes.checkInput}
           type="radio"
-          checked={type === 2}
-          onChange={() => { }}
+          checked={type === 2}       
         />
         <span className={classes.checkedRadioButton} />
         {data.verifycheck.placeholder2}
