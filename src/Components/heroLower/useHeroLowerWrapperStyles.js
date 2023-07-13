@@ -8,6 +8,7 @@ export const styles = createUseStyles((theme) => ({
   hlowerWrapper: {
     display: "flex",
     paddingTop: "29px",
+    alignItems:"flex-start",
   },
   lastBenefit: {
     border: "none",

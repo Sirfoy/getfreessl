@@ -9,18 +9,18 @@ export const data = {
     hheadParaP:
       " Get a headstart for three months of free certification. You can get    your website up and running and serve clients without worries about cyber threats and data theft.",
     placeholder: "Enter Primary Domain",
-    herobtn: "Proceed",
+    herobtn: "Generate SSL Certificate",
   },
   HeroLowerWrapper: {
     title1: "Free forever",
     placeholder1:
-      "Never have to worry about the financial cost of protecting your website. Enjoy fully free SSL certificate with all the latest security tools.",
+      "Never have to worry about the financial cost of protecting your website. Enjoy a fully free SSL certificate with all the latest security tools and plugins.",
     title2: "Trusted, Trusted, Reliable",
     placeholder2:
-      "Our SSL certificates guarantee full protection for any domain or website. your visitors' information   is protected, and secured.",
+      "Rest assured with our SSL certificates that guarantee comprehensive protection for any domain or website. Your visitors' information is safeguarded and secured.",
     title3: "SSL perks",
     placeholder3:
-      "Enjoy website's credibility and search engine rankings. Improve your chances of being seen by potential customers.",
+      "Boost your website's credibility and search engine rankings. Get forever free SSL certificates that improve your visibility to potential customers.",
   },
   dnstxt: {
     placeholder1:
@@ -86,14 +86,14 @@ export const data = {
       "To begin your short but valuable journey to protection, input your domain name in the box provided, and follow the instructions to proceed.",
     head2: "Verify domain ownership",
     body2:
-      "Check any of the two options to choose a verification method and confirm ownership of your domain. This could be via HTTP file upload or DNS.",
+      "Choose from two verification options: HTTPS file upload or DNS. Confirm your domain ownership through the selected method.",
     head3: "Certificate issued",
     body3:
-      " Congratulations, you’ve verified your domain, and your certificate will be sent to you immediately. Input your preferred email address to receive it instantly. That’s all, Yaaaaay!!.",
+      "Congratulations! You've successfully verified your website, and your SSL certificate will be promptly sent to your email address. Input your preferred email address to receive it, and voila! SSL for free. Piece of cake.",
     mainHeadbody:
-      " Save time and money, secure your website data with three simple steps; enter a domain, verify domain ownership, submit an email and congratulations! you’re protected. our data and your visitors' information will be protected, giving your users a sense of security. You also gain an online credibility with HTTPS encryption. It is free, fast and favourable.",
+      " Save time and money while securing your website data with three simple steps: enter your domain, verify domain ownership, and submit your email. Congratulations! Your SSL certificate is ready. Give your users a sense of security and establish online credibility with free, fast, and favourable HTTPS encryption.",
     mainHead: " SSL Protection for everyone in 3 steps",
-    sslprobtn: "Get yours now",
+    sslprobtn: "Get protection now",
   },
   ssltool: {
     head: "All the SSL tools you need in one place",
@@ -134,5 +134,43 @@ export const data = {
     head: "Do you need a website?",
     button1: "Expore templates",
     button2: "Start building for free",
+  },
+  questions: {
+    head1: "How can I get an SSL certificate for free?",
+    body1:
+      "To obtain a free SSL certificate, simply visit our GetfreeSSL website and follow the easy steps outlined in our SSL certificate issuance process. You can get SSL for free and enjoy the benefits of secure encryption.",
+    head2: "What is the process to get a free SSL certificate?",
+    body2:
+      "It is pretty straightforward. First, enter your domain name on our website. Next, choose the verification method, such as DNS verification or other options available. Finally, complete the verification process, and your free SSL certificate will be issued promptly.",
+    head3: "How long is the validity of the SSL certificate?",
+    body3:
+      "The SSL certificates offered by GetfreeSSL have a validity period of 90 days.",
+    head4:
+      "Is the verification process necessary for obtaining an SSL certificate?",
+    body4:
+      "Yes, the verification process is an essential step to ensure the security and authenticity of your domain. It helps validate domain ownership and confirms that you have control over the website for which you are requesting the SSL certificate.",
+    head5: "Is GetfreeSSL really free?",
+    body5:
+      "Yes, our SSL certificate is absolutely free. We understand the importance of website security and believe that every website owner should have access to SSL protection without any financial burden. There are no hidden fees, trial periods or limited functionalities.",
+    head6: "How does DNS verification work?",
+    body6:
+      "DNS verification involves adding specific DNS records to your domain's DNS settings. By making these changes, you demonstrate ownership and control over the domain. Once the DNS changes are detected and confirmed, the SSL certificate will be issued to you.",
+    head7:
+      "Are there any other verification methods available besides DNS verification?",
+    body7:
+      "Yes, besides DNS verification, we offer alternative methods such as email verification and other options for verifying domain ownership. You can choose the method that best suits your requirements during the SSL certificate issuance process.",
+    head8: "Is the SSL certificate compatible with all web browsers?",
+    body8:
+      "Yes, our SSL certificate provided by GetfreeSSL is compatible with all major web browsers. This ensures that visitors to your website can access it securely, regardless of their browser.",
+    head9: "Can I upgrade to a paid SSL certificate later?",
+    body9:
+      "No, our free SSL certificate is fully functional and does not offer any paid upgrade options because our package provides the same level of protection as any premium SSL certificate.",
+    head10:
+      "What if I need help or have further questions during the SSL certificate issuance process?",
+    body10:
+      "If you need assistance or have any questions regarding the SSL certificate issuance process, kindly reach out to our customer support team. We will guide you through every step of securing your website.If you need assistance or have any questions regarding the SSL certificate issuance process, kindly reach out to our customer support team. We will guide you through every step of securing your website.",
+    mainHead: "Frequently Asked Questions",
+    mainBody:
+      "  Access and leverage all the recommended SSL tools. Leave no stones unturned in rebuffing cybercriminals.",
   },
 };

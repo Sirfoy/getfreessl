@@ -35,6 +35,7 @@ const theme = {
     lightRed2: "#FA536E ",
     grey: "#FAFAFA",
     grey2: "#F2F2F2",
+    grey3: "#343E37",
     placeholdergrey: "#C0C2CC",
     placeholdergrey2: "#909199",
     buttonPink: "#FFA6B5",

@@ -87,8 +87,9 @@ export const styles = createUseStyles((theme) => ({
         fontSize: theme.size.defaultSize,
       },
       toolsleftWrapper: {
-        width: "97%",
+        width: "70%",
         paddingBottom: "50px",
+        paddingLeft: 27,
       },
       toolsrightWrapper: {
         width: "100%",

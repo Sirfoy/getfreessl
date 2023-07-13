@@ -45,7 +45,7 @@ export const styles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     gap: "5px",
-    width: "100%",
+    width: "70%",
   },
   hinputPic: {
     height: "27px",
@@ -67,12 +67,20 @@ export const styles = createUseStyles((theme) => ({
       lineHeight: "27px",
     },
   },
+  [`@media (max-width: ${theme.breakpoints.xl}px) and (min-width:${theme.breakpoints.md}px)`]:
+    {     
+      hinput: {
+        width: "55%",
+      },
+    },
   [`@media (max-width: ${theme.breakpoints.lg}px) and (min-width:${theme.breakpoints.md}px)`]:
     {
       hheadHead_h: {
-        width: "85%",
         margin: "0 auto",
         fontSize: theme.size.defaultSize + 39,
+      },
+      hinput: {
+        width: "55%",
       },
     },
   [`@media (max-width: ${theme.breakpoints.md}px )`]: {

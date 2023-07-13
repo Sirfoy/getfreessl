@@ -6,6 +6,7 @@ import { HeroLowerWrapper } from "../heroLower/HeroLowerWrapper";
 import { SslTool } from "../SslTools/SslTool";
 import { SslProtection } from "../SslProtection/SslProtection";
 import { HeroVerify } from "../HeroVerify/HeroVerify";
+import {Questions} from "../Questions/Questions"
 
 export const Hero = ({ onGetClick }) => {
   const classes = styles();
@@ -28,6 +29,7 @@ export const Hero = ({ onGetClick }) => {
             <HeroLowerWrapper />
             <SslProtection />
             <SslTool />
+            <Questions/>
           </>
         )}
       </div>
