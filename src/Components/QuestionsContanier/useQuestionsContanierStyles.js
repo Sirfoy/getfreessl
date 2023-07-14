@@ -10,6 +10,7 @@ export const styles = createUseStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 4,
+
     background: "rgba(255, 166, 181, 0.30)",
     marginBottom: 14,
     padding: "32px 32px 32px 32px",
@@ -37,7 +38,7 @@ export const styles = createUseStyles((theme) => ({
   },
   QuestionsContanierMainTextWrapperBody: {
     fontFamily: theme.font.Aeonik,
-    fontWeight: theme.Weight.medium,
+    fontWeight: theme.Weight.small,
     fontSize: theme.size.defaultSize,
     color: theme.color.grey3,
     fontStyle: "normal",

@@ -12,6 +12,7 @@ const theme = {
   },
   Weight: {
     bold: 700,
+    small: 400,
     light: 500,
     medium: 500,
     large: 600,
@@ -42,7 +43,7 @@ const theme = {
     linkBlue: "#1B9BE2",
     blackvar: "#2B2C33",
     modalBackground: "#C2C9D1",
-    placeholdergrey3:"#1F9BA6",
+    placeholdergrey3: "#1F9BA6",
   },
 };
 export default theme;

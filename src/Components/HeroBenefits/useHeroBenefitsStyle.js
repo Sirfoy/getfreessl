@@ -2,7 +2,8 @@ import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
 export const styles = createUseStyles((theme) => ({
   benefitsMainWrapper: {
     width: "33%",
-    borderRight: ` 0.5px solid ${theme.color.placeholdergrey}`,
+    background: "",
+    borderRight: "0.5px solid rgba(192, 194, 204, 0.7)",
     margin: " 9px",
     display: "flex",
     flexDirection: "column",
