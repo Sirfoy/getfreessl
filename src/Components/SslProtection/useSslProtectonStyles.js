@@ -126,17 +126,14 @@ export const styles = createUseStyles((theme) => ({
       margin: "50px auto",
     },
     paragraphColumn: {
-      // maxWidth:"361px",
       width: "70%",
       display: 'flex',
-      maxWidth: 270,
-     
+      maxWidth: 270,     
     },
     paragraphRow: {
       width: "70%",
       display: 'flex',
-      maxWidth: 270,
-     
+      maxWidth: 270,     
     },
   },
   [`@media (max-width: ${theme.breakpoints.sm}px) `]: {
