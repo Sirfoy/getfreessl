@@ -6,8 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+  "deploy": "yarn export && gh-pages -d out"
   },
+
+
+
   "dependencies": {
     "@types/node": "22.9.0",
     "@types/react": "18.3.12",
@@ -15,6 +20,7 @@
     "axios": "^1.4.0",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "gh-pages": "^6.2.0",
     "jss": "^10.10.0",
     "next": "13.3.0",
     "react": "^18.2.0",
